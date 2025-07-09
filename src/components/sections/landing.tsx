@@ -1,4 +1,13 @@
 import Image from 'next/image'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselDots,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { photoGallery } from '@/data/photo-gallery'
 
 const Landing = () => {
   return (
@@ -11,14 +20,31 @@ const Landing = () => {
         </div>
 
         {/* Image gallery */}
-          <Image
-            src="/images/example-group-photo.png"
-            alt="Landing Image"
-            width={630}
-            height={386}
-            className="w-[630px] h-[386px] object-cover rounded-lg"
-            priority
-          />
+        <Carousel 
+          opts={{
+            loop: true,
+          }}
+          className='w-[630px] h-[386px] rounded-xl overflow-hidde'
+        >
+          <CarouselContent className=''>
+            {photoGallery.map((photo, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={630}
+                  height={386}
+                  className="w-[630px] h-[386px] object-cover rounded-xl"
+                  priority={index === 0} // Load the first image with priority only
+                  decoding='async' // Use async decoding for better performance
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+          <CarouselDots />
+        </Carousel>
       </div>
 
       <div className='flex w-full justify-around mt-20'>

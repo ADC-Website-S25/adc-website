@@ -24,7 +24,7 @@ const Landing = () => {
           opts={{
             loop: true,
           }}
-          className='w-[630px] h-[386px] rounded-xl overflow-hidde'
+          className='w-[630px] h-[386px] rounded-xl overflow-hidden'
         >
           <CarouselContent className=''>
             {photoGallery.map((photo, index) => (

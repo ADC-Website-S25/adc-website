@@ -21,11 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <script src="https://unpkg.com/react-scan/dist/auto.global.js" />
-      </head>
+      </head> */}
       <body
-        className={`${bricolage.variable} antialiased`}
+        className={`${bricolage.variable} antialiased scroll-smooth`}
       >
         <Navbar />
         {children}

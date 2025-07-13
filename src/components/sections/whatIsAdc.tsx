@@ -3,7 +3,7 @@ import InfoCard from '../ui/info-card'
 
 const WhatIsAdc = () => {
   return (
-    <section className='mt-15'>
+    <section className='mt-15' id='about'>
       <div className="relative flex items-center justify-center w-full my-8">
         <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
         <h2 className="relative z-10 bg-white px-6 text-6xl font-bold text-subheader">

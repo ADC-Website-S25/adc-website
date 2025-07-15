@@ -196,3 +196,7 @@
 .bg-gradient-blue {
   background: linear-gradient(180deg, #00b5ff 0%, #0083ff 100%);
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -11,14 +11,14 @@ const WhatIsAdc = () => {
         </h2>
       </div>
       
-      <div className='max-w-5xl mx-auto px-4 text-lg text-center flex flex-col gap-12'>
+      <div className='max-w-6xl mx-auto px-4 text-lg text-center flex flex-col gap-12'>
         <p>
           App Dev Club <span className='font-extrabold'>bridges the gap</span> between talented students who lack industry experience
           and companies who need to hire talented software engineering candidates. Companies 
           want to identify the best talent, but traditional hiring methods sometimes fall short. The best way to find strong candidates is to give them a real problem to solve. Companies come to App Dev Club with projects that they want done, but might not have the bandwidth or resources to take on. We then form a team of undergraduate students who develop it over the course of the semester.
         </p>
 
-        <div className='flex justify-between flex-col md:flex-row'>
+        <div className='flex justify-around flex-col md:flex-row'>
           <InfoCard title='Bootcamp' description='Develop your technical skills, work with your mentor, and transition into project teams.'/>
           <InfoCard title='Projects' description='Gain valuable internship experience by working on a project with industry experts.'/>
           <InfoCard title='Startups' description='Work with startups to develop an innovative new product that solves real problems.'/>

@@ -193,6 +193,12 @@
   }
 }
 
+@layer utilities {
+  .max-w-8xl {
+    max-width: 88rem;
+  }
+}
+
 .bg-gradient-blue {
   background: linear-gradient(180deg, #00b5ff 0%, #0083ff 100%);
 }

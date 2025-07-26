@@ -7,7 +7,7 @@ import WhatIsAdc from "@/components/sections/whatIsAdc";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="w-full flex flex-col gap-y-50">
       <Landing />
       <WhatIsAdc />
       <Leadership />

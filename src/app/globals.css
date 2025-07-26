@@ -192,3 +192,55 @@
     font-family: var(--font-bricolage);
   }
 }
+
+  @layer utilities {
+  .gradient-text-gold {
+    background: linear-gradient(270deg, #EFBF04, #FFD700, #F9A602, #EFBF04);
+    background-size: 500% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 6s ease infinite;
+  }
+
+  .gold-hr {
+    background: linear-gradient(270deg, #EFBF04, #FFD700, #F9A602, #EFBF04);
+    background-size: 500% 500%;
+    animation: gradient-flow 6s ease infinite;
+  }
+
+  .gradient-text-silver {
+    background: linear-gradient(270deg, #B7BABE, #C5C8CC, #8F949A, #B7BABE);
+    background-size: 500% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 6s ease infinite;
+  }
+
+  .silver-hr {
+    background: linear-gradient(270deg, #B7BABE, #C5C8CC, #8F949A, #B7BABE);
+    background-size: 500% 500%;
+    animation: gradient-flow 6s ease infinite;
+  }
+
+  .gradient-text-bronze {
+    background: linear-gradient(270deg, #CD7F32, #E59E48, #B86B2E, #CD7F32);
+    background-size: 500% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 6s ease infinite;
+  }
+
+  .bronze-hr {
+    background: linear-gradient(270deg, #CD7F32, #E59E48, #B86B2E, #CD7F32);
+    background-size: 500% 500%;
+    animation: gradient-flow 6s ease infinite;
+  }
+
+  @keyframes gradient-flow {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
+
+

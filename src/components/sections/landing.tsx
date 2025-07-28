@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { photoGallery } from '@/data/photo-gallery'
+import SlidingNumber from '../ui/sliding-number'
 
 const Landing = () => {
   return (
@@ -53,29 +54,60 @@ const Landing = () => {
 
       <div className='w-full max-w-8xl flex flex-col lg:flex-row justify-around items-center mt-20 gap-8 lg:gap-0'>
         <span className='flex flex-col items-center justify-center text-white'>
-          <p className='text-5xl xl:text-6xl font-bold'>$1,000,000+</p>
+          <span className='flex items-baseline'>
+            <p className='text-5xl xl:text-6xl font-bold'>$</p>
+            <SlidingNumber
+              value={1000000}
+              className='text-5xl xl:text-6xl font-bold'
+            />
+            <p className='text-5xl xl:text-6xl font-bold'>+</p>
+          </span>
           <p className='text-2xl'>Dollars Saved</p>
         </span>
 
         <div className='hidden md:flex lg:contents flex-row justify-around w-full max-w-4xl'>
           <span className='flex flex-col items-center justify-center text-white'>
-            <p className='text-5xl xl:text-6xl font-bold'>300+</p>
+            <span className='flex items-baseline'>
+              <SlidingNumber
+                value={300}
+                className='text-5xl xl:text-6xl font-bold'
+              />
+              <p className='text-5xl xl:text-6xl font-bold'>+</p>
+            </span>
             <p className='text-2xl'>Members</p>
           </span>
 
           <span className='flex flex-col items-center justify-center text-white'>
-            <p className='text-5xl xl:text-6xl font-bold'>90,000+</p>
+            <span className='flex items-baseline'>
+              <SlidingNumber
+                value={90000}
+                className='text-5xl xl:text-6xl font-bold'
+              />
+              <p className='text-5xl xl:text-6xl font-bold'>+</p>
+            </span>
             <p className='text-2xl'>Lines of Code</p>
           </span>
         </div>
 
         <span className='flex flex-col items-center justify-center text-white md:hidden'>
-          <p className='text-5xl xl:text-6xl font-bold'>90,000+</p>
+          <span className='flex items-baseline'>
+            <SlidingNumber
+              value={90000}
+              className='text-5xl xl:text-6xl font-bold'
+            />
+            <p className='text-5xl xl:text-6xl font-bold'>+</p>
+          </span>
           <p className='text-2xl'>Lines of Code</p>
         </span>
         
         <span className='flex flex-col items-center justify-center text-white md:hidden'>
-          <p className='text-5xl xl:text-6xl font-bold'>300+</p>
+          <span className='flex items-baseline'>
+            <SlidingNumber
+              value={300}
+              className='text-5xl xl:text-6xl font-bold'
+            />
+            <p className='text-5xl xl:text-6xl font-bold'>+</p>
+          </span>
           <p className='text-2xl'>Members</p>
         </span>
       </div>

@@ -14,16 +14,16 @@ import {
 import Link from 'next/link';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#sponsors', label: 'Sponsors' },
-  { href: '#highlights', label: 'Highlights' },
-  { href: '#contact', label: 'Contact Us' },
+  { href: '/#about', label: 'About' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#sponsors', label: 'Sponsors' },
+  { href: '/#highlights', label: 'Highlights' },
+  { href: '/#contact', label: 'Contact Us' },
 ];
 
 const Navbar = () => {
   return (
-    <nav className='fixed top-10 left-1/2 transform -translate-x-1/2 w-[95%] max-w-6xl h-16 flex items-center justify-between px-6 py-3 rounded-full bg-white/60 backdrop-blur-md shadow-lg z-50'>
+    <nav className='fixed top-6 left-1/2 transform -translate-x-1/2 w-[95%] max-w-6xl h-16 flex items-center justify-between px-6 py-3 rounded-full bg-white/60 backdrop-blur-md shadow-lg z-50'>
       <Link href='#home' className='flex items-center space-x-3' draggable={false}>
         <Image
           src='/common/adc-256.png'

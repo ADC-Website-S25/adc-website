@@ -8,7 +8,7 @@ type PhotoGalleryItem = {
  * All images should be in the public/images folder
  */
 export const photoGallery: PhotoGalleryItem[] = [
-  { src: "/images/example-group-photo.png", alt: "Group photo of ADC members" },
-  { src: "/common/adc-256.png", alt: "adc logo"},
+  { src: "/images/final-dinner1.JPG", alt: "final dinner with members" },
+  { src: "/images/final-dinner2.JPG", alt: "final dinner with members" },
   // { src: "/images/", alt: ""},
 ]

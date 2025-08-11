@@ -28,7 +28,6 @@ const Banner = (banner: Banner) => {
   const happeningNow = new Date() >= eventDateTime.startTime && new Date() <= eventDateTime.endTime;
   const happeningToday = today.toDateString() === eventDate.toDateString();
   const isActive = happeningNow || happeningToday;
-  console.log({isActive, happeningNow, happeningToday});
 
   return (
     <aside className="w-full bg-white z-[99999] shadow-2xl">

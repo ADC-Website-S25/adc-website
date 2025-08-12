@@ -7,7 +7,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import VideoEmbed from "@/components/ui/video-embed";
 
-export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
+export async function generateStaticParams() {
+  return ALL_PROJECTS.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
+export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = ALL_PROJECTS.find((p) => p.slug === slug);
 

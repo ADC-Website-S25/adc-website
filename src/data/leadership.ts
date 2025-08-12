@@ -15,9 +15,4 @@ export const leadershipMembers: LeadershipMember[] = [
   { name: "First Last", role: "Position" },
   { name: "First Last", role: "Position" },
   { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
 ]

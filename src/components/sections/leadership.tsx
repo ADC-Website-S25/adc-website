@@ -24,27 +24,27 @@ const Leadership = () => {
 
 const Member = ({ name, role, src }: LeadershipMember) => {
   return (
-    <div className='flex flex-col items-center w-56'>
+    <div className='flex flex-col items-center md:w-56 w-36'>
       {src ?
-        <Image
-          src={src}
-          alt={`${name}'s photo`}
-          title={name}
-          draggable={false}
-          loading='lazy'
-          priority={false}
-          width={160}
-          height={160}
-          className='w-40 h-40 rounded-full mb-2'
-        />
-        :
-        <div 
-          title={name}
-          className='w-40 h-40 bg-gray-200 rounded-full mb-2 flex items-center justify-center'
-        />
+      <Image
+        src={src}
+        alt={`${name}'s photo`}
+        title={name}
+        draggable={false}
+        loading='lazy'
+        priority={false}
+        width={160}
+        height={160}
+        className='rounded-full mb-2 md:w-40 md:h-40 w-28 h-28'
+      />
+      :
+      <div
+        title={name}
+        className='bg-gray-200 rounded-full mb-2 flex items-center justify-center md:w-40 md:h-40 w-28 h-28 text-center'
+      />
       }
-      <h4 className='mt-2 text-lg font-semibold text-center'>{name}</h4>
-      <p className='text-sm text-gray-600'>{role}</p>
+      <h4 className='mt-2 md:text-lg text-base font-semibold text-center'>{name}</h4>
+      <p className='md:text-sm text-xs text-gray-600 text-center'>{role}</p>
     </div>
   )
 }

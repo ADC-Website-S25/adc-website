@@ -1,5 +1,14 @@
 import React from 'react'
-import InfoCard from '../ui/info-card'
+import BlueBorderContainer from '../ui/blue-border-container';
+
+const InfoCard = ({ title, description }: { title: string; description: string }) => {
+  return (
+    <BlueBorderContainer className='flex flex-col items-center sm:gap-5 p-5 lg:p-10 h-44 md:h-80 w-full'>
+      <h3 className="text-2xl font-bold uppercase">{title}</h3>
+      <p className="mt-5 text-base md:text-lg">{description}</p>
+    </BlueBorderContainer>
+  )
+}
 
 const WhatIsAdc = () => {
   return (

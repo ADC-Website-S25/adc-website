@@ -3,64 +3,46 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link';
-
-const projects = [
-  {
-    slug: 'trachsense',
-    logo: '/images/childrensnational.png',
-    alt: "Children's National logo",
-    title: 'TrachSense',
-    description: 'TrachSense is a medical app that monitors and ensures proper breathing tube placement for tracheotomy patients.',
-  },
-  {
-    slug: 'amazonkuiper',
-    logo: '/images/amazonkuiper.png',
-    alt: 'Amazon Project Kuiper logo',
-    title: 'Project Title',
-    description: 'Short description of project',
-  },
-  {
-    slug: 'mitre',
-    logo: '/images/mitre.png',
-    alt: 'MITRE logo',
-    title: 'Project Title',
-    description: 'Short description of project',
-  },
-]
+import { FEATURED_PROJECTS } from '@/data/projects';
+import BlueBorderContainer from '../ui/blue-border-container'; 
 
 const Projects = () => {
   return (
-    <section className="mt-15" id="projects">
-      <div className="w-full my-8 flex items-center justify-center">
-        <h2 className="text-5xl font-bold text-blue-600 bg-white px-6 text-center">
+    <section className="mt-15 scroll-mt-32" id="projects">
+      <div className="w-full my-8 flex items-center justify-center relative">
+        <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
+        <h2 className="text-5xl font-bold text-blue-600 bg-white px-6 text-center z-10">
           Featured Projects
         </h2>
       </div>
-      <div className="w-full px-2 sm:px-4 flex flex-col gap-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-          {projects.map((project, idx) => (
-            <div
-              key={idx}
-              className="bg-gradient-to-br from-[#00B5FF] to-[#0083FF] p-[4px] rounded-4xl shadow-lg hover:scale-[1.01] transition-transform h-full w-full"
-            >
-              <div className="bg-white rounded-[calc(2rem-4px)] flex flex-col items-center gap-3 p-8 h-80 w-full">
+      <div className="w-full max-w-8xl mx-auto px-2 sm:px-4 flex flex-col gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full items-stretch">
+          {FEATURED_PROJECTS.map((project, idx) => {
+            const isLastOddItem = idx === FEATURED_PROJECTS.length - 1 && FEATURED_PROJECTS.length % 2 === 1;
+
+            return (
+              <BlueBorderContainer
+                key={idx}
+                className="flex flex-col items-center gap-3 p-6 h-full"
+                parentClassName={isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""}
+              >
                 <div className="flex justify-center items-center mb-2">
-                  <Image src={project.logo} alt={project.alt} width={128} height={128} className="object-contain h-24 w-52" />
+                  <Image src={project.logo} alt={project?.logoAlt || "Project Logo"} width={128} height={128} className="object-contain h-24 w-52" />
                 </div>
                 <div className="text-lg font-semibold mb-1 text-gray-800 text-center">
                   {project.title}
                 </div>
-                <div className="text-sm text-gray-600 mb-4 text-center">
+                <div className="text-sm text-gray-600 mb-4 text-center flex-grow">
                   {project.description}
                 </div>
-                <Link href={`/projects/${project.slug}`} className="w-full">
-                  <Button variant="outline" className="mt-auto w-full">
+                <Link href={`/projects/${project.slug}`} className="w-full mt-auto">
+                  <Button variant="roundedOutline" className="w-full py-5">
                     Read more <ArrowRight className="ml-1" />
                   </Button>
                 </Link>
-              </div>
-            </div>
-          ))}
+              </BlueBorderContainer>
+            )
+          })}
         </div>
         <div className="flex justify-center mt-6">
           <Link href="/projects">

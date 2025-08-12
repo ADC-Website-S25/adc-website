@@ -22,8 +22,8 @@ const navLinks = [
 
 const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
   return (
-    <nav className={`sticky top-6 w-[95%] max-w-6xl h-16 flex items-center justify-between px-6 py-3 rounded-full bg-white/60 backdrop-blur-md shadow-lg z-50 mx-auto ${hasActiveBanner ? "mt-4 -mb-20" : "-mb-16"}`}>
-      <Link href='#home' className='flex items-center space-x-3' draggable={false}>
+    <nav className={`sticky top-4 md:top-6 w-[95%] max-w-6xl h-16 flex items-center justify-between px-6 py-3 rounded-full bg-white/60 backdrop-blur-md shadow-lg z-50 mx-auto ${hasActiveBanner ? "mt-4 -mb-20" : "-mb-16"}`}>
+      <Link href='/#home' className='flex items-center space-x-3' draggable={false}>
         <Image
           src='/common/adc-256.png'
           alt='App Dev Club Logo'

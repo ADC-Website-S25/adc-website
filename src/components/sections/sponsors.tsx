@@ -1,25 +1,27 @@
-import React from "react";
 import SponsorSection from "@/components/sections/sponsorsection";
 const Sponsors = () => {
   return (
-    <>
+    <section aria-labelledby="sponsors-heading" className="w-full">
       <div className="flex items-center justify-center w-full flex-col">
-        <h1 className="font-bold text-[70px] text-blue-500 mb-8 text-center">
+        <h1
+          id="sponsors-heading"
+          className="font-bold text-5xl text-[#0083FF] mb-8 text-center"
+        >
           Our Sponsors
         </h1>
-        <h3 className="text-[24px] text-light text-center">
+        <h3 className="max-w-[85%] text-xl text-center">
           These companies are helping drive the future of ADC.
         </h3>
-        <div className="w-[90%]">
+        <div className="w-full">
           <SponsorSection
             title="Gold"
             color="gold"
             logos={[
               "/amazon.svg",
-              "/mitre.svg",
-              "/ref.svg",
+              "/us-news.svg",
+              "/ref-institute.svg",
               "/ionq.svg",
-              "/usnews.svg",
+              "/mitre.svg",
             ]}
           />
           <SponsorSection
@@ -28,20 +30,19 @@ const Sponsors = () => {
             logos={[
               "/accenture.svg",
               "/secu.svg",
-              "/cnational.svg",
-              "/bah.svg",
+              "/childrens-national.svg",
               "/noaa.svg",
+              "/booz-allen.jpg",
             ]}
           />
           <SponsorSection
             title="Bronze"
             color="bronze"
-            logos={["/gd.svg", "/nsa.svg"]}
-            w="max-w-[470px]"
+            logos={["/general-dynamics.png", "/nsa.svg"]}
           />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -1,54 +1,61 @@
 import React from "react";
+import Post from "./post";
 
 const Instagram = () => {
   return (
-    <div>
-      <h1 className="font-bold text-[70px] text-blue-500 mb-8 text-center">
-        Follow Our Instagram!
+    <div className="w-full flex flex-col items-center justify-center">
+      {/* title */}
+      <h1 className="max-w-[85%] font-bold leading-[1.1] text-5xl sm:text-6xl md:text-7xl mb-8 text-center bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] bg-clip-text text-transparent">
+        Follow Us on Instagram!
       </h1>
 
-      <div className="flex w-full space-x-1">
-        <div className="h-[572px] flex-1 bg-[#D9D9D9] relative"></div>
-        <div className="h-[572px] flex-1 bg-green-400 relative group">
-          <div className="absolute inset-0 bg-[#D9D9D9] group-hover:bg-pink-100 transition-colors duration-500 z-0" />
-
-          <div
-            className="absolute inset-0 z-10 opacity-0 translate-y-4
-               group-hover:opacity-100 group-hover:translate-y-0
-               transition-all duration-500 ease-out"
+      {/* instagram profile gradient button link */}
+      <div className="flex items-center justify-center mb-10">
+        <a
+          href="https://www.instagram.com/appdev_umd/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit our Instagram profile"
+          className="flex  items-center justify-center group rounded-full w-34 p-[.15rem] bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#8134AF] focus-visible:ring-offset-white"
+        >
+          <span
+            className="flex rounded-full h-full w-full items-center justify-center py-3
+               bg-white text-black 
+               transition-all duration-300
+               group-hover:bg-transparent group-hover:text-white"
           >
-            <img
-              src="/photoicon.svg"
-              alt="Icon 1"
-              className="absolute top-2 right-2 w-12 h-12"
-            />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-10 items-center px-4">
-              <div className="flex items-center justify-center gap-x-2">
-                <img
-                  src="/likeicon.svg"
-                  alt="Heart Icon"
-                  className="w-12 h-12"
-                />
-                <p className="bold">5K</p>
-                <img
-                  src="/commenticon.svg"
-                  alt="Plus Icon"
-                  className="w-12 h-12"
-                />
-                <p className="bold">305</p>
-              </div>
-              <div className="flex justify-center items-center">
-                <p className="text-center max-w-md">
-                  "An emotional ending to the semester as our final event marked
-                  not only the end of the school year but also the departure of
-                  our senior and founding class."
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+            @appdev_umd
+          </span>
+        </a>
+      </div>
 
-        <div className="h-[572px] flex-1 bg-[#D9D9D9] relative"></div>
+      {/* instagram posts; surrounding divs act as top + bottom borders */}
+      <div>
+        <div className="h-1 bg-gradient-to-r from-[#DD2A7B] via-[#8134AF] to-[#515BD4]"></div>
+        <div className="flex w-full gap-x-1 bg-gradient-to-r from-[#DD2A7B] via-[#8134AF] to-[#515BD4]">
+          <Post
+            imgSrc="/test.png"
+            caption="An emotional ending to the semester as our final event marked not
+              only the end of the school year but also the departure of our
+              senior and founding class. founding class. founding class."
+          />
+          <Post
+            imgSrc="/test3.png"
+            caption="An emotional ending to the semester as our final event marked not
+              only the end of the school year but also the departure of our
+              senior and founding class. founding class. founding class."
+            className="hidden sm:block"
+          />
+          <Post
+            imgSrc="/test4.png"
+            caption="An emotional ending to the semester as our final event marked not
+              only the end of the school year but also the departure of our
+              senior and founding class. founding class. founding class."
+            className="hidden md:block"
+          />
+        </div>
+        <div className="h-1 bg-gradient-to-r from-[#DD2A7B] via-[#8134AF] to-[#515BD4] hidden sm:block"></div>
+        <div className="h-1 bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] block sm:hidden"></div>
       </div>
     </div>
   );

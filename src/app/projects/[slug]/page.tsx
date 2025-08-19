@@ -33,12 +33,12 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </Button>
       </Link>
 
-      <div className="px-2 sm:px-4 flex flex-col items-center">
+      <div className="px-2 sm:px-4 flex flex-col items-center w-full">
         {/* Top rounded rectangle with logo and text split */}
         <div className="w-full border-2 border-blue-300 rounded-3xl p-10 mb-16 gap-6 md:gap-4 flex flex-col md:flex-row items-center bg-white shadow-lg">
-          <div className="flex-1 flex items-center justify-center h-full">
+          <div className="flex-[0.5] flex items-center justify-center h-full">
             {project.logo ? (
-              <Image src={project.logo} alt={project.title} width={500} height={500} className="object-contain max-h-32 max-w-full md:max-w-100" draggable={false} />
+              <Image src={project.logo} alt={project.title} width={400} height={400} className="object-contain max-h-20 max-w-full md:max-w-100" draggable={false} />
             ) : (
               <div className="w-28 h-28 rounded-full bg-blue-100 flex items-center justify-center">
                 <span className="text-blue-400 text-4xl font-bold">?</span>
@@ -68,10 +68,29 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <p className="text-gray-600 text-center">{project.showcaseContent?.description}</p>
         </div>
         )}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-5 gap-x-4 justify-items-center text-center">
+        <div className="relative flex items-center justify-center w-full my-8">
+            <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
+            <h2 className="relative z-10 bg-white px-4 text-2xl sm:text-3xl font-bold text-subheader">
+              Team Members
+            </h2>
+          </div>
+        <div className="w-full flex flex-wrap justify-center gap-y-5 md:gap-x-25 gap-x-20 text-center">
           {members.map((member, idx) => (
-            <div key={idx} className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full bg-gray-200 mb-2" />
+            <div key={idx} className="flex flex-col items-center w-32">
+              {member.photo ? (
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-2">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={120}
+                    height={120}
+                    className={`object-cover transform ${member.zoomPhotoIn ? "scale-150" : ""}`}
+                    draggable={false}
+                  />
+                </div>
+              ) : (
+                <div className="w-24 h-24 rounded-full bg-gray-200 mb-2" />
+              )}
               <div className="text-base font-medium text-gray-800">{member.name}</div>
               <div className="text-sm text-gray-500">{member.title}</div>
             </div>

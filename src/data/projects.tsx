@@ -10,9 +10,15 @@ export type Project = {
   year: number;
   semester: "Spring" | "Fall";
   showcaseContent?: ShowcaseContent;
-  members?: { name: string; title: string }[];
+  members?: { 
+    name: string; 
+    title: string; 
+    photo?: string;
+    zoomPhotoIn?: boolean; // Use this if they have a linkedin badge and you want to zoom it to fit
+  }[];
 }
 
+// only youtube video links are supported right now
 type ShowcaseContent =
   | { description: string; image: string; videoUrl?: never }
   | { description: string; videoUrl: string; image?: never };
@@ -59,7 +65,7 @@ const SPRING_25_PROJECTS: Project[] = [
     logo: '/images/projects/amazonkuiper.png',
     logoAlt: 'Amazon Project Kuiper Logo',
     title: 'Amazon Project Kuiper',
-    description: 'Short description of project 2',
+    description: 'Short description of project 2 something something something something something something something something something ',
     year: 2025,
     semester: 'Spring',
 
@@ -71,21 +77,34 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'mitre',
-    logo: '/images/projects/mitre.svg',
+    logo: '/images/projects/mitreSP25/mitre.svg',
     logoAlt: 'Mitre Logo',
-    title: 'Mitre',
+    title: 'Malware Analysis and Visualization',
     description: 'This semester\'s project involved developing a centralized malware analysis platform for various tools used by the company',
     year: 2025,
     semester: 'Spring',
     showcaseContent: {
-      description: 'Selecting which tools to analyze the given files with',
-      image: '/images/projects/mitre-showcase.png',
+      description: 'Selecting what tool to use to analyze the uploaded malware files',
+      image: '/images/projects/mitreSP25/mitre-showcase.png',
     },
     members: [
-      { name: 'Grace White', title: 'Team Lead' },
-      { name: 'Henry Black', title: 'Developer' },
-      { name: 'Ivy Wilson', title: 'Designer' },
-    ],
+      { name: 'Amelia Harn', title: 'Project Lead', photo: '/images/projects/mitreSP25/ameliaHarn.png' },
+      { name: 'Anand Vinod', title: 'Tech Lead', photo: '/images/projects/mitreSP25/anandVinod.png' },
+      { name: 'Kevin Chong', title: 'ML Tech Lead', photo: '/images/projects/mitreSP25/kevinChong.webp' },
+      { name: 'Shreya Sanikommu', title: 'Project Manager', photo: '/images/projects/mitreSP25/shreyaSanikommu.png', zoomPhotoIn: true },
+      { name: 'Anvay Panguluri', title: 'Backend Engineer', photo: '/images/projects/mitreSP25/anvayPanguluri.webp' },
+      { name: 'Autumn Anson', title: 'Frontend Engineer/Research', photo: '/images/projects/mitreSP25/autumnAnson.webp' },
+      { name: 'Chayanika Sinha', title: 'Data Visualization Engineer', photo: '/images/projects/mitreSP25/chayanikaSinha.webp' },
+      { name: 'Gitika Saravanan', title: 'DevOps Engineer', photo: '/images/projects/mitreSP25/gitikaSaravanan.webp' },
+      { name: 'Jessica Zhou', title: 'UI/UX Designer', photo: '/images/projects/mitreSP25/jessicaZhou.webp', zoomPhotoIn: true },
+      { name: 'Marvin Lin', title: 'ML Engineer', photo: '/images/projects/mitreSP25/marvinLin.png' },
+      { name: 'Nate Zhang', title: 'Frontend Engineer/Research', photo: '/images/projects/mitreSP25/nateZhang.png' },
+      { name: 'Parth Dua', title: 'Backend/DevOps Engineer', photo: '/images/projects/mitreSP25/parthDua.webp', zoomPhotoIn: true },
+      { name: 'Ritvik Thakur', title: 'Backend Engineer', photo: '/images/projects/mitreSP25/ritvikThakur.webp' },
+      { name: 'Thomas Huitema', title: 'Backend Engineer', photo: '/images/projects/mitreSP25/thomasHuitema.webp' },
+      { name: 'Varun Kota', title: 'ML Engineer', photo: '/images/projects/mitreSP25/varunKota.webp' },
+      { name: 'Will Graham', title: 'Frontend Engineer', photo: '/images/projects/mitreSP25/willGraham.png' }
+    ]
   },
   {
     slug: 'spring-2025-project-4',

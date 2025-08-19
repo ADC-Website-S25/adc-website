@@ -14,7 +14,7 @@ const bricolage = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   title: "App Dev Club @ UMD",
-  description: "Empowering students to build impactful software solutions",
+  description: "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
 };
 
 export const viewport: Viewport = {

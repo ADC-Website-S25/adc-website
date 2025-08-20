@@ -86,27 +86,27 @@ const Roadmap = () => {
   const position = roadmapPositions[currentPosition]
 
   return (
-    <section className="py-20 px-8 bg-gray-50" id="roadmap">
+    <section className="py-12 md:py-20 px-4 md:px-8" id="roadmap">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-blue-600 mb-4">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-blue-600 mb-2 md:mb-4">
             Your ADC Journey
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Discover your path through the App Development Club. From bootcamp member to leadership, 
             every step builds your skills and opens new opportunities.
           </p>
         </div>
 
         {/* Progress Indicator */}
-        <div className="flex justify-center items-center mb-12">
-          <div className="flex items-center space-x-2">
+        <div className="flex justify-center items-center mb-8 md:mb-12">
+          <div className="flex items-center space-x-1 md:space-x-2">
             {roadmapPositions.map((_, index) => (
               <React.Fragment key={index}>
                 <button
                   onClick={() => goToPosition(index)}
-                  className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                  className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 ${
                     index === currentPosition
                       ? 'bg-blue-600 scale-125'
                       : index < currentPosition
@@ -116,7 +116,7 @@ const Roadmap = () => {
                 />
                 {index < roadmapPositions.length - 1 && (
                   <div
-                    className={`w-8 h-0.5 transition-colors duration-300 ${
+                    className={`w-4 md:w-8 h-0.5 transition-colors duration-300 ${
                       index < currentPosition ? 'bg-blue-400' : 'bg-gray-300'
                     }`}
                   />
@@ -126,40 +126,51 @@ const Roadmap = () => {
           </div>
         </div>
 
-        {/* Main Content Card */}
-        <div className="relative">
-          <div
-            className={`${position.bgColor} ${position.borderColor} border-2 rounded-3xl p-8 shadow-lg transition-all duration-500 ease-in-out transform`}
+        {/* Main Content Card with Outside Navigation */}
+        <div className="relative flex items-center justify-center mx-2 md:mx-0">
+          {/* Left Navigation Button - Outside card */}
+          <Button
+            onClick={prevPosition}
+            variant="outline"
+            size="lg"
+            className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-full mr-12 bg-white rounded-full p-3 z-10 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={currentPosition === 0}
           >
-            <div className="flex flex-col lg:flex-row items-center gap-8">
+            <ChevronLeft className="w-6 h-6 text-gray-600" />
+          </Button>
+
+          <div
+            className={`${position.bgColor} ${position.borderColor} border-2 rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-lg hover:shadow-xl transition-all duration-500 ease-in-out transform min-h-[400px] md:min-h-[350px] w-full max-w-5xl mx-auto`}
+          >
+            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 h-full">
               {/* Icon and Title */}
-              <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/3">
-                <div className="p-4 bg-white rounded-2xl shadow-md mb-4 text-blue-600">
+              <div className="flex flex-col items-center md:items-start text-center md:text-left md:w-1/3">
+                <div className="p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-md mb-3 md:mb-4 text-blue-600">
                   {position.icon}
                 </div>
-                <h3 className="text-3xl font-bold text-gray-800 mb-2">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
                   {position.title}
                 </h3>
-                <span className="text-sm font-medium text-gray-600 bg-white px-3 py-1 rounded-full">
+                <span className="text-xs md:text-sm font-medium text-gray-600 bg-white px-2 md:px-3 py-1 rounded-full shadow-sm">
                   {position.duration}
                 </span>
               </div>
 
               {/* Description and Skills */}
-              <div className="lg:w-2/3">
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <div className="md:w-2/3 flex flex-col justify-center">
+                <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6 leading-relaxed">
                   {position.description}
                 </p>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-3">
+                  <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-2 md:mb-3">
                     Key Skills & Responsibilities:
                   </h4>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {position.skills.map((skill, index) => (
                       <div
                         key={index}
-                        className="bg-white bg-opacity-70 px-3 py-2 rounded-lg text-gray-700 font-medium text-sm"
+                        className="bg-white bg-opacity-70 px-2 md:px-3 py-1 md:py-2 rounded-lg text-gray-700 font-medium text-xs md:text-sm shadow-sm"
                       >
                         {skill}
                       </div>
@@ -170,38 +181,48 @@ const Roadmap = () => {
             </div>
           </div>
 
-          {/* Navigation Buttons */}
-          <Button
-            onClick={prevPosition}
-            variant="outline"
-            size="lg"
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg hover:bg-gray-50 rounded-full p-3"
-            disabled={currentPosition === 0}
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </Button>
-
+          {/* Right Navigation Button - Outside card */}
           <Button
             onClick={nextPosition}
             variant="outline"
             size="lg"
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg hover:bg-gray-50 rounded-full p-3"
+            className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-full ml-12 bg-white rounded-full p-3 z-10 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={currentPosition === roadmapPositions.length - 1}
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-6 h-6 text-gray-600" />
+          </Button>
+        </div>
+
+        {/* Mobile Navigation Buttons */}
+        <div className="flex md:hidden justify-center gap-6 mt-8">
+          <Button
+            onClick={prevPosition}
+            variant="outline"
+            className="bg-white rounded-full p-2 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={currentPosition === 0}
+          >
+            <ChevronLeft className="w-5 h-5 text-gray-600" />
+          </Button>
+          <Button
+            onClick={nextPosition}
+            variant="outline"
+            className="bg-white rounded-full p-2 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={currentPosition === roadmapPositions.length - 1}
+          >
+            <ChevronRight className="w-5 h-5 text-gray-600" />
           </Button>
         </div>
 
         {/* Position Counter */}
-        <div className="text-center mt-8">
-          <span className="text-gray-600 font-medium">
+        <div className="text-center mt-6 md:mt-8">
+          <span className="text-gray-600 font-medium text-sm md:text-base">
             Step {currentPosition + 1} of {roadmapPositions.length}
           </span>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+        <div className="text-center mt-8 md:mt-12">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-2 md:py-3 text-sm md:text-base">
             Start Your Journey Today
           </Button>
         </div>

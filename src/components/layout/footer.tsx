@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Footer = () => {
@@ -11,8 +13,7 @@ const Footer = () => {
     setEmailMessage(e.target.value);
   };
   return (
-    <footer className="relative bg-white w-full h-96 p-10">
-
+    <footer id="contact" className="relative bg-white w-full h-96 p-10">
       {/* back to top button */}
       <button
         type="button"
@@ -26,59 +27,55 @@ const Footer = () => {
             behavior: prefersReduced ? "auto" : "smooth",
           });
         }}
-        className="flex absolute top-1 gap-1 right-1 font-bold focus-visible:ring-2 focus-visible:ring-black/30 items-center p-3 rounded hover:bg-[#0083FF] cursor-pointer transition-colors duration-100 text-xs"
+        className="flex absolute top-1 gap-1 right-1 font-bold focus-visible:ring-2 focus-visible:ring-black/30 items-center p-3 rounded hover:bg-[#0083FF] cursor-pointer transition-colors duration-200 text-xs"
       >
-        <img src="/back-to-top2.png" alt="Back to Top" className="w-4 h-4" />
+        <Image width={16} height={16} src="/back-to-top2.png" alt="Back to Top" className="w-4 h-4" />
       </button>
 
       <div className="flex flex-col justify-center items-center w-full h-full gap-y-8">
         {/* logo */}
-        <a href="/">
-          <img src="/adc_logo_black.png" alt="ADC Logo" className="w-64" />
-        </a>
+        <Link href="/#home">
+          <Image width={256} height={64} src="/adc_logo_black.png" alt="ADC Logo" className="w-64" />
+        </Link>
 
         {/* social media icons */}
         <div className="flex gap-5 items-center">
-          <a
+          <Link
             href="https://www.instagram.com/appdev_umd/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/ig-icon.png" alt="Instagram" className="w-7 h-auto" />
-          </a>
-          <a
+            <Image width={28} height={28} src="/ig-icon.png" alt="Instagram" className="w-7 h-auto" />
+          </Link>
+          <Link
             href="https://www.linkedin.com/company/app-development-club/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/linkedin-icon.png"
-              alt="LinkedIn"
-              className="w-7 h-auto"
-            />
-          </a>
-          <a
+            <Image width={28} height={28} src="/linkedin-icon.png" alt="LinkedIn" className="w-7 h-auto" />
+          </Link>
+          <Link
             href="https://github.com/appdevumd"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/github-icon.png" alt="GitHub" className="w-7 h-auto" />
-          </a>
-          <a
+            <Image width={28} height={28} src="/github-icon.png" alt="GitHub" className="w-7 h-auto" />
+          </Link>
+          <Link
             href="mailto:umdappdev@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            
-            <img src="/email-icon2.svg" alt="Email" className="w-7 h-auto" />
-          </a>
-          <a
+
+            <Image width={28} height={28} src="/email-icon2.svg" alt="Email" className="w-7 h-auto" />
+          </Link>
+          <Link
             href="https://discord.com/invite/scSeVbTT7G"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/discord-icon.svg" alt="Discord" className="w-7 h-auto" />
-          </a>
+            <Image width={28} height={28} src="/discord-icon.svg" alt="Discord" className="w-7 h-auto" />
+          </Link>
         </div>
 
         {/* email input */}
@@ -104,7 +101,9 @@ const Footer = () => {
               className="
              focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30"
             >
-              <img
+              <Image
+                width={20}
+                height={20}
                 src="/send-icon.png"
                 alt="Send"
                 className="w-5 absolute right-3 top-1/2 transform -translate-y-1/2"

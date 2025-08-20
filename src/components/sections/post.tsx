@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useId } from "react";
 
 type PostProps = {
@@ -19,7 +20,7 @@ function Post({ imgSrc, caption, className = "" }: PostProps) {
       <div className="absolute inset-0 group-hover:bg-pink-100 transition-colors duration-500 z-0" />
 
       {/* image */}
-      <img src={imgSrc} alt="" className="block" />
+      <Image width={750} height={750} src={imgSrc} alt="" className="block" />
 
       {/* inner elements hover effect */}
       <div
@@ -28,7 +29,9 @@ function Post({ imgSrc, caption, className = "" }: PostProps) {
                transition-all duration-500 ease-out"
       >
         {/* top right photo icon */}
-        <img
+        <Image
+          width={40}
+          height={40}
           src="/photoicon.svg"
           alt=""
           aria-hidden="true"
@@ -39,13 +42,17 @@ function Post({ imgSrc, caption, className = "" }: PostProps) {
         <div className="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-4 md:gap-y-10 items-center px-4">
           {/* like + comment icons */}
           <div className="flex items-center justify-center gap-x-2">
-            <img
+            <Image
+              width={48}
+              height={48}
               src="/likeicon.svg"
               alt=""
               aria-hidden="true"
               className="w-12 h-12 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-10 xl:h-10 2xl:w-10 2xl:h-10"
             />
-            <img
+            <Image
+              width={48}
+              height={48}
               src="/commenticon.svg"
               alt=""
               aria-hidden="true"

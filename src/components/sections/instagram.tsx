@@ -3,7 +3,7 @@ import Post from "./post";
 
 const Instagram = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center">
+    <section id="highlights" className="w-full flex flex-col items-center justify-center mt-32 scroll-mt-32">
       {/* title */}
       <h1 className="max-w-[85%] font-bold leading-[1.1] text-5xl sm:text-6xl md:text-7xl mb-8 text-center bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] bg-clip-text text-transparent">
         Follow Us on Instagram!
@@ -57,7 +57,7 @@ const Instagram = () => {
         <div className="h-1 bg-gradient-to-r from-[#DD2A7B] via-[#8134AF] to-[#515BD4] hidden sm:block"></div>
         <div className="h-1 bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] block sm:hidden"></div>
       </div>
-    </div>
+    </section>
   );
 };
 

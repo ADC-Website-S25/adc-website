@@ -1,7 +1,7 @@
 import SponsorSection from "@/components/sections/sponsorsection";
 const Sponsors = () => {
   return (
-    <section aria-labelledby="sponsors-heading" className="w-full">
+    <section id="sponsors" aria-labelledby="sponsors-heading" className="w-full mt-32 scroll-mt-32">
       <div className="flex items-center justify-center w-full flex-col">
         <h1
           id="sponsors-heading"
@@ -10,7 +10,7 @@ const Sponsors = () => {
           Our Sponsors
         </h1>
         <h3 className="max-w-[85%] text-xl text-center">
-          These companies are helping drive the future of ADC.
+          These companies are helping drive the future of ADC
         </h3>
         <div className="w-full">
           <SponsorSection

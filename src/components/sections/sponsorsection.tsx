@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type SponsorSectionProps = {
   title: string;
   color: string;
@@ -35,7 +37,9 @@ function SponsorSection({ title, color, logos }: SponsorSectionProps) {
                 key={src}
                 className="relative w-29 h-18 sm:w-65 sm:h-28 p-2 rounded-2xl flex items-center justify-center bg-white"
               >
-                <img
+                <Image
+                  width={244}
+                  height={100}
                   src={src}
                   alt={alt}
                   decoding="async"

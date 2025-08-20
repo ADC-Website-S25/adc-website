@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 import Link from 'next/link';
 import { FEATURED_PROJECTS } from '@/data/projects';
 import BlueBorderContainer from '../ui/blue-border-container'; 
+import FadeSlideIn from '../ui/fade-slide-in';
 
 const Projects = () => {
   return (
@@ -21,26 +22,33 @@ const Projects = () => {
             const isLastOddItem = idx === FEATURED_PROJECTS.length - 1 && FEATURED_PROJECTS.length % 2 === 1;
 
             return (
-              <BlueBorderContainer
-                key={idx}
-                className="flex flex-col items-center gap-3 p-6 h-full"
-                parentClassName={isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""}
+              <FadeSlideIn 
+                key={project.title} 
+                delay={idx + 1 * 50} 
+                direction={idx === 0 ? 'right' : idx === 2 ? 'left' : 'up'}
+                className='h-full'
               >
-                <div className="flex justify-center items-center mb-2">
-                  <Image src={project.logo} alt={project?.logoAlt || "Project Logo"} width={128} height={128} className="object-contain h-24 w-52" />
-                </div>
-                <div className="text-lg font-semibold mb-1 text-gray-800 text-center">
-                  {project.title}
-                </div>
-                <div className="text-sm text-gray-600 mb-4 text-center flex-grow">
-                  {project.description}
-                </div>
-                <Link href={`/projects/${project.slug}`} className="w-full mt-auto">
-                  <Button variant="roundedOutline" className="w-full py-5">
-                    Read more <ArrowRight className="ml-1" />
-                  </Button>
-                </Link>
-              </BlueBorderContainer>
+                <BlueBorderContainer
+                  className="flex flex-col items-center gap-3 p-6 h-full"
+                  key={idx}
+                  parentClassName={`${isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""} h-full`}
+                >
+                  <div className="flex justify-center items-center mb-2">
+                    <Image src={project.logo} alt={project?.logoAlt || "Project Logo"} width={128} height={128} className="object-contain h-24 w-52" />
+                  </div>
+                  <div className="text-lg font-semibold mb-1 text-gray-800 text-center">
+                    {project.title}
+                  </div>
+                  <div className="text-sm text-gray-600 mb-4 text-center flex-grow">
+                    {project.description}
+                  </div>
+                  <Link href={`/projects/${project.slug}`} className="w-full mt-auto">
+                    <Button variant="roundedOutline" className="w-full py-5">
+                      Read more <ArrowRight className="ml-1" />
+                    </Button>
+                  </Link>
+                </BlueBorderContainer>
+              </FadeSlideIn>
             )
           })}
         </div>

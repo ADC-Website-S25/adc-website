@@ -23,6 +23,7 @@ const Sponsors = () => {
               "/images/logos/ionq.svg",
               "/images/logos/mitre.svg",
             ]}
+            delay={0}
           />
           <SponsorSection
             title="Silver"
@@ -34,11 +35,13 @@ const Sponsors = () => {
               "/images/logos/noaa.svg",
               "/images/logos/booz-allen.png",
             ]}
+            delay={50}
           />
           <SponsorSection
             title="Bronze"
             color="bronze"
             logos={["/images/logos/general-dynamics.png", "/images/logos/nsa.svg"]}
+            delay={100}
           />
         </div>
       </div>

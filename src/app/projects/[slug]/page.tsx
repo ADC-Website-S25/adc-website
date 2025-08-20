@@ -13,9 +13,168 @@ export async function generateStaticParams() {
   }));
 }
 
+<<<<<<< Updated upstream
 export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = ALL_PROJECTS.find((p) => p.slug === slug);
+=======
+// Project data (should ideally be imported from a shared file, but duplicating for now)
+const spring2025Projects: Project[] = [
+  {
+    slug: 'trachsense',
+    logo: '/images/childrensnational.png',
+    title: 'TrachSense',
+    description: 'TrachSense is a medical app that monitors and ensures proper breathing tube placement for tracheotomy patients.',
+    members: [
+        { name: 'Hannah Chan', title: 'Team Lead' },
+        { name: 'Yashas Bhat', title: 'Tech Lead' },
+        { name: 'Mohammad Abd-Elmoniem', title: 'Tech Lead' },
+        { name: 'Olivia', title: 'UI/UX' },
+        { name: 'Matthew', title: 'Frontend' },
+        { name: 'Eswar Karavadi', title: 'Frontend' },
+        { name: 'Amogh', title: 'Backend' },
+        { name: 'Tanmay', title: 'Backend' },
+        { name: 'Tommy', title: 'Backend' },
+        { name: 'Surabhi', title: 'Backend' },
+        { name: 'Richard', title: 'Backend' },
+        { name: 'Pranav', title: 'Backend' },
+        { name: 'Michelle', title: 'Backend' },
+        { name: 'Jay', title: 'Backend' },
+        { name: 'Kira', title: 'Backend' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-2',
+    logo: '',
+    title: 'Spring 2025 Project 2',
+    description: 'Short description of project 2',
+    members: [
+      { name: 'David Kim', title: 'Team Lead' },
+      { name: 'Eva Brown', title: 'Developer' },
+      { name: 'Frank Green', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-3',
+    logo: '',
+    title: 'Spring 2025 Project 3',
+    description: 'Short description of project 3',
+    members: [
+      { name: 'Grace White', title: 'Team Lead' },
+      { name: 'Henry Black', title: 'Developer' },
+      { name: 'Ivy Wilson', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-4',
+    logo: '',
+    title: 'Spring 2025 Project 4',
+    description: 'Short description of project 4',
+    members: [
+      { name: 'Jack Taylor', title: 'Team Lead' },
+      { name: 'Kara Adams', title: 'Developer' },
+      { name: 'Liam Scott', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-5',
+    logo: '',
+    title: 'Spring 2025 Project 5',
+    description: 'Short description of project 5',
+    members: [
+      { name: 'Mia Clark', title: 'Team Lead' },
+      { name: 'Nora White', title: 'Developer' },
+      { name: 'Oliver Brown', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-6',
+    logo: '',
+    title: 'Spring 2025 Project 6',
+    description: 'Short description of project 6',
+    members: [
+      { name: 'Peter Green', title: 'Team Lead' },
+      { name: 'Queen Adams', title: 'Developer' },
+      { name: 'Riley Black', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-7',
+    logo: '',
+    title: 'Spring 2025 Project 7',
+    description: 'Short description of project 7',
+    members: [
+      { name: 'Sofia Wilson', title: 'Team Lead' },
+      { name: 'Tom Lee', title: 'Developer' },
+      { name: 'Uma Patel', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-8',
+    logo: '',
+    title: 'Spring 2025 Project 8',
+    description: 'Short description of project 8',
+    members: [
+      { name: 'Victor Kim', title: 'Team Lead' },
+      { name: 'Wendy Brown', title: 'Developer' },
+      { name: 'Xander Green', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'spring-2025-project-9',
+    logo: '',
+    title: 'Spring 2025 Project 9',
+    description: 'Short description of project 9',
+    members: [
+      { name: 'Yara Black', title: 'Team Lead' },
+      { name: 'Zane Wilson', title: 'Developer' },
+      { name: 'Amy Clark', title: 'Designer' },
+    ],
+  },
+];
+
+const fall2024Projects: Project[] = [
+  {
+    slug: 'fall-2024-project-1',
+    logo: '',
+    title: 'Fall 2024 Project 1',
+    description: 'Short description of project 1',
+    members: [
+      { name: 'Brian Hall', title: 'Team Lead' },
+      { name: 'Cathy Young', title: 'Developer' },
+      { name: 'Derek Fox', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'fall-2024-project-2',
+    logo: '',
+    title: 'Fall 2024 Project 2',
+    description: 'Short description of project 2',
+    members: [
+      { name: 'Ella King', title: 'Team Lead' },
+      { name: 'Finn Moore', title: 'Developer' },
+      { name: 'Gina Ray', title: 'Designer' },
+    ],
+  },
+  {
+    slug: 'fall-2024-project-3',
+    logo: '',
+    title: 'Fall 2024 Project 3',
+    description: 'Short description of project 3',
+    members: [
+      { name: 'Holly West', title: 'Team Lead' },
+      { name: 'Ian Bell', title: 'Developer' },
+      { name: 'Judy Snow', title: 'Designer' },
+    ],
+  },
+];
+
+const allProjects: Project[] = [...spring2025Projects, ...fall2024Projects];
+
+export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = allProjects.find((p) => p.slug === slug);
+>>>>>>> Stashed changes
 
   if (!project) {
     notFound();

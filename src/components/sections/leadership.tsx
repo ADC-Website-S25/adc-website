@@ -3,6 +3,7 @@ import Image from "next/image"
 
 const Leadership = () => {
   return (
+<<<<<<< Updated upstream
     <section id='leadership' className='flex flex-col items-center justify-center w-full mt-24 gap-12'>
       <h3 className="relative z-10 bg-white px-6 text-4xl font-bold text-subheader">
         Our Leadership
@@ -16,6 +17,26 @@ const Leadership = () => {
             src={member.src}
           />
         ))}
+=======
+    <section className="mt-15 pb-16" id="leadership">
+      <div className="w-full my-8 flex items-center justify-center">
+        <h2 className="text-5xl font-bold text-blue-600 bg-white px-6 text-center">
+          Our Leadership
+        </h2>
+      </div>
+      <div className="w-full px-2 sm:px-4 flex flex-col gap-12">
+        <div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-9 text-center w-full"
+        >
+          {leaders.map((leader, idx) => (
+            <div key={idx} className="flex flex-col items-center">
+              <div className="w-32 h-32 rounded-full bg-gray-300 mb-3 flex items-center justify-center"></div>
+              <div className="text-sm font-semibold text-gray-700">{leader.name}</div>
+              <div className="text-xs text-gray-500">{leader.title}</div>
+            </div>
+          ))}
+        </div>
+>>>>>>> Stashed changes
       </div>
     </section>
   )

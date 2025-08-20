@@ -5,11 +5,12 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import Banner from "@/components/layout/banner";
 import { banners } from "@/data/event-banner";
+import Footer2 from "@/components/layout/footer-blue";
 
 const bricolage = Bricolage_Grotesque({
-  variable: '--font-bricolage',
-  subsets: ['latin'],
-  display: 'swap',
+  variable: "--font-bricolage",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

@@ -31,7 +31,7 @@ type ShowcaseContent =
 
 const SPRING_25_PROJECTS: Project[] = [
   {
-    slug: 'trachsense',
+    slug: 'trachsense-sp-25',
     logo: '/images/logos/childrensnational.png',
     logoAlt: 'Childrens National Logo',
     title: 'TrachSense',
@@ -56,7 +56,7 @@ const SPRING_25_PROJECTS: Project[] = [
     ],
   },
   {
-    slug: 'amazon-project-kuiper',
+    slug: 'amazon-project-kuiper-sp-25',
     logo: '/images/logos/amazonkuiper.png',
     logoAlt: 'Amazon Project Kuiper Logo',
     title: 'Amazon Project Kuiper',
@@ -70,7 +70,7 @@ const SPRING_25_PROJECTS: Project[] = [
     ],
   },
   {
-    slug: 'mitre',
+    slug: 'mitre-sp-25',
     logo: '/images/logos/mitre.svg',
     logoAlt: 'Mitre Logo',
     title: 'Malware Analysis and Visualization',
@@ -101,7 +101,7 @@ const SPRING_25_PROJECTS: Project[] = [
     ]
   },
   {
-    slug: 'us-news',
+    slug: 'us-news-sp-25',
     logo: '',
     logoAlt: 'U.S. News Logo',
     title: 'U.S. News',
@@ -128,7 +128,7 @@ const SPRING_25_PROJECTS: Project[] = [
     }
   },
   {
-    slug: 'booz-allen',
+    slug: 'booz-allen-sp-25',
     logo: '',
     logoAlt: 'Booz Allen Logo',
     title: 'Citation Configuration',
@@ -152,7 +152,7 @@ const SPRING_25_PROJECTS: Project[] = [
     ],
   },
   {
-    slug: 'gdit',
+    slug: 'gdit-sp-25',
     logo: '',
     logoAlt: 'GDIT Logo',
     title: 'EmailMiner',
@@ -179,7 +179,7 @@ const SPRING_25_PROJECTS: Project[] = [
     }
   },
   {
-    slug: 'omal',
+    slug: 'omal-sp-25',
     logo: '',
     title: 'Omal',
     description: 'Created a cross-platform application that transforms interaction with educators and clients, offering an all-in-one platform to learn, showcase skills, and find projects across diverse professions',

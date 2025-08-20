@@ -32,7 +32,7 @@ type ShowcaseContent =
 const SPRING_25_PROJECTS: Project[] = [
   {
     slug: 'trachsense-sp-25',
-    logo: '/images/logos/childrensnational.png',
+    logo: '/images/logos/childrens-national.svg',
     logoAlt: 'Childrens National Logo',
     title: 'TrachSense',
     description: 'The team developed a compact CO2 sensing system that attaches to pediatric tracheostomy tubes, enabling continuous, remote monitoring to rapidly detect decannulation or obstruction and alert caregivers',
@@ -57,7 +57,7 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'amazon-project-kuiper-sp-25',
-    logo: '/images/logos/amazonkuiper.png',
+    logo: '/images/logos/amazon.svg',
     logoAlt: 'Amazon Project Kuiper Logo',
     title: 'Amazon Project Kuiper',
     description: 'Short description of project 2 something something something something something something something something something ',
@@ -102,9 +102,9 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'us-news-sp-25',
-    logo: '',
+    logo: '/images/logos/us-news.svg',
     logoAlt: 'U.S. News Logo',
-    title: 'U.S. News',
+    title: 'Anomaly Detection & Visualization',
     description: 'Advanced U.S News\' data platform by building a dynamic frontend for their internal API and implementing anomaly detection on multiple metric types',
     year: 2025,
     semester: 'Spring',
@@ -129,7 +129,7 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'booz-allen-sp-25',
-    logo: '',
+    logo: '/images/logos/booz-allen.png',
     logoAlt: 'Booz Allen Logo',
     title: 'Citation Configuration',
     description: 'Created a web app to generate citations that supports uploading, filtering, and exporting policy data in an easy to use way',
@@ -153,7 +153,7 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'gdit-sp-25',
-    logo: '',
+    logo: '/images/logos/general-dynamics.png',
     logoAlt: 'GDIT Logo',
     title: 'EmailMiner',
     description: 'Developed a scalable Retrieval Augmented Generation (RAG) pipeline to better query information from emails, utilizing relationship mappings and similarity search databases to improve data retrieval speed and accuracy',
@@ -180,8 +180,8 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'omal-sp-25',
-    logo: '',
-    title: 'Omal',
+    logo: '/images/logos/omal.webp',
+    title: 'Omal Learning Platform',
     description: 'Created a cross-platform application that transforms interaction with educators and clients, offering an all-in-one platform to learn, showcase skills, and find projects across diverse professions',
     year: 2025,
     semester: 'Spring',

@@ -1,4 +1,5 @@
 "use client";
+import { ChevronsUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -27,15 +28,15 @@ const Footer = () => {
             behavior: prefersReduced ? "auto" : "smooth",
           });
         }}
-        className="flex absolute top-1 gap-1 right-1 font-bold focus-visible:ring-2 focus-visible:ring-black/30 items-center p-3 rounded hover:bg-[#0083FF] cursor-pointer transition-colors duration-200 text-xs"
+        className="flex absolute top-1 gap-1 right-1 font-bold focus-visible:ring-2 focus-visible:ring-black/30 items-center p-2 rounded hover:bg-[#0083FF] cursor-pointer transition-colors duration-200 text-xs group"
       >
-        <Image width={16} height={16} src="/back-to-top2.png" alt="Back to Top" className="w-4 h-4" />
+        <ChevronsUp className="w-6 h-6 text-black group-hover:text-white transition-colors duration-200" />
       </button>
 
       <div className="flex flex-col justify-center items-center w-full h-full gap-y-8">
         {/* logo */}
         <Link href="/#home">
-          <Image width={256} height={64} src="/adc_logo_black.png" alt="ADC Logo" className="w-64" />
+          <Image width={256} height={64} src="/common/adc_logo_black.png" alt="ADC Logo" className="w-64" />
         </Link>
 
         {/* social media icons */}
@@ -45,21 +46,21 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image width={28} height={28} src="/ig-icon.png" alt="Instagram" className="w-7 h-auto" />
+            <Image width={28} height={28} src="/icons/ig-icon.png" alt="Instagram" className="w-7 h-auto" />
           </Link>
           <Link
             href="https://www.linkedin.com/company/app-development-club/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image width={28} height={28} src="/linkedin-icon.png" alt="LinkedIn" className="w-7 h-auto" />
+            <Image width={28} height={28} src="/icons/linkedin-icon.png" alt="LinkedIn" className="w-7 h-auto" />
           </Link>
           <Link
             href="https://github.com/appdevumd"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image width={28} height={28} src="/github-icon.png" alt="GitHub" className="w-7 h-auto" />
+            <Image width={28} height={28} src="/icons/github-icon.png" alt="GitHub" className="w-7 h-auto" />
           </Link>
           <Link
             href="mailto:umdappdev@gmail.com"
@@ -67,14 +68,14 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
 
-            <Image width={28} height={28} src="/email-icon2.svg" alt="Email" className="w-7 h-auto" />
+            <Image width={28} height={28} src="/icons/email-icon2.svg" alt="Email" className="w-7 h-auto" />
           </Link>
           <Link
             href="https://discord.com/invite/scSeVbTT7G"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image width={28} height={28} src="/discord-icon.svg" alt="Discord" className="w-7 h-auto" />
+            <Image width={28} height={28} src="/icons/discord-icon.svg" alt="Discord" className="w-7 h-auto" />
           </Link>
         </div>
 
@@ -104,7 +105,7 @@ const Footer = () => {
               <Image
                 width={20}
                 height={20}
-                src="/send-icon.png"
+                src="/icons/send-icon.png"
                 alt="Send"
                 className="w-5 absolute right-3 top-1/2 transform -translate-y-1/2"
               />

@@ -32,7 +32,7 @@ function Post({ imgSrc, caption, className = "" }: PostProps) {
         <Image
           width={40}
           height={40}
-          src="/photoicon.svg"
+          src="/icons/photoicon.svg"
           alt=""
           aria-hidden="true"
           className="absolute top-2 right-2 w-10 h-10 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10"
@@ -45,7 +45,7 @@ function Post({ imgSrc, caption, className = "" }: PostProps) {
             <Image
               width={48}
               height={48}
-              src="/likeicon.svg"
+              src="/icons/likeicon.svg"
               alt=""
               aria-hidden="true"
               className="w-12 h-12 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-10 xl:h-10 2xl:w-10 2xl:h-10"
@@ -53,7 +53,7 @@ function Post({ imgSrc, caption, className = "" }: PostProps) {
             <Image
               width={48}
               height={48}
-              src="/commenticon.svg"
+              src="/icons/commenticon.svg"
               alt=""
               aria-hidden="true"
               className="w-12 h-12 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-10 xl:h-10 2xl:w-10 2xl:h-10"

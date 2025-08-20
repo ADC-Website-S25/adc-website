@@ -17,28 +17,28 @@ const Sponsors = () => {
             title="Gold"
             color="gold"
             logos={[
-              "/amazon.svg",
-              "/us-news.svg",
-              "/ref-institute.svg",
-              "/ionq.svg",
-              "/mitre.svg",
+              "/images/logos/amazon.svg",
+              "/images/logos/us-news.svg",
+              "/images/logos/ref-institute.svg",
+              "/images/logos/ionq.svg",
+              "/images/logos/mitre.svg",
             ]}
           />
           <SponsorSection
             title="Silver"
             color="silver"
             logos={[
-              "/accenture.svg",
-              "/secu.svg",
-              "/childrens-national.svg",
-              "/noaa.svg",
-              "/booz-allen.jpg",
+              "/images/logos/accenture.svg",
+              "/images/logos/secu.svg",
+              "/images/logos/childrens-national.svg",
+              "/images/logos/noaa.svg",
+              "/images/logos/booz-allen.png",
             ]}
           />
           <SponsorSection
             title="Bronze"
             color="bronze"
-            logos={["/general-dynamics.png", "/nsa.svg"]}
+            logos={["/images/logos/general-dynamics.png", "/images/logos/nsa.svg"]}
           />
         </div>
       </div>

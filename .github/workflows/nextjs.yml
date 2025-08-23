@@ -2,7 +2,7 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["github-pages"]   # 👈 your source branch
+    branches: ["main"]   # 👈 your source branch
 
 permissions:
   contents: read

@@ -99,6 +99,4 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </div>
     </div>
   );
-}
-
-export const dynamicParams = true; 
+};

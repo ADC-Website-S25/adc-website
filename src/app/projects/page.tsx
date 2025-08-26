@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ALL_PROJECTS, Project } from "@/data/projects";
 import BlueBorderContainer from "@/components/ui/blue-border-container";
 import { Button } from "@/components/ui/button";
+import { prefixPath } from "@/lib/prefix";
 
 const projectsByTerm = ALL_PROJECTS.reduce((acc, project) => {
   const key = `${project.semester} ${project.year}`;
@@ -32,7 +33,7 @@ function ProjectCard({ logo, title, description, slug }: { logo: string; title: 
     <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full">
       <div className="mb-3 w-32 h-32 flex items-center justify-center bg-blue-100 rounded-full">
         {logo ? (
-          <Image src={logo} alt={title} width={128} height={128} className="object-contain p-2" />
+          <Image src={prefixPath(logo)} alt={title} width={128} height={128} className="object-contain p-2" />
         ) : (
           <span className="text-blue-400 text-4xl font-bold">?</span>
         )}

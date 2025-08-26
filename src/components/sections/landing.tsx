@@ -10,6 +10,7 @@ import {
 import { photoGallery } from '@/data/photo-gallery'
 import SlidingNumber from '../ui/sliding-number'
 import FadeIn from '../ui/fade-in'
+import { prefixPath } from '@/lib/prefix'
 
 const Landing = () => {
   return (
@@ -33,7 +34,7 @@ const Landing = () => {
               <CarouselItem key={index}>
                 <div className="w-full h-full overflow-hidden rounded-xl">
                   <Image
-                    src={photo.src}
+                    src={prefixPath(photo.src)}
                     alt={photo.alt}
                     width={630}
                     height={386}

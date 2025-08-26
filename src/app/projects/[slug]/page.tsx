@@ -6,6 +6,7 @@ import { ALL_PROJECTS } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import VideoEmbed from "@/components/ui/video-embed";
+import { prefixPath } from "@/lib/prefix";
 
 export async function generateStaticParams() {
   return ALL_PROJECTS.map((project) => ({
@@ -38,7 +39,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <div className="w-full border-2 border-blue-300 rounded-3xl p-10 mb-16 gap-6 md:gap-4 flex flex-col md:flex-row items-center bg-white shadow-lg">
           <div className="flex-[0.5] flex items-center justify-center h-full">
             {project.logo ? (
-              <Image src={project.logo} alt={project.title} width={400} height={400} className="object-contain max-h-20 max-w-full md:max-w-100" draggable={false} />
+              <Image src={prefixPath(project.logo)} alt={project.title} width={400} height={400} className="object-contain max-h-20 max-w-full md:max-w-100" draggable={false} />
             ) : (
               <div className="w-28 h-28 rounded-full bg-blue-100 flex items-center justify-center">
                 <span className="text-blue-400 text-4xl font-bold">?</span>
@@ -55,7 +56,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             <div className="w-full max-w-5xl flex items-center justify-center relative">
               {project.showcaseContent.image ? (
                 <Image
-                  src={project.showcaseContent?.image}
+                  src={prefixPath(project.showcaseContent?.image)}
                   alt="Project Image"
                   width={900}
                   height={400}
@@ -80,7 +81,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               {member.photo ? (
                 <div className="w-24 h-24 rounded-full overflow-hidden mb-2">
                   <Image
-                    src={member.photo}
+                    src={prefixPath(member.photo)}
                     alt={member.name}
                     width={120}
                     height={120}

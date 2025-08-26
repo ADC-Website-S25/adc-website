@@ -1,3 +1,4 @@
+import { prefixPath } from "@/lib/prefix";
 import Image from "next/image";
 
 type SponsorSectionProps = {
@@ -40,7 +41,7 @@ function SponsorSection({ title, color, logos }: SponsorSectionProps) {
                 <Image
                   width={244}
                   height={100}
-                  src={src}
+                  src={prefixPath(src)}
                   alt={alt}
                   decoding="async"
                   className="max-w-full max-h-full object-contain"

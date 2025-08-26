@@ -1,4 +1,5 @@
 import { LeadershipMember, leadershipMembers } from "@/data/leadership"
+import { prefixPath } from "@/lib/prefix"
 import Image from "next/image"
 
 const Leadership = () => {
@@ -27,7 +28,7 @@ const Member = ({ name, role, src }: LeadershipMember) => {
     <div className='flex flex-col items-center md:w-56 w-36'>
       {src ?
       <Image
-        src={src}
+        src={prefixPath(src)}
         alt={`${name}'s photo`}
         title={name}
         draggable={false}

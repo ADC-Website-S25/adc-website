@@ -1,12 +1,18 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
-  output: "export", // enables `next export` for static HTML export
+const basePath = '/adc-website';
+
+const nextConfig: NextConfig = {
+  output: "export",
   images: {
-    unoptimized: true, // disables Next.js Image Optimization (needed for GH Pages)
+    unoptimized: true,
   },
-  basePath: "/adc-website", // replace with your repo name
-  assetPrefix: "/adc-website/", // ensures assets load correctly
+  // basePath: basePath,
+  assetPrefix: basePath,
+  trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;

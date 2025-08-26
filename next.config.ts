@@ -9,8 +9,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     path: `${basePath}/_next/image`, // Add this line
   },
-  basePath: basePath,
-  assetPrefix: `${basePath}/`, // Add trailing slash
+  basePath: '/adc-website/',
   trailingSlash: true,
   
   env: {

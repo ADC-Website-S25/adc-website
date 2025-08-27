@@ -18,6 +18,7 @@ const navLinks = [
   { href: '/#sponsors', label: 'Sponsors' },
   { href: '/#highlights', label: 'Highlights' },
   { href: '/#contact', label: 'Contact Us' },
+  { href: 'https://corp.appdevclub.com/', label: 'Log In' },
 ];
 
 const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
@@ -32,7 +33,7 @@ const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
           className='w-10 h-10'
           draggable={false}
         />
-        <span className='text-xl font-semibold text-gray-800'>
+        <span className='md:text-lg lg:text-xl font-semibold text-gray-800'>
           App Dev Club
         </span>
       </Link>
@@ -78,7 +79,8 @@ const NavbarLink: React.FC<NavbarLinkProps> = ({ href, children }) => (
   <Link
     href={href}
     draggable={false}
-    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-semibold"
+    target={href.startsWith('http') ? '_blank' : undefined}
+    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-semibold text-lg md:text-sm lg:text-base"
   >
     {children}
   </Link>

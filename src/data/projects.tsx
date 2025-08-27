@@ -199,74 +199,73 @@ const SPRING_25_PROJECTS: Project[] = [
     ],
   },
   {
-    slug: 'spring-2025-project-8',
-    logo: '',
-    title: 'Spring 2025 Project 8',
-    description: 'Short description of project 8',
+    slug: 'cnh-xray-sp25',
+    logo: '/images/logos/childrens-national.svg',
+    logoAlt: 'Childrens National Logo',
+    title: 'CNH X-Ray Project',
+    description: 'The team trained a Graph Neural Network (GNN) on the ABIDE and sEEG brain imaging dataset to create an application that assists in Autism diagnosis',
     year: 2025,
     semester: 'Spring',
+    showcaseContent: {
+      image: '/images/projects/cnhXraySP25/demo.png',
+      description: 'Visualizing imaging in 2D and 3D with focus on regions of interest'
+    },
     members: [
-      { name: 'Victor Kim', title: 'Team Lead' },
-      { name: 'Wendy Brown', title: 'Developer' },
-      { name: 'Xander Green', title: 'Designer' },
+      { name: 'Andrew Yang', title: 'Project Lead', photo: '/images/projects/cnhXraySP25/AndrewYang.jpg' },
+      { name: 'Shlok Desai', title: 'Research Lead', photo: '/images/projects/cnhXraySP25/ShlokDesai.jpg' },
+      { name: 'Naman Nagelia', title: 'Engineer Lead', photo: '/images/projects/cnhXraySP25/NamanNagelia.jpg' },
+      { name: 'Nandhu Pillai', title: 'Researcher', photo: '/images/projects/cnhXraySP25/NandhuPillai.jpg' },
+      { name: 'William Lee', title: 'Researcher', photo: '/images/projects/cnhXraySP25/WilliamLee.jpg' },
+      { name: 'Anika Rai', title: 'Researcher', photo: '/images/projects/cnhXraySP25/AnikaRai.jpg' },
+      { name: 'Rian Tiwari', title: 'Researcher', photo: '/images/projects/cnhXraySP25/RianTiwari.jpg' },
+      { name: 'Anu Daga', title: 'Researcher', photo: '/images/projects/cnhXraySP25/AnuDaga.jpg' },
+      { name: 'Jude Lwin', title: 'Engineer', photo: '/images/projects/cnhXraySP25/JudeLwin.jpg' },
+      { name: 'Cathy Wu', title: 'Engineer', photo: '/images/projects/cnhXraySP25/CathyWu.jpg' },
+      { name: 'Arush Jain', title: 'Engineer', photo: '/images/projects/cnhXraySP25/ArushJain.jpg' },
+      { name: 'Alan Chan', title: 'Engineer', photo: '/images/projects/cnhXraySP25/AlanChan.jpg' },
+      { name: 'Vibhas Ramani', title: 'Engineer', photo: '/images/projects/cnhXraySP25/VibhasRamani.jpg' },
+      { name: 'Ishaan Chakraborty', title: 'Project Manager', photo: '/images/projects/cnhXraySP25/IshaanChakraborty.jpg' },
+      { name: 'James Miller', title: 'Shadow', photo: '/images/projects/cnhXraySP25/JamesMiller.jpg' },
+      { name: 'Aarya Vijayaraghavan', title: 'Shadow' },
+      { name: 'Bhavya Tanugula', title: 'Shadow', photo: '/images/projects/cnhXraySP25/BhavyaTanugula.jpg' },
     ],
   },
   {
-    slug: 'spring-2025-project-9',
-    logo: '',
-    title: 'Spring 2025 Project 9',
-    description: 'Short description of project 9',
+    slug: 'mokhtarzada-sp-25',
+    logo: '/images/projects/mokhtarzadaSP25/hatchery-logo.webp',
+    title: 'Mokhtarzada Project',
+    description: 'Developed a tool to automatically fetch relevant financial documents from websites using AI-based browser automation and construct a vector database of financial data to inform the user about market situations and provide detailed insights into specific industries',
     year: 2025,
     semester: 'Spring',
     members: [
-      { name: 'Yara Black', title: 'Team Lead' },
-      { name: 'Zane Wilson', title: 'Developer' },
-      { name: 'Amy Clark', title: 'Designer' },
-    ],
+      { name: 'Atheesh Thirumalairajan', title: 'Project Lead', photo: '/images/projects/mokhtarzadaSP25/AtheeshThirumalairajan.jpg' },
+      { name: 'Aadarsh Govada', title: '', photo: '/images/projects/mokhtarzadaSP25/AadarshGovada.jpg' },
+      { name: 'Andy Diep', title: '', photo: '/images/projects/mokhtarzadaSP25/AndyDiep.jpg' },
+      { name: 'Arjun Rajaram', title: '', photo: '/images/projects/mokhtarzadaSP25/ArjunRajaram.jpg' },
+      { name: 'Eva Dimitrova', title: '', photo: '/images/projects/mokhtarzadaSP25/EvaDimitrova.jpg' },
+      { name: 'Evelyn Jiang', title: '', photo: '/images/projects/mokhtarzadaSP25/EvelynJiang.jpg' },
+      { name: 'Gili Gordiyenko', title: '', photo: '/images/projects/mokhtarzadaSP25/GiliGordiyenko.jpg' },
+      { name: 'Harini Thirukonda', title: '', photo: '/images/projects/mokhtarzadaSP25/HariniThirukonda.jpg' },
+      { name: 'Narain Sriram', title: '', photo: '/images/projects/mokhtarzadaSP25/NarainSriram.jpg' }
+    ]
   },
 ];
 
-const FALL_24_PROJECTS: Project[] = [
-  {
-    slug: 'fall-2024-project-1',
-    logo: '',
-    title: 'Fall 2024 Project 1',
-    description: 'Short description of project 1',
-    year: 2024,
-    semester: 'Fall',
-    members: [
-      { name: 'Brian Hall', title: 'Team Lead' },
-      { name: 'Cathy Young', title: 'Developer' },
-      { name: 'Derek Fox', title: 'Designer' },
-    ],
-  },
-  {
-    slug: 'fall-2024-project-2',
-    logo: '',
-    title: 'Fall 2024 Project 2',
-    description: 'Short description of project 2',
-    year: 2024,
-    semester: 'Fall',
-    members: [
-      { name: 'Ella King', title: 'Team Lead' },
-      { name: 'Finn Moore', title: 'Developer' },
-      { name: 'Gina Ray', title: 'Designer' },
-    ],
-  },
-  {
-    slug: 'fall-2024-project-3',
-    logo: '',
-    title: 'Fall 2024 Project 3',
-    description: 'Short description of project 3',
-    year: 2024,
-    semester: 'Fall',
-    members: [
-      { name: 'Holly West', title: 'Team Lead' },
-      { name: 'Ian Bell', title: 'Developer' },
-      { name: 'Judy Snow', title: 'Designer' },
-    ],
-  },
-];
+// const FALL_24_PROJECTS: Project[] = [
+//   {
+//     slug: 'fall-2024-project-1',
+//     logo: '',
+//     title: 'Fall 2024 Project 1',
+//     description: 'Short description of project 1',
+//     year: 2024,
+//     semester: 'Fall',
+//     members: [
+//       { name: 'Brian Hall', title: 'Team Lead' },
+//       { name: 'Cathy Young', title: 'Developer' },
+//       { name: 'Derek Fox', title: 'Designer' },
+//     ],
+//   },
+// ];
 
 // Featured projects must have exactly 3 items
 const FEATURED_PROJECTS: FixedLengthArray<Project, 3> = [
@@ -274,6 +273,7 @@ const FEATURED_PROJECTS: FixedLengthArray<Project, 3> = [
   SPRING_25_PROJECTS[1],
   SPRING_25_PROJECTS[2],
 ];
-const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_24_PROJECTS];
+// const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_24_PROJECTS];
+const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS];
 
-export { ALL_PROJECTS, FEATURED_PROJECTS, SPRING_25_PROJECTS, FALL_24_PROJECTS };
+export { ALL_PROJECTS, FEATURED_PROJECTS, SPRING_25_PROJECTS };

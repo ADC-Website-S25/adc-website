@@ -59,7 +59,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                   alt="Project Image"
                   width={900}
                   height={400}
-                  className="object-contain w-auto h-auto max-h-[30rem] max-w-full border rounded-md"
+                  className="object-contain w-full h-full max-h-[30rem] max-w-full"
                 />
               ) : (
                 <VideoEmbed url={project.showcaseContent.videoUrl || ""} />

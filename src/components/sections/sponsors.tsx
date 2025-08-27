@@ -30,8 +30,8 @@ const Sponsors = () => {
             color="silver"
             logos={[
               "/images/logos/accenture.svg",
-              "/images/logos/secu.svg",
-              "/images/logos/childrens-national.svg",
+              "/images/logos/secu.png",
+              "/images/logos/childrens-national.png",
               "/images/logos/noaa.svg",
               "/images/logos/booz-allen.png",
             ]}

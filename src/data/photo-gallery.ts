@@ -9,6 +9,6 @@ type PhotoGalleryItem = {
  */
 export const photoGallery: PhotoGalleryItem[] = [
   { src: "/images/final-dinner1.JPG", alt: "final dinner with members" },
-  { src: "/images/final-dinner2.jpg", alt: "final dinner with members" },
+  { src: "/images/bootcamp.jpg", alt: "bootcamp group photo" },
   // { src: "/images/", alt: ""},
 ]

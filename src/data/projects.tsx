@@ -32,7 +32,7 @@ type ShowcaseContent =
 const SPRING_25_PROJECTS: Project[] = [
   {
     slug: 'trachsense-sp-25',
-    logo: '/images/logos/childrens-national.svg',
+    logo: '/images/logos/childrens-national.png',
     logoAlt: 'Childrens National Logo',
     title: 'TrachSense',
     description: 'The team developed a compact CO2 sensing system that attaches to pediatric tracheostomy tubes, enabling continuous, remote monitoring to rapidly detect decannulation or obstruction and alert caregivers',
@@ -200,7 +200,7 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'cnh-xray-sp25',
-    logo: '/images/logos/childrens-national.svg',
+    logo: '/images/logos/childrens-national.png',
     logoAlt: 'Childrens National Logo',
     title: 'CNH X-Ray Project',
     description: 'The team trained a Graph Neural Network (GNN) on the ABIDE and sEEG brain imaging dataset to create an application that assists in Autism diagnosis',
@@ -239,14 +239,14 @@ const SPRING_25_PROJECTS: Project[] = [
     semester: 'Spring',
     members: [
       { name: 'Atheesh Thirumalairajan', title: 'Project Lead', photo: '/images/projects/mokhtarzadaSP25/AtheeshThirumalairajan.jpg' },
-      { name: 'Aadarsh Govada', title: '', photo: '/images/projects/mokhtarzadaSP25/AadarshGovada.jpg' },
-      { name: 'Andy Diep', title: '', photo: '/images/projects/mokhtarzadaSP25/AndyDiep.jpg' },
-      { name: 'Arjun Rajaram', title: '', photo: '/images/projects/mokhtarzadaSP25/ArjunRajaram.jpg' },
-      { name: 'Eva Dimitrova', title: '', photo: '/images/projects/mokhtarzadaSP25/EvaDimitrova.jpg' },
-      { name: 'Evelyn Jiang', title: '', photo: '/images/projects/mokhtarzadaSP25/EvelynJiang.jpg' },
-      { name: 'Gili Gordiyenko', title: '', photo: '/images/projects/mokhtarzadaSP25/GiliGordiyenko.jpg' },
-      { name: 'Harini Thirukonda', title: '', photo: '/images/projects/mokhtarzadaSP25/HariniThirukonda.jpg' },
-      { name: 'Narain Sriram', title: '', photo: '/images/projects/mokhtarzadaSP25/NarainSriram.jpg' }
+      { name: 'Andy Diep', title: 'Tech lead', photo: '/images/projects/mokhtarzadaSP25/AndyDiep.jpg' },
+      { name: 'Aadarsh Govada', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/AadarshGovada.jpg' },
+      { name: 'Arjun Rajaram', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/ArjunRajaram.jpg' },
+      { name: 'Eva Dimitrova', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/EvaDimitrova.jpg' },
+      { name: 'Evelyn Jiang', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/EvelynJiang.jpg' },
+      { name: 'Gili Gordiyenko', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/GiliGordiyenko.jpg' },
+      { name: 'Harini Thirukonda', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/HariniThirukonda.jpg' },
+      { name: 'Narain Sriram', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/NarainSriram.jpg' }
     ]
   },
 ];

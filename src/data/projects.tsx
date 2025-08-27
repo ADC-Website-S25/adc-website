@@ -18,7 +18,7 @@ export type Project = {
   }[];
 }
 
-// only youtube video links are supported right now
+// only youtube video links are supported
 type ShowcaseContent =
   | { description: string; image: string; videoUrl?: never }
   | { description: string; videoUrl: string; image?: never };
@@ -232,7 +232,7 @@ const SPRING_25_PROJECTS: Project[] = [
   },
   {
     slug: 'mokhtarzada-sp-25',
-    logo: '/images/projects/mokhtarzadaSP25/hatchery-logo.webp',
+    logo: '/images/logos/hatchery-logo.webp',
     title: 'Mokhtarzada Project',
     description: 'Developed a tool to automatically fetch relevant financial documents from websites using AI-based browser automation and construct a vector database of financial data to inform the user about market situations and provide detailed insights into specific industries',
     year: 2025,

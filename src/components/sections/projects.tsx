@@ -34,7 +34,14 @@ const Projects = () => {
                   parentClassName={`${isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""} h-full`}
                 >
                   <div className="flex justify-center items-center mb-2">
-                    <Image src={project.logo} alt={project?.logoAlt || "Project Logo"} width={128} height={128} className="object-contain h-24 w-52" />
+                    <Image 
+                      src={project.logo} 
+                      alt={project?.logoAlt || "Project Logo"} 
+                      width={208} 
+                      height={96} 
+                      unoptimized={project.logo.endsWith('.svg')}
+                      className="object-contain h-24 w-52" 
+                    />
                   </div>
                   <div className="text-lg font-semibold mb-1 text-gray-800 text-center">
                     {project.title}

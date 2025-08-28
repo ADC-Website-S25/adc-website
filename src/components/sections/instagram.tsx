@@ -5,7 +5,7 @@ import FadeSlideIn from "../ui/fade-slide-in";
 
 const Instagram = () => {
   return (
-    <section id="highlights" className="w-full flex flex-col items-center justify-center mt-32 scroll-mt-32">
+    <section id="contact" className="w-full flex flex-col items-center justify-center mt-32 scroll-mt-32">
       {/* title */}
       <FadeSlideIn className="max-w-[85%]">
         <h1 className="font-bold leading-[1.1] text-5xl sm:text-6xl md:text-7xl mb-8 text-center bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] bg-clip-text text-transparent">

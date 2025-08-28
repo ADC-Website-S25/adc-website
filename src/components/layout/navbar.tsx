@@ -11,13 +11,14 @@ import {
   SheetClose,
 } from "@/components/ui/sheet"
 import Link from 'next/link';
+import GradientText from '../ui/gradient-text';
 
 const navLinks = [
   { href: '/#about', label: 'About' },
   { href: '/#projects', label: 'Projects' },
   { href: '/#sponsors', label: 'Sponsors' },
-  { href: '/#highlights', label: 'Highlights' },
   { href: '/#contact', label: 'Contact Us' },
+  { href: 'https://apply.appdevclub.com/', label: 'Apply Now', specialText: true }, //TODO: ADD REAL APPLY LINK
   { href: 'https://corp.appdevclub.com/', label: 'Log In' },
 ];
 
@@ -39,9 +40,15 @@ const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
       </Link>
       
       <div className='hidden md:flex items-center space-x-8'>
-        {navLinks.map(({ href, label }) => (
+        {navLinks.map(({ href, label, specialText }) => (
           <NavbarLink key={href} href={href}>
-            {label}
+            {specialText ? (
+                <GradientText showBg={false} colors={["#0083ff", "#80cbc4","#0083ff","#0d47a1"]}>
+                {label}
+                </GradientText>
+            ) : (
+              label
+            )}
           </NavbarLink>
         ))}
       </div>
@@ -55,11 +62,19 @@ const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
         <SheetContent className='!w-[250px]'>
           <SheetHeader>
             <SheetTitle className='flex flex-col text-2xl gap-5 mt-10'>
-              {navLinks.map(({ href, label }) => (
+              {navLinks.map(({ href, label, specialText }) => (
                 <SheetClose asChild key={href}>
-                  <NavbarLink href={href}>
-                    {label}
-                  </NavbarLink>
+                  {specialText ? (
+                    <GradientText>
+                      <NavbarLink href={href}>
+                        {label}
+                      </NavbarLink>
+                    </GradientText>
+                  ) : (
+                    <NavbarLink href={href}>
+                      {label}
+                    </NavbarLink>
+                  )}
                 </SheetClose>
               ))}
             </SheetTitle>

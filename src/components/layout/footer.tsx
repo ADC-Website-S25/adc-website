@@ -14,7 +14,7 @@ const Footer = () => {
     setEmailMessage(e.target.value);
   };
   return (
-    <footer id="contact" className="relative bg-white w-full h-96 p-10">
+    <footer id="footer" className="relative bg-white w-full h-96 p-10">
       {/* back to top button */}
       <button
         type="button"

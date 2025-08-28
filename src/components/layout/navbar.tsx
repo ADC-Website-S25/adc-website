@@ -64,17 +64,15 @@ const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
             <SheetTitle className='flex flex-col text-2xl gap-5 mt-10'>
               {navLinks.map(({ href, label, specialText }) => (
                 <SheetClose asChild key={href}>
-                  {specialText ? (
-                    <GradientText>
-                      <NavbarLink href={href}>
+                  <NavbarLink key={href} href={href}>
+                    {specialText ? (
+                        <GradientText showBg={false} colors={["#0083ff", "#80cbc4","#0083ff","#0d47a1"]}>
                         {label}
-                      </NavbarLink>
-                    </GradientText>
-                  ) : (
-                    <NavbarLink href={href}>
-                      {label}
-                    </NavbarLink>
-                  )}
+                        </GradientText>
+                    ) : (
+                      label
+                    )}
+                  </NavbarLink>
                 </SheetClose>
               ))}
             </SheetTitle>

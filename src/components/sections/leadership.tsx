@@ -10,7 +10,7 @@ const Leadership = () => {
       </h3>
       <div className="flex flex-wrap justify-center gap-y-10 gap-x-5 max-w-7xl px-4">
         {leadershipMembers.map((member, index) => (
-          <FadeSlideIn delay={index * 100} key={member.name}>
+          <FadeSlideIn delay={index * 50} key={member.name}>
             <Member 
               name={member.name}
               role={member.role}

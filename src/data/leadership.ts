@@ -6,7 +6,7 @@ export type LeadershipMember = {
 
 export const leadershipMembers: LeadershipMember[] = [
   { name: "Atheesh Thirumalairajan", role: "President", src: '/images/leadership/AtheeshThirumalairajan.jpg' },
-  { name: "Amelia Harn", role: "Managing Director, Project Lead", src: '/images/leadership/AmeliaHarn.png' },
+  { name: "Amelia Harn", role: "Managing Director, Project Lead", src: '/images/leadership/ameliaHarn.png' },
   { name: "Hannah Chen", role: "Position", src: "/images/leadership/hannahChan.jpg" },
   { name: "Ashna Nayak", role: "Position" },
 ]

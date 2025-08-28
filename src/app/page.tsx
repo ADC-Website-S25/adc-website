@@ -2,6 +2,7 @@ import Instagram from "@/components/sections/instagram";
 import Landing from "@/components/sections/landing";
 import Leadership from "@/components/sections/leadership";
 import Projects from "@/components/sections/projects";
+import Roadmap from "@/components/sections/roadmap";
 import Sponsors from "@/components/sections/sponsors";
 import WhatIsAdc from "@/components/sections/whatIsAdc";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Landing />
       <WhatIsAdc />
       <Leadership />
+      <Roadmap />
       <Projects />
       <Sponsors />
       <Instagram />

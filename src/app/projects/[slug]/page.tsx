@@ -6,6 +6,25 @@ import { ALL_PROJECTS } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import VideoEmbed from "@/components/ui/video-embed";
+import { Metadata } from "next";
+
+export async function generateMetadata(
+  { params }: { params: { slug: string } }
+): Promise<Metadata> {
+  const project = ALL_PROJECTS.find((p) => p.slug === params.slug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found | ADC",
+      description: "The requested project does not exist.",
+    };
+  }
+
+  return {
+    title: `${project.title} | ADC`,
+    description: project.description || "Detailed information about the project",
+  };
+}
 
 export async function generateStaticParams() {
   return ALL_PROJECTS.map((project) => ({

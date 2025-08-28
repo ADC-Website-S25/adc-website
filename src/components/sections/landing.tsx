@@ -13,7 +13,7 @@ import FadeIn from '../ui/fade-in'
 
 const Landing = () => {
   return (
-    <section className='w-full bg-gradient-blue pt-32 lg:pt-44 pb-32 flex flex-col items-center lg:px-12 xl:px-8 2xl:px-40' id='home'>
+    <section className='min-h-screen w-full bg-gradient-blue pt-32 lg:pt-44 pb-32 flex flex-col items-center lg:px-12 xl:px-8 2xl:px-40' id='home'>
       <div className='w-full max-w-8xl flex flex-col lg:flex-row max-lg:items-center lg:justify-between max-lg:gap-20 max-lg:px-4 max-sm:h-[calc(100vh-10rem)]'>
         <FadeIn className='max-lg:text-center flex flex-col justify-center gap-4 text-white text-4xl md:text-6xl xl:text-7xl font-bold'>
           <h2>Empower Code.</h2>

@@ -1,7 +1,13 @@
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
 
 interface ProjectLayoutProps {
   readonly children: ReactNode;
+}
+
+export const metaData: Metadata = {
+  title: "Projects | ADC",
+  description: "Explore our projects and initiatives",
 }
 
 export default function ProjectLayout({ children }: ProjectLayoutProps) {

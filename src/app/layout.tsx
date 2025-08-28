@@ -41,11 +41,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      {/* <head>
-        <script src="https://unpkg.com/react-scan/dist/auto.global.js" />
-      </head> */}
       <body
-        className={`${bricolage.variable} antialiased scroll-smooth min-h-screen`}
+        className={`${bricolage.variable} antialiased scroll-smooth min-h-screen overflow-x-clip`}
       >
         {banner && hasActiveBanner && (
           <Banner {...banner} />

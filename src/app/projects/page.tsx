@@ -33,11 +33,7 @@ function ProjectCard({ logo, title, description, slug }: { logo: string; title: 
     <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full">
       <div className="mb-3 w-32 h-32 flex items-center justify-center bg-blue-100 rounded-full">
         {logo ? (
-          <img src={logo} alt={title} className="object-contain p-2" />
-          // isSvg ? (
-          // ) : (
-          //   <Image src={logo} alt={title} width={128} height={128} className="object-contain p-2" />
-          // )
+          <Image width={128} height={128} src={logo} alt={title} className="object-contain p-2" />
         ) : (
           <span className="text-blue-400 text-4xl font-bold">?</span>
         )}

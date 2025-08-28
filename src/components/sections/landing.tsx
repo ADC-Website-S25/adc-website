@@ -10,6 +10,7 @@ import {
 import { photoGallery } from '@/data/photo-gallery'
 import SlidingNumber from '../ui/sliding-number'
 import FadeIn from '../ui/fade-in'
+import FadeSlideIn from '../ui/fade-slide-in'
 
 const Landing = () => {
   return (
@@ -22,35 +23,37 @@ const Landing = () => {
         </FadeIn>
 
         {/* Image gallery */}
-        <Carousel 
-          opts={{
-            loop: true,
-          }}
-          className='w-full max-w-xl aspect-[630/386] lg:w-[420px] lg:h-[257px] xl:w-[630px] xl:h-[386px] rounded-xl overflow-hidden'
-        >
-          <CarouselContent>
-            {photoGallery.map((photo, index) => (
-              <CarouselItem key={index}>
-                <div className="w-full h-full overflow-hidden rounded-xl">
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    width={630}
-                    height={386}
-                    className="w-full max-w-xl aspect-[630/386] lg:w-[420px] lg:h-[257px] xl:w-[630px] xl:h-[386px] object-cover rounded-xl"
-                    draggable={false}
-                    loading={index === 0 ? 'eager' : 'lazy'}
-                    priority={index === 0}
-                    decoding='async'
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-          <CarouselDots />
-        </Carousel>
+        <FadeSlideIn direction='up'>
+          <Carousel 
+            opts={{
+              loop: true,
+            }}
+            className='w-full max-w-xl aspect-[630/386] lg:w-[420px] lg:h-[257px] xl:w-[630px] xl:h-[386px] rounded-xl overflow-hidden'
+          >
+            <CarouselContent>
+              {photoGallery.map((photo, index) => (
+                <CarouselItem key={index}>
+                  <div className="w-full h-full overflow-hidden rounded-xl">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      width={630}
+                      height={386}
+                      className="w-full max-w-xl aspect-[630/386] lg:w-[420px] lg:h-[257px] xl:w-[630px] xl:h-[386px] object-cover rounded-xl"
+                      draggable={false}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                      priority={index === 0}
+                      decoding='async'
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+            <CarouselDots />
+          </Carousel>
+        </FadeSlideIn>
       </div>
 
       <div className='w-full max-w-8xl flex flex-col lg:flex-row justify-around items-center sm:mt-20 gap-8 lg:gap-0'>

@@ -24,7 +24,7 @@ const Projects = () => {
             return (
               <FadeSlideIn 
                 key={project.title} 
-                delay={idx + 1 * 50} 
+                delay={idx + 1 * 100} 
                 direction={idx === 0 ? 'right' : idx === 2 ? 'left' : 'up'}
                 className='h-full'
               >

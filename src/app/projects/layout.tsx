@@ -5,11 +5,6 @@ interface ProjectLayoutProps {
   readonly children: ReactNode;
 }
 
-export const metaData: Metadata = {
-  title: "Projects | ADC",
-  description: "Explore our projects and initiatives",
-}
-
 export default function ProjectLayout({ children }: ProjectLayoutProps) {
   return (
     <main className="relative w-full bg-white pb-16">

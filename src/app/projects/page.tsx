@@ -5,6 +5,12 @@ import Link from "next/link";
 import { ALL_PROJECTS, Project } from "@/data/projects";
 import BlueBorderContainer from "@/components/ui/blue-border-container";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+
+export const metaData: Metadata = {
+  title: "Projects | ADC",
+  description: "Explore our projects and initiatives",
+}
 
 const projectsByTerm = ALL_PROJECTS.reduce((acc, project) => {
   const key = `${project.semester} ${project.year}`;

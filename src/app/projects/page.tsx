@@ -7,7 +7,7 @@ import BlueBorderContainer from "@/components/ui/blue-border-container";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 
-export const metaData: Metadata = {
+const metaData: Metadata = {
   title: "Projects | ADC",
   description: "Explore our projects and initiatives",
 }

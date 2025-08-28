@@ -5,14 +5,8 @@ export type LeadershipMember = {
 }
 
 export const leadershipMembers: LeadershipMember[] = [
-  { name: "superlongname longname", role: "Director of Quantum Engineering" },
-  { name: "superlongname longname", role: "Managing Director, Project Lead" },
-  { name: "Kimber Gonzalez Lopez", role: "Position", src: "/leadership/kimber-gonzalez-lopez.jpeg" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
-  { name: "First Last", role: "Position" },
+  { name: "Atheesh Thirumalairajan", role: "President", src: '/images/leadership/AtheeshThirumalairajan.jpg' },
+  { name: "Amelia Harn", role: "Managing Director, Project Lead", src: '/images/leadership/AmeliaHarn.png' },
+  { name: "Hannah Chen", role: "Position", src: "/images/leadership/hannahChan.jpg" },
+  { name: "Ashna Nayak", role: "Position" },
 ]

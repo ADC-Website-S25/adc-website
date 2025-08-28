@@ -11,9 +11,9 @@ export default function Home() {
     <main className="w-full flex flex-col items-center justify-center">
       <Landing />
       <WhatIsAdc />
-      <Leadership />
-      <Roadmap />
       <Projects />
+      <Roadmap />
+      <Leadership />
       <Sponsors />
       <Instagram />
     </main>

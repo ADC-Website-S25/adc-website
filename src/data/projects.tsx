@@ -268,6 +268,30 @@ const SPRING_25_PROJECTS: Project[] = [
       { name: 'Narain Sriram', title: 'Engineer', photo: '/images/projects/mokhtarzadaSP25/NarainSriram.jpg' }
     ]
   },
+  {
+    slug: 'warriors-legacy-sp-25',
+    logo: '/images/logos/warriors-legacy.png',
+    title: 'Warriors Legacy Project',
+    description: 'Developed an all-in-one mobile app for veterans, integrating healthcare access, AI-powered resume suggestions, video calling, and messaging to support medical, career, and community needs',
+    year: 2025,
+    semester: 'Spring',
+    members: [
+      { name: "Josiah Johnson", title: "Project Lead", photo: "/images/projects/warriors-legacySP25/JosiahJohnson.jpg" },
+      { name: "Andy Hong", title: "Tech Lead", photo: "/images/projects/warriors-legacySP25/AndyHong.jpg" },
+      { name: "Arnav Aggarwal", title: "Tech Lead", photo: "/images/projects/warriors-legacySP25/ArnavAggarwal.jpg" },
+
+      { name: "Aprameya Kannan", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/AprameyaKannan.jpg" },
+      { name: "Aadi Anand", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/AadiAnand.jpg" },
+      { name: "Jacob Plunkert", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/JacobPlunkert.jpg" },
+      { name: "Tanay Naik", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/TanayNaik.jpg" },
+      { name: "Bharath Malipeddi", title: "Fullstack Engineer" },
+      { name: "Rithvik Singh", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/RithvikSingh.jpg" },
+      { name: "Samarth Parekh", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/SamarthParekh.jpg" },
+
+      { name: "Riya Lakhani", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/RiyaLakhani.jpg" },
+      { name: "Milana Dagne", title: "Fullstack Engineer", photo: "/images/projects/warriors-legacySP25/MilanaDagne.jpg" },
+    ]
+  },
 ];
 
 // const FALL_24_PROJECTS: Project[] = [

@@ -12,14 +12,15 @@ import {
 } from "@/components/ui/sheet"
 import Link from 'next/link';
 import GradientText from '../ui/gradient-text';
+import { applicationLink, internalLink } from '@/data/links';
 
 const navLinks = [
   { href: '/#about', label: 'About' },
   { href: '/#projects', label: 'Projects' },
   { href: '/#sponsors', label: 'Sponsors' },
   { href: '/#contact', label: 'Contact Us' },
-  { href: 'https://apply.appdevclub.com/', label: 'Apply Now', specialText: true }, //TODO: ADD REAL APPLY LINK
-  { href: 'https://corp.appdevclub.com/', label: 'Log In' },
+  { href: applicationLink, label: 'Apply Now', specialText: true },
+  { href: internalLink, label: 'Log In' },
 ];
 
 const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {

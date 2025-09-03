@@ -205,7 +205,7 @@ const Roadmap = () => {
         </div>
 
         {/* Desktop Flow Layout */}
-        <div className="hidden md:block relative w-3xl lg:w-5xl xl:w-6xl bg-green-200">
+        <div className="hidden md:block relative w-3xl lg:w-5xl xl:w-6xl">
           {/* First Row: Bootcamp -> Shadow */}
           <div className="flex items-center gap-0 mb-6 lg:mr-32">
             <div className="flex-1 max-w-32 hidden lg:flex items-center justify-center pr-8">
@@ -308,7 +308,7 @@ const Roadmap = () => {
         {/* Instructions */}
         <div className="text-center mt-20">
           <p className="text-neutral-500 mb-6">Click on any position to explore the role details</p>
-          <Link href={applicationLink}>
+          <Link href={applicationLink} target='_blank'>
             <Button size="lg" variant={"default"} className='text-lg font-semibold'>
               Start Your Journey Today
             </Button>

@@ -21,7 +21,7 @@ function FadeSlideIn({
   });
 
   const getTransformClasses = () => {
-    if (inView) return "opacity-100 translate-x-0 translate-y-0";
+    if (inView) return "opacity-100";
     
     // Always fade up on mobile, use direction on md and larger
     const mobileClasses = "opacity-0 translate-y-8";

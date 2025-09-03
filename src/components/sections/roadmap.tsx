@@ -13,6 +13,7 @@ import * as motion from 'motion/react-client'
 import type { ReactElement } from 'react'
 import Link from 'next/link'
 import { applicationLink } from '@/data/links'
+import FadeSlideIn from '../ui/fade-slide-in'
 
 interface RoadmapPosition {
   id: number
@@ -81,7 +82,7 @@ const roadmapPositions: RoadmapPosition[] = [
     title: 'Project Lead',
     description: 'Oversee project delivery, manage company relationships, and ensure team success from start to finish.',
     icon: <Crown className="w-6 h-6" />,
-    skills: ['Strategic Planning', 'Team Management', 'Company Relations', 'Vision Setting'],
+    skills: ['Strategic Planning', 'Team Management', 'Company Relations', 'Task Delegation'],
     duration: 'Ongoing',
     bgColor: 'bg-gradient-to-br from-teal-100 to-sky-100',
     borderColor: 'border-teal-400',
@@ -93,7 +94,7 @@ const roadmapPositions: RoadmapPosition[] = [
     title: 'Leadership Role',
     description: 'Shape the future of ADC by taking on executive responsibilities and strategic decision-making.',
     icon: <Star className="w-6 h-6" />,
-    skills: ['Strategic Planning', 'Team Management', 'Client Relations', 'Vision Setting'],
+    skills: ['Vision Setting', 'Organizational Management', 'Member Development', 'External Relations'],
     duration: 'Executive Term',
     bgColor: 'bg-gradient-to-br from-red-100 to-pink-100',
     borderColor: 'border-red-400',
@@ -208,80 +209,80 @@ const Roadmap = () => {
         <div className="hidden md:block relative w-3xl lg:w-5xl xl:w-6xl">
           {/* First Row: Bootcamp -> Shadow */}
           <div className="flex items-center gap-0 mb-6 lg:mr-32">
-            <div className="flex-1 max-w-32 hidden lg:flex items-center justify-center pr-8">
-              <div className="w-full h-[3px] bg-blue-500 relative rounded-md">
-                <ArrowRight className="w-8 h-8 text-blue-500 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
-              </div>
-            </div>
+              <FadeSlideIn direction='right' delay={0} className="flex-1 max-w-32 hidden lg:flex items-center justify-center pr-8">
+                <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
+                  <ArrowRight className="w-8 h-8 text-neutral-400 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
+                </div>
+              </FadeSlideIn>
 
-            <div className="w-80">
+            <FadeSlideIn direction='right' delay={25} className="w-80">
               <PositionPopover position={roadmapPositions[0]} />
-            </div>
+            </FadeSlideIn>
             
             {/* Full-width arrow */}
-            <div className="flex-1 flex items-center justify-center px-8">
-              <div className="w-full h-[3px] bg-blue-500 relative rounded-md">
-                <ArrowRight className="w-8 h-8 text-blue-500 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
+            <FadeSlideIn direction='right' delay={50} className="flex-1 flex items-center justify-center px-8">
+              <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
+                <ArrowRight className="w-8 h-8 text-neutral-400 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
               </div>
-            </div>
-            
-            <div className="w-80">
+            </FadeSlideIn>
+
+            <FadeSlideIn direction='down' delay={75} className="w-80">
               <PositionPopover position={roadmapPositions[1]} />
-            </div>
+            </FadeSlideIn>
           </div>
 
           {/* Vertical connection */}
-          <div className="flex justify-end my-6">
+          <FadeSlideIn direction='down' delay={100} className="flex justify-end my-6">
             <div className="mr-40 lg:mr-72">
-              <div className="w-[3px] h-16 bg-blue-500 relative mx-auto rounded-md">
-                <ArrowDown className="w-8 h-8 text-blue-500 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2" />
+              <div className="w-[3px] h-16 bg-neutral-400 relative mx-auto rounded-md">
+                <ArrowDown className="w-8 h-8 text-neutral-400 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2" />
               </div>
             </div>
-          </div>
+          </FadeSlideIn>
 
           {/* Second Row */}
           <div className="flex items-center gap-0 lg:mx-32">
-            <div className="w-80">
+            <FadeSlideIn direction='left' delay={125} className="w-80">
               <PositionPopover position={roadmapPositions[3]} />
-            </div>
+            </FadeSlideIn>
             
             {/* Full-width arrow */}
-            <div className="flex-1 flex items-center justify-center px-8">
-              <div className="w-full h-[3px] bg-blue-500 relative rounded-md">
-                <ArrowLeft className="w-8 h-8 text-blue-500 absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2" />
+            <FadeSlideIn direction='left' delay={150} className="flex-1 flex items-center justify-center px-8">
+              <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
+                <ArrowLeft className="w-8 h-8 text-neutral-400 absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2" />
               </div>
-            </div>
-            
-            <div className="w-80">
+            </FadeSlideIn>
+
+            <FadeSlideIn direction='down' delay={175} className="w-80">
               <PositionPopover position={roadmapPositions[2]} />
-            </div>
+            </FadeSlideIn>
           </div>
 
           {/* Vertical connection */}
-          <div className="flex justify-start my-6">
+          <FadeSlideIn direction='down' delay={200} className="flex justify-start my-6">
             <div className="ml-40 lg:ml-72">
-              <div className="w-[3px] h-16 bg-blue-500 relative mx-auto rounded-md">
-                <ArrowDown className="w-8 h-8 text-blue-500 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2" />
+              <div className="w-[3px] h-16 bg-neutral-400 relative mx-auto rounded-md">
+                <ArrowDown className="w-8 h-8 text-neutral-400 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2" />
               </div>
             </div>
-          </div>
+          </FadeSlideIn>
 
           {/* Third Row */}
           <div className='flex items-center gap-0 lg:mx-32'>
-            <div className="w-80">
+            <FadeSlideIn direction='right' delay={225} className="w-80">
               <PositionPopover position={roadmapPositions[4]} />
-            </div>
+            </FadeSlideIn>
 
             {/* Full-width arrow */}
-            <div className="flex-1 flex items-center justify-center px-8">
-              <div className="w-full h-[3px] bg-blue-500 relative rounded-md">
-                <ArrowRight className="w-8 h-8 text-blue-500 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
+            <FadeSlideIn direction='right' delay={250} className="flex-1 flex items-center justify-center px-8">
+              <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
+                <ArrowRight className="w-8 h-8 text-neutral-400 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
               </div>
-            </div>
-            
-            <div className="w-80">
+            </FadeSlideIn>
+
+            <FadeSlideIn direction='up' delay={275} className="w-80">
               <PositionPopover position={roadmapPositions[5]} />
-            </div>
+            </FadeSlideIn>
           </div>
         </div>
 
@@ -289,17 +290,17 @@ const Roadmap = () => {
         <div className="md:hidden">
           {roadmapPositions.map((position, index) => (
             <div key={position.id} className="flex flex-col items-center">
-              <div className="w-full max-w-md h-36 pt-0.5">
+              <FadeSlideIn direction='down' delay={index * 15} className="w-full max-w-md h-36 pt-0.5">
                 <PositionPopover position={position} />
-              </div>
+              </FadeSlideIn>
               
               {/* Vertical arrow (except for last item) */}
               {index < roadmapPositions.length - 1 && (
-                <div className="my-2">
-                  <div className="w-[3px] h-8 bg-blue-500 relative mx-auto rounded-md">
-                    <ArrowDown className="w-8 h-8 text-blue-500 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2" />
+                <FadeSlideIn direction='down' delay={index * 25} className="my-2">
+                  <div className="w-[3px] h-8 bg-neutral-400 relative mx-auto rounded-md">
+                    <ArrowDown className="w-8 h-8 text-neutral-400 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2" />
                   </div>
-                </div>
+                </FadeSlideIn>
               )}
             </div>
           ))}

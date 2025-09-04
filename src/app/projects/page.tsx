@@ -36,7 +36,7 @@ const sortedProjects = Object.entries(projectsByTerm)
 function ProjectCard({ logo, title, description, slug }: { logo: string; title: string; description: string; slug: string }) {
   const isSvg = logo?.toLowerCase().endsWith(".svg")
   return (
-    <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full">
+    <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full bg-gradient-to-b from-white to-sky-50">
       <div className="mb-3 w-32 h-32 flex items-center justify-center bg-blue-100 rounded-full">
         {logo ? (
           <Image width={128} height={128} src={logo} alt={title} className="object-contain p-2" />

@@ -29,7 +29,7 @@ const Projects = () => {
                 className='h-full'
               >
                 <BlueBorderContainer
-                  className="flex flex-col items-center gap-3 p-6 h-full"
+                  className="flex flex-col items-center gap-3 p-6 h-full bg-gradient-to-b from-white to-sky-50"
                   key={idx}
                   parentClassName={`${isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""} h-full`}
                 >

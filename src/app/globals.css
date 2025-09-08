@@ -205,14 +205,6 @@
   .max-w-8xl {
     max-width: 88rem;
   }
-
-  .border-primary-gold {
-    border-color: #efbf04;
-  }
-
-  .border-secondary-gray {
-    border-color: #b7babe;
-  }
 }
 
 .bg-gradient-blue {

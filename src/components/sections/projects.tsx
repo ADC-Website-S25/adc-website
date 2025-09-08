@@ -58,7 +58,7 @@ const Projects = () => {
             );
           })}
         </div>
-        <div className="flex flex-col items-center justify-center gap-y-10 mt-6">
+        <div className="flex flex-col items-center justify-center gap-y-10 m-6">
           <Link href="/projects">
             <Button size="lg" variant="default">
               View All Projects

@@ -205,6 +205,14 @@
   .max-w-8xl {
     max-width: 88rem;
   }
+
+  .border-primary-gold {
+    border-color: #efbf04;
+  }
+
+  .border-secondary-gray {
+    border-color: #b7babe;
+  }
 }
 
 .bg-gradient-blue {
@@ -257,20 +265,6 @@ html {
   transform: translate(-50%, -50%);
   background-color: #060010;
   z-index: -1;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .text-content {
@@ -327,6 +321,20 @@ html {
     animation: gradient-flow 6s ease infinite;
   }
 
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
   @keyframes gradient-flow {
     0% {
       background-position: 0% 50%;
@@ -338,4 +346,23 @@ html {
       background-position: 0% 50%;
     }
   }
+
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+
+  .infinite-scroll {
+    animation: infinite-scroll 50s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+  .infinite-scroll { animation: none !important; transform: none !important; }
+  .gradient-overlay, .text-content { animation: none !important; }
+}
+
 }

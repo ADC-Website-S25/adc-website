@@ -202,14 +202,14 @@ const Roadmap = () => {
             Follow the path through the App Development Club. From bootcamp member to leadership, 
             every step builds your skills and opens new opportunities.
           </p>
-          <p className='text-neutral-500 mt-3 px-4'>Not everyone starts in the bootcamp, many people join directly as a Project Engineer too!</p>
+          <p className='text-neutral-500 mt-3 px-4'>Not everyone starts in the bootcamp, many people join directly as Project Engineers too!</p>
         </div>
 
         {/* Desktop Flow Layout */}
         <div className="hidden md:block relative w-3xl lg:w-5xl xl:w-6xl">
           {/* First Row: Bootcamp -> Shadow */}
           <div className="flex items-center gap-0 mb-6 lg:mr-32">
-              <FadeSlideIn direction='right' delay={0} className="flex-1 max-w-32 hidden lg:flex items-center justify-center pr-8">
+              <FadeSlideIn direction='right' delay={0} className="flex-1 max-w-32 hidden lg:flex items-center justify-center px-8">
                 <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
                   <ArrowRight className="w-8 h-8 text-neutral-400 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
                 </div>
@@ -220,7 +220,7 @@ const Roadmap = () => {
             </FadeSlideIn>
             
             {/* Full-width arrow */}
-            <FadeSlideIn direction='right' delay={50} className="flex-1 flex items-center justify-center px-8">
+            <FadeSlideIn direction='right' delay={50} className="flex-1 flex items-center justify-center px-16">
               <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
                 <ArrowRight className="w-8 h-8 text-neutral-400 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
               </div>
@@ -247,7 +247,7 @@ const Roadmap = () => {
             </FadeSlideIn>
             
             {/* Full-width arrow */}
-            <FadeSlideIn direction='left' delay={150} className="flex-1 flex items-center justify-center px-8">
+            <FadeSlideIn direction='left' delay={150} className="flex-1 flex items-center justify-center px-16">
               <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
                 <ArrowLeft className="w-8 h-8 text-neutral-400 absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2" />
               </div>
@@ -274,7 +274,7 @@ const Roadmap = () => {
             </FadeSlideIn>
 
             {/* Full-width arrow */}
-            <FadeSlideIn direction='right' delay={250} className="flex-1 flex items-center justify-center px-8">
+            <FadeSlideIn direction='right' delay={250} className="flex-1 flex items-center justify-center px-16">
               <div className="w-full h-[3px] bg-neutral-400 relative rounded-md">
                 <ArrowRight className="w-8 h-8 text-neutral-400 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2" />
               </div>

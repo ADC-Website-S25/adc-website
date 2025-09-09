@@ -92,19 +92,22 @@ export default function RotatingLogoGrid() {
 
   return (
     <section
-      className="flex flex-col w-full"
+      className="flex flex-col w-full max-w-8xl"
       aria-labelledby="sponsors-heading"
       id="sponsors"
     >
       {/* heading + subtitle */}
-      <div className="flex flex-col justify-center items-center">
-        <h1
-          id="sponsors-heading"
-          className="font-bold text-5xl text-[#0083FF] mt-24 mb-8 text-center"
-        >
-          Our Sponsors
-        </h1>
-        <p className="max-w-[85%] text-xl text-center mb-10">
+      <div className="flex flex-col justify-center items-center mt-40">
+        <span className="relative w-full flex items-center justify-center">
+          <h1
+            id="sponsors-heading"
+            className="font-bold text-3xl md:text-5xl lg:text-6xl text-subheader bg-white z-10 px-6"
+          >
+            Our Sponsors
+          </h1>
+          <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
+        </span>
+        <p className="text-base md:text-xl text-gray-600 px-4 my-6">
           These companies are helping drive the future of ADC.
         </p>
       </div>
@@ -154,8 +157,8 @@ export default function RotatingLogoGrid() {
       </div>
 
       {/* animated sponsor image cycle - medium screens and up */}
-      <div className="hidden justify-center items-center md:flex ">
-        <div className="max-w-[85%] md:w-8xl">
+      <div className="hidden justify-center items-center md:flex w-full">
+        <div className="max-sm:max-w-[85%] md:w-full">
           <AnimatePresence mode="popLayout">
             <motion.div
               key={currentSetIndex}

@@ -16,8 +16,8 @@ export default function Home() {
       <Roadmap />
       <Projects />
       <Leadership />
-      {showHackathonLink && <AppDevHacks />}
       <Sponsors />
+      {showHackathonLink && <AppDevHacks />}
       <Instagram />
     </main>
   );

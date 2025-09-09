@@ -10,10 +10,10 @@ import FadeSlideIn from '../ui/fade-slide-in';
 
 const Projects = () => {
   return (
-    <section className="mt-15 scroll-mt-32" id="projects">
+    <section className="mt-20 scroll-mt-28" id="projects">
       <div className="w-full my-8 flex items-center justify-center relative">
         <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
-        <h2 className="text-5xl font-bold text-blue-600 bg-white px-6 text-center z-10">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-subheader bg-white px-6 text-center z-10">
           Featured Projects
         </h2>
       </div>
@@ -65,7 +65,7 @@ const Projects = () => {
         </div>
         <div className="flex flex-col items-center justify-center gap-y-10 m-6">
           <Link href="/projects">
-            <Button size="lg" variant="default">
+            <Button size="lg" variant="default" className='text-lg font-semibold'>
               View All Projects
             </Button>
           </Link>

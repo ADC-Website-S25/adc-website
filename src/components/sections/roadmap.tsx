@@ -191,14 +191,14 @@ const PositionPopover = ({ position }: { position: RoadmapPosition }) => {
 
 const Roadmap = () => {
   return (
-    <section className="py-12 md:py-20 px-4 md:px-8" id="roadmap">
+    <section className="mt-12 md:mt-20 px-4 md:px-8" id="roadmap">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-blue-600 mb-2 md:mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-subheader mb-2 md:mb-4">
             Your ADC Journey
           </h2>
-          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+          <p className="text-base md:text-xl text-gray-600 px-4 max-w-5xl mx-auto">
             Follow the path through the App Development Club. From bootcamp member to leadership, 
             every step builds your skills and opens new opportunities.
           </p>
@@ -307,7 +307,7 @@ const Roadmap = () => {
         </div>
 
         {/* Instructions */}
-        <div className="text-center mt-20">
+        <div className="text-center mt-12">
           <p className="text-neutral-500 mb-6">Click on any position to explore the role details</p>
           {showApplicationLink && (
             <Link href={applicationLink} target='_blank'>

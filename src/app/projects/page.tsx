@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { prefixPath } from "@/lib/prefix";
 import { Metadata } from "next";
 
-const metaData: Metadata = {
+export const metadata: Metadata = {
   title: "Projects | ADC",
   description: "Explore our projects and initiatives",
 }

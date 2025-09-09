@@ -53,7 +53,7 @@ function ProjectCard({ logo, title, description, slug }: { logo: string; title: 
         {description}
       </p>
       <Link href={`/projects/${slug}`} className="w-full mt-auto z-10">
-        <Button variant="roundedOutline" className="w-full py-5">
+        <Button variant="roundedOutline" className="w-full py-5 hover:bg-blue-100/75">
           Read more <ArrowRight className="ml-1" />
         </Button>
       </Link>

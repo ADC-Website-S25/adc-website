@@ -54,7 +54,7 @@ const Projects = () => {
                     {project.description}
                   </div>
                   <Link href={`/projects/${project.slug}`} className="w-full mt-auto z-10">
-                    <Button variant="roundedOutline" className="w-full py-5">
+                    <Button variant="roundedOutline" className="w-full py-5 hover:bg-blue-100/75">
                       Read more <ArrowRight className="ml-1" />
                     </Button>
                   </Link>

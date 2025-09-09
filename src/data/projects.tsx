@@ -296,7 +296,7 @@ const SPRING_25_PROJECTS: Project[] = [
     slug: 'ionq-sp-25',
     logo: '/images/logos/ionq.svg',
     title: 'Quantum Machine Learning',
-    description: 'Collaborated with QLab and Dr. Franz Klein to explore quantum machine learning for image classification, reproducing IonQ research papers, benchmarking against classical techniques, and testing quantum circuits on simulators before deploying to Aria-1 and Forte-1 ion-trap quantum computers',
+    description: 'Explored quantum machine learning for image classification, reproducing IonQ research papers, benchmarking against classical techniques, and testing quantum circuits on simulators before deploying to Aria-1 and Forte-1 ion-trap quantum computers',
     year: 2025,
     semester: 'Spring',
     members: [

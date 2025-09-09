@@ -15,7 +15,7 @@ import { AuroraBackground } from '../ui/aurora-background'
 const Landing = () => {
   return (
     <section className='min-h-screen w-full' id='home'>
-      <AuroraBackground className='w-full h-full min-h-screen flex flex-col items-center pt-32 lg:pt-44 pb-32 lg:px-12 xl:px-8 2xl:px-40 bg-gradient-blue'>
+      <div className='w-full h-full min-h-screen flex flex-col items-center pt-32 lg:pt-44 pb-32 lg:px-12 xl:px-8 2xl:px-40 bg-gradient-blue'>
         <div className='w-full max-w-8xl flex flex-col lg:flex-row max-lg:items-center lg:justify-between max-lg:gap-20 max-lg:px-4 max-sm:h-[calc(100vh-10rem)] z-10'>
           <FadeIn className='max-lg:text-center flex flex-col justify-center gap-4 text-white text-4xl md:text-6xl xl:text-7xl font-bold'>
             <h2>Empower Code.</h2>
@@ -24,7 +24,7 @@ const Landing = () => {
           </FadeIn>
 
           {/* Image gallery */}
-          <FadeSlideIn direction='up'>
+          <FadeSlideIn direction='up' className='hidden md:block'>
             <Carousel 
               opts={{
                 loop: true,
@@ -116,7 +116,7 @@ const Landing = () => {
             <p className='text-2xl'>Members</p>
           </span>
         </div>
-      </AuroraBackground>
+      </div>
     </section>
   )
 }

@@ -37,21 +37,22 @@ const sortedProjects = Object.entries(projectsByTerm)
 function ProjectCard({ logo, title, description, slug }: { logo: string; title: string; description: string; slug: string }) {
   const isSvg = logo?.toLowerCase().endsWith(".svg")
   return (
-    <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full bg-gradient-to-b from-white to-sky-50">
-      <div className="mb-3 w-32 h-32 flex items-center justify-center bg-blue-100 rounded-full">
+    <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full relative bg-white group overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-sky-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="mb-3 w-32 h-32 flex items-center justify-center bg-blue-100 rounded-full z-10">
         {logo ? (
-          <Image src={prefixPath(logo)} alt={title} width={128} height={128} className="object-contain p-2" />
+          <Image src={prefixPath(logo)} alt={title} width={128} height={128} className="object-contain p-2 z-10" />
         ) : (
-          <span className="text-blue-400 text-4xl font-bold">?</span>
+          <span className="text-blue-400 text-4xl font-bold z-10">?</span>
         )}
       </div>
-      <p className="text-2xl font-semibold text-gray-800 text-center mb-3">
+      <p className="text-2xl font-semibold text-gray-800 text-center mb-3 z-10">
         {title}
       </p>
-      <p className="text-base text-gray-600 text-center mb-3">
+      <p className="text-base text-gray-600 text-center mb-3 z-10">
         {description}
       </p>
-      <Link href={`/projects/${slug}`} className="w-full mt-auto">
+      <Link href={`/projects/${slug}`} className="w-full mt-auto z-10">
         <Button variant="roundedOutline" className="w-full py-5">
           Read more <ArrowRight className="ml-1" />
         </Button>

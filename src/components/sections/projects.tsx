@@ -32,11 +32,12 @@ const Projects = () => {
                 className='h-full'
               >
                 <BlueBorderContainer
-                  className="flex flex-col items-center gap-3 p-6 h-full bg-gradient-to-b from-white to-sky-50"
+                  className="flex flex-col items-center gap-3 p-6 h-full relative bg-white group overflow-hidden"
                   key={idx}
                   parentClassName={`${isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""} h-full`}
                 >
-                  <div className="flex justify-center items-center mb-2">
+                  <div className="absolute inset-0 bg-gradient-to-b from-white to-sky-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="flex justify-center items-center mb-2 z-10">
                     <Image 
                       src={project.logo} 
                       alt={project?.logoAlt || "Project Logo"} 
@@ -46,13 +47,13 @@ const Projects = () => {
                       className="object-contain h-24 w-52" 
                     />
                   </div>
-                  <div className="text-lg font-semibold mb-1 text-gray-800 text-center">
+                  <div className="text-lg font-semibold mb-1 text-gray-800 text-center z-10">
                     {project.title}
                   </div>
-                  <div className="text-sm text-gray-600 mb-4 text-center flex-grow">
+                  <div className="text-sm text-gray-600 mb-4 text-center flex-grow z-10">
                     {project.description}
                   </div>
-                  <Link href={`/projects/${project.slug}`} className="w-full mt-auto">
+                  <Link href={`/projects/${project.slug}`} className="w-full mt-auto z-10">
                     <Button variant="roundedOutline" className="w-full py-5">
                       Read more <ArrowRight className="ml-1" />
                     </Button>

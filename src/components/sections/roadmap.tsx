@@ -12,7 +12,7 @@ import * as motion from 'motion/react-client'
 
 import type { ReactElement } from 'react'
 import Link from 'next/link'
-import { applicationLink } from '@/data/links-and-feature-flags'
+import { applicationLink, showApplicationLink } from '@/data/links-and-feature-flags'
 import FadeSlideIn from '../ui/fade-slide-in'
 
 interface RoadmapPosition {
@@ -309,11 +309,13 @@ const Roadmap = () => {
         {/* Instructions */}
         <div className="text-center mt-20">
           <p className="text-neutral-500 mb-6">Click on any position to explore the role details</p>
-          <Link href={applicationLink} target='_blank'>
-            <Button size="lg" variant={"default"} className='text-lg font-semibold'>
-              Start Your Journey Today
-            </Button>
-          </Link>
+          {showApplicationLink && (
+            <Link href={applicationLink} target='_blank'>
+              <Button size="lg" variant={"default"} className='text-lg font-semibold'>
+                Start Your Journey Today
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
     </section>

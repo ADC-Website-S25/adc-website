@@ -5,9 +5,12 @@ import FadeSlideIn from '../ui/fade-slide-in';
 const InfoCard = ({ title, description, delay }: { title: string; description: string; delay?: number }) => {
   return (
     <FadeSlideIn delay={delay}>
-      <BlueBorderContainer className='flex flex-col items-center sm:gap-5 p-5 lg:p-10 h-44 md:h-80 w-full bg-gradient-to-b from-white to-sky-50'>
-        <h3 className="text-2xl font-bold uppercase">{title}</h3>
-        <p className="mt-5 text-base md:text-lg">{description}</p>
+      <BlueBorderContainer className='group relative flex flex-col items-center sm:gap-5 p-5 lg:p-10 h-44 md:h-80 w-full bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300'>
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-sky-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className='relative  text-center z-10'>
+          <h3 className="text-2xl font-bold uppercase">{title}</h3>
+          <p className="mt-5 text-base md:text-lg">{description}</p>
+        </div>
       </BlueBorderContainer>
     </FadeSlideIn>
   )

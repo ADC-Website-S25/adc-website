@@ -94,6 +94,7 @@ export default function RotatingLogoGrid() {
     <section
       className="flex flex-col w-full"
       aria-labelledby="sponsors-heading"
+      id="sponsors"
     >
       {/* heading + subtitle */}
       <div className="flex flex-col justify-center items-center">

@@ -19,16 +19,26 @@ const Projects = () => {
       <div className="w-full max-w-8xl mx-auto px-2 sm:px-4 flex flex-col gap-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full items-stretch">
           {FEATURED_PROJECTS.map((project, idx) => {
-            const isLastOddItem = idx === FEATURED_PROJECTS.length - 1 && FEATURED_PROJECTS.length % 2 === 1;
+            const isLastOddItem =
+              idx === FEATURED_PROJECTS.length - 1 &&
+              FEATURED_PROJECTS.length % 2 === 1;
 
             return (
               <BlueBorderContainer
                 key={idx}
                 className="flex flex-col items-center gap-3 p-6 h-full"
-                parentClassName={isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""}
+                parentClassName={
+                  isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""
+                }
               >
                 <div className="flex justify-center items-center mb-2">
-                  <Image src={prefixPath(project.logo)} alt={project?.logoAlt || "Project Logo"} width={128} height={128} className="object-contain h-24 w-52" />
+                  <Image
+                    src={prefixPath(project.logo)}
+                    alt={project?.logoAlt || "Project Logo"}
+                    width={128}
+                    height={128}
+                    className="object-contain h-24 w-52"
+                  />
                 </div>
                 <div className="text-lg font-semibold mb-1 text-gray-800 text-center">
                   {project.title}
@@ -36,16 +46,19 @@ const Projects = () => {
                 <div className="text-sm text-gray-600 mb-4 text-center flex-grow">
                   {project.description}
                 </div>
-                <Link href={`/projects/${project.slug}`} className="w-full mt-auto">
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="w-full mt-auto"
+                >
                   <Button variant="roundedOutline" className="w-full py-5">
                     Read more <ArrowRight className="ml-1" />
                   </Button>
                 </Link>
               </BlueBorderContainer>
-            )
+            );
           })}
         </div>
-        <div className="flex justify-center mt-6">
+        <div className="flex flex-col items-center justify-center gap-y-10 m-6">
           <Link href="/projects">
             <Button size="lg" variant="default">
               View All Projects
@@ -54,7 +67,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Projects

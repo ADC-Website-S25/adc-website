@@ -259,20 +259,6 @@ html {
   z-index: -1;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .text-content {
   display: inline-block;
   position: relative;
@@ -327,6 +313,20 @@ html {
     animation: gradient-flow 6s ease infinite;
   }
 
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
   @keyframes gradient-flow {
     0% {
       background-position: 0% 50%;
@@ -338,4 +338,23 @@ html {
       background-position: 0% 50%;
     }
   }
+
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+
+  .infinite-scroll {
+    animation: infinite-scroll 50s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+  .infinite-scroll { animation: none !important; transform: none !important; }
+  .gradient-overlay, .text-content { animation: none !important; }
+}
+
 }

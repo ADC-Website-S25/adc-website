@@ -57,8 +57,20 @@ const Banner = (banner: Banner) => {
             <span className='flex items-center'>
               <Clock size={16} className="inline mr-1" />
               <p className="truncate">
-                {`${eventDateTime.date.toLocaleString('en-US', { month: 'short', day: 'numeric' })}, 
-                ${eventDateTime.startTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}-${eventDateTime.endTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}`}
+                {`${eventDateTime.date.toLocaleString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric', 
+                    timeZone: 'America/New_York' 
+                  })}, 
+                  ${eventDateTime.startTime.toLocaleTimeString('en-US', { 
+                    hour: 'numeric', 
+                    minute: '2-digit', 
+                    timeZone: 'America/New_York' 
+                  })}-${eventDateTime.endTime.toLocaleTimeString('en-US', { 
+                    hour: 'numeric', 
+                    minute: '2-digit', 
+                    timeZone: 'America/New_York' 
+                  })}`}
               </p>
             </span>
           )}

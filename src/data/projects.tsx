@@ -230,7 +230,7 @@ const SPRING_25_PROJECTS: Project[] = [
       description: 'Visualizing imaging in 2D and 3D with focus on regions of interest'
     },
     members: [
-      { name: 'Andrew Yang', title: 'Project Lead', photo: '/images/projects/spring-25/cnhXraySP25/AndrewYang.jpg' },
+      { name: 'Andrew Yang', title: 'Project Lead', photo: '/images/projects/spring-25/cnhXraySP25/andrewYang.jpg' },
       { name: 'Shlok Desai', title: 'Research Lead', photo: '/images/projects/spring-25/cnhXraySP25/ShlokDesai.jpg' },
       { name: 'Naman Nagelia', title: 'Engineer Lead', photo: '/images/projects/spring-25/cnhXraySP25/NamanNagelia.jpg' },
       { name: 'Nandhu Pillai', title: 'Researcher', photo: '/images/projects/spring-25/cnhXraySP25/NandhuPillai.jpg' },
@@ -310,7 +310,7 @@ const SPRING_25_PROJECTS: Project[] = [
       { name: "Mihir Talati", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/MihirTalati.jpg" },
       { name: "Richa Gupta", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/RichaGupta.jpg" },
       { name: "Samarth Parekh", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/SamarthParekh.jpg" },
-      { name: "Jessica Zhou", title: "PM", photo: "/images/projects/spring-25/ionqSP25/JessicaZhou.webp", zoomPhotoIn: true },
+      { name: "Jessica Zhou", title: "PM", photo: "/images/projects/spring-25/ionqSP25/jessicaZhou.webp", zoomPhotoIn: true },
       { name: "Pranav Krishnamurthy", title: "Shadower", photo: "/images/projects/spring-25/ionqSP25/PranavKrishnamurthy.jpg" },
       { name: "Sawyer Bloom", title: "Shadower", photo: "/images/projects/spring-25/ionqSP25/SawyerBloom.jpg" },
     ]

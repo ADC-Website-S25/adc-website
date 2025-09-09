@@ -39,7 +39,7 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-b from-white to-blue-300/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="flex justify-center items-center mb-2 z-10">
                     <Image 
-                      src={project.logo} 
+                      src={prefixPath(project.logo)} 
                       alt={project?.logoAlt || "Project Logo"} 
                       width={208} 
                       height={96} 

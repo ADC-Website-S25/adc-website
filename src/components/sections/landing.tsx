@@ -37,7 +37,7 @@ const Landing = () => {
                   <CarouselItem key={index}>
                     <div className="w-full h-full overflow-hidden rounded-xl">
                       <Image
-                        src={photo.src}
+                        src={prefixPath(photo.src)}
                         alt={photo.alt}
                         width={630}
                         height={386}

@@ -38,7 +38,7 @@ function ProjectCard({ logo, title, description, slug }: { logo: string; title: 
   const isSvg = logo?.toLowerCase().endsWith(".svg")
   return (
     <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full relative bg-white group overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-sky-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-blue-300/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       <div className="mb-3 w-32 h-32 flex items-center justify-center bg-blue-100 rounded-full z-10">
         {logo ? (
           <Image src={prefixPath(logo)} alt={title} width={128} height={128} className="object-contain p-2 z-10" />

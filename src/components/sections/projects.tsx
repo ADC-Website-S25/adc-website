@@ -36,7 +36,7 @@ const Projects = () => {
                   key={idx}
                   parentClassName={`${isLastOddItem ? "md:col-span-2 lg:col-span-1" : ""} h-full`}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-b from-white to-sky-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-white to-blue-300/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="flex justify-center items-center mb-2 z-10">
                     <Image 
                       src={project.logo} 

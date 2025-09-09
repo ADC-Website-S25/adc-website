@@ -16,6 +16,51 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "App Dev Club @ UMD",
   description: "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
+  keywords: [
+    "UMD",
+    "University of Maryland",
+    "App Dev Club",
+    "Computer Science",
+    "Student Organization",
+    "Software Development",
+    "Programming",
+    "Hackathon",
+    "Tech Club",
+    "Fortune 500",
+    "Digital Solutions"
+  ],
+  authors: [{ name: "App Dev Club" }],
+  metadataBase: new URL("https://appdevclub.com"),
+  openGraph: {
+    title: "App Dev Club @ UMD",
+    description: "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
+    url: "https://appdevclub.com",
+    siteName: "App Dev Club",
+    images: [
+      {
+        url: "/og-image.webp",
+        width: 1422,
+        height: 800,
+        alt: "App Dev Club @ UMD",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "App Dev Club @ UMD",
+    description: "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
+    images: ["/og-image.webp"],
+  },
+  alternates: {
+    canonical: "https://appdevclub.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
 };
 
 export const viewport: Viewport = {

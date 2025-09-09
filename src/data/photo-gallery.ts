@@ -8,9 +8,9 @@ type PhotoGalleryItem = {
  * All images should be in the public/images folder
  */
 export const photoGallery: PhotoGalleryItem[] = [
-  { src: "/images/landing-carousel/symposium-1.jpg", alt: "Symposium 2025" },
-  { src: "/images/landing-carousel/bootcamp-1.jpg", alt: "Spring 2025 Bootcamp" },
-  { src: "/images/landing-carousel/final-dinner-group.jpg", alt: "Final Dinner Group" },
-  { src: "/images/landing-carousel/symposium-2.jpg", alt: "Symposium 2025" },
-  { src: "/images/landing-carousel/valentines-event.jpg", alt: "Valentine's Event 2025" },
+  { src: "/images/landing-carousel/symposium-1.webp", alt: "Symposium 2025" },
+  { src: "/images/landing-carousel/bootcamp-1.webp", alt: "Spring 2025 Bootcamp" },
+  { src: "/images/landing-carousel/final-dinner-group.webp", alt: "Final Dinner Group" },
+  { src: "/images/landing-carousel/symposium-2.webp", alt: "Symposium 2025" },
+  { src: "/images/landing-carousel/valentines-event.webp", alt: "Valentine's Event 2025" },
 ]

@@ -15,7 +15,6 @@ export default function Home() {
       <Roadmap />
       <Projects />
       <Leadership />
-      <Projects />
       <AppDevHacks />
       <Sponsors />
       <Instagram />

@@ -35,9 +35,9 @@ const logoSets: Readonly<Logo[][]> = [
       src: "/images/logos/accenture.svg",
       alt: "Accenture",
     },
-    { src: "/images/logos/secu.svg", alt: "SECU" },
+    { src: "/images/logos/secu.png", alt: "SECU" },
     {
-      src: "/images/logos/childrens-national.svg",
+      src: "/images/logos/childrens-national.png",
       alt: "Children's National",
     },
     { src: "/images/logos/noaa.svg", alt: "NOAA" },

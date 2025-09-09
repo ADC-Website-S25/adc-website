@@ -154,8 +154,8 @@ export default function RotatingLogoGrid() {
       </div>
 
       {/* animated sponsor image cycle - medium screens and up */}
-      <div className="hidden justify-center items-center md:flex">
-        <div className="max-w-[85%] md:w-210">
+      <div className="hidden justify-center items-center md:flex ">
+        <div className="max-w-[85%] md:w-8xl">
           <AnimatePresence mode="popLayout">
             <motion.div
               key={currentSetIndex}

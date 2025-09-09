@@ -12,7 +12,7 @@ import * as motion from 'motion/react-client'
 
 import type { ReactElement } from 'react'
 import Link from 'next/link'
-import { applicationLink } from '@/data/links'
+import { applicationLink } from '@/data/links-and-feature-flags'
 import FadeSlideIn from '../ui/fade-slide-in'
 
 interface RoadmapPosition {

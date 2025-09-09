@@ -6,6 +6,7 @@ import AppDevHacks from "@/components/sections/appdevhacks";
 import Roadmap from "@/components/sections/roadmap";
 import Sponsors from "@/components/sections/sponsors";
 import WhatIsAdc from "@/components/sections/whatIsAdc";
+import { showHackathonLink } from "@/data/links-and-feature-flags";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Roadmap />
       <Projects />
       <Leadership />
-      <AppDevHacks />
+      {showHackathonLink && <AppDevHacks />}
       <Sponsors />
       <Instagram />
     </main>

@@ -12,17 +12,28 @@ import {
 } from "@/components/ui/sheet"
 import Link from 'next/link';
 import GradientText from '../ui/gradient-text';
-import { applicationLink, internalLink } from '@/data/links';
+import { applicationLink, internalLink, showApplicationLink, showInternalLink } from '@/data/links-and-feature-flags';
 import { prefixPath } from '@/lib/prefix';
 
-const navLinks = [
-  { href: '/#about', label: 'About' },
-  { href: '/#projects', label: 'Projects' },
-  { href: '/#sponsors', label: 'Sponsors' },
-  { href: '/#contact', label: 'Contact Us' },
-  { href: applicationLink, label: 'Apply Now', specialText: true },
-  { href: internalLink, label: 'Log In' },
-];
+const getNavLinks = () => {
+  const baseLinks = [
+    { href: '/#about', label: 'About', specialText: false },
+    { href: '/#projects', label: 'Projects' },
+    { href: '/#sponsors', label: 'Sponsors' },
+    { href: '/#contact', label: 'Contact Us' },
+  ];
+  const links = [...baseLinks];
+
+  if (showApplicationLink) {
+    links.push({ href: applicationLink, label: 'Apply Now', specialText: true });
+  }
+  if (showInternalLink) {
+    links.push({ href: internalLink, label: 'Log In', specialText: false });
+  }
+
+  return links;
+};
+const navLinks = getNavLinks();
 
 const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
   return (

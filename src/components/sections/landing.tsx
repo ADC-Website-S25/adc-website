@@ -11,14 +11,13 @@ import { photoGallery } from '@/data/photo-gallery'
 import SlidingNumber from '../ui/sliding-number'
 import FadeIn from '../ui/fade-in'
 import FadeSlideIn from '../ui/fade-slide-in'
-import { AuroraBackground } from '../ui/aurora-background'
 import { prefixPath } from '@/lib/prefix'
 
 const Landing = () => {
   return (
     <section className='min-h-screen w-full' id='home'>
-      <div className='w-full h-full min-h-screen flex flex-col items-center pt-32 lg:pt-44 pb-32 lg:px-12 xl:px-8 2xl:px-40 bg-gradient-blue'>
-        <div className='w-full max-w-8xl flex flex-col lg:flex-row max-lg:items-center lg:justify-between max-lg:gap-20 max-lg:px-4 max-sm:h-[calc(100vh-10rem)] z-10'>
+      <div className='w-full h-full min-h-screen flex flex-col items-center pt-32 lg:pt-44 pb-32 lg:px-12 xl:px-8 2xl:px-40 bg-gradient-blue relative overflow-clip'>
+        <div className='w-full max-w-8xl flex flex-col lg:flex-row max-lg:items-center lg:justify-between max-lg:gap-20 max-lg:px-4 z-10'>
           <FadeIn className='max-lg:text-center flex flex-col justify-center gap-4 text-white text-4xl md:text-6xl xl:text-7xl font-bold'>
             <h2>Empower Code.</h2>
             <h2>Inspire Design.</h2>
@@ -59,7 +58,7 @@ const Landing = () => {
           </FadeSlideIn>
         </div>
 
-        <div className='w-full max-w-8xl flex flex-col lg:flex-row justify-around items-center sm:mt-20 gap-8 lg:gap-0 z-10'>
+        <div className='w-full max-w-8xl flex flex-col lg:flex-row justify-around items-center sm:mt-20 gap-8 lg:gap-0 z-10 max-sm:mt-40'>
           <span className='flex flex-col items-center justify-center text-white'>
             <span className='flex items-baseline'>
               <p className='text-5xl xl:text-6xl font-bold'>$</p>
@@ -118,6 +117,12 @@ const Landing = () => {
             <p className='text-2xl'>Members</p>
           </span>
         </div>
+
+        <div className="hidden lg:block w-[15rem] h-[15rem] absolute -top-10 left-1/2 -translate-x-1/2 rounded-full border border-white/15 pointer-events-none"></div>
+        <div className="hidden lg:block w-[20rem] h-[20rem] absolute -top-20 left-1/2 -translate-x-1/2 rounded-full border border-white/10 pointer-events-none"></div>
+        <div className="hidden lg:block w-[50rem] h-[50rem] absolute -top-64 left-1/2 -translate-x-1/2 rounded-full border border-white/10 pointer-events-none"></div>
+        <div className="hidden lg:block w-[60rem] h-[60rem] absolute -top-80 left-1/2 -translate-x-1/2 rounded-full border border-white/5 pointer-events-none"></div>
+        <div className="hidden lg:block w-[max(100vw,100vh)] h-[max(100vw,100vh)] absolute -top-[100vh] left-1/2 -translate-x-1/2 rounded-full border border-white/10 pointer-events-none"></div>
       </div>
     </section>
   )

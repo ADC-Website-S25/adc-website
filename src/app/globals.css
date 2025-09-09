@@ -226,7 +226,11 @@
 }
 
 .bg-gradient-blue {
-  background: linear-gradient(180deg, #00b5ff 0%, #0083ff 100%);
+  background: radial-gradient(circle at top center,
+      #01aff4 0%,
+      #0083ff 50%,
+      #00a3e4 100%
+    );
 }
 
 html {

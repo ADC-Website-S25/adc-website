@@ -107,7 +107,7 @@ export default function RotatingLogoGrid() {
           </h1>
           <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
         </span>
-        <p className="text-base md:text-xl text-gray-600 px-4 my-6">
+        <p className="text-base md:text-xl text-gray-600 px-4 my-6 text-center">
           These companies are helping drive the future of ADC.
         </p>
       </div>

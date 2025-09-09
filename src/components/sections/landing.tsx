@@ -58,7 +58,7 @@ const Landing = () => {
           </FadeSlideIn>
         </div>
 
-        <div className='w-full max-w-8xl flex flex-col lg:flex-row justify-around items-center sm:mt-20 gap-8 lg:gap-0 z-10 max-sm:mt-40'>
+        <div className='w-full max-w-8xl flex flex-col lg:flex-row justify-around items-center sm:mt-20 gap-8 lg:gap-0 z-10 max-sm:mt-20'>
           <span className='flex flex-col items-center justify-center text-white'>
             <span className='flex items-baseline'>
               <p className='text-5xl xl:text-6xl font-bold'>$</p>

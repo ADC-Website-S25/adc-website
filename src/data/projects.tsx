@@ -18,7 +18,7 @@ export type Project = {
   }[];
 }
 
-// only youtube video links are supported right now
+// only youtube video links are supported
 type ShowcaseContent =
   | { description: string; image: string; videoUrl?: never }
   | { description: string; videoUrl: string; image?: never };
@@ -32,27 +32,27 @@ type ShowcaseContent =
 const SPRING_25_PROJECTS: Project[] = [
   {
     slug: 'trachsense-sp-25',
-    logo: '/images/logos/childrens-national.svg',
+    logo: '/images/logos/childrens-national.png',
     logoAlt: 'Childrens National Logo',
     title: 'TrachSense',
     description: 'The team developed a compact CO2 sensing system that attaches to pediatric tracheostomy tubes, enabling continuous, remote monitoring to rapidly detect decannulation or obstruction and alert caregivers',
     year: 2025,
     semester: 'Spring',
     members: [
-      { name: 'Hannah Chan', title: 'Project Lead', photo: '/images/projects/childrensNationalSP25/hannahChan.jpg' },
-      { name: 'Surabhi Singh', title: 'Project Manager', photo: '/images/projects/childrensNationalSP25/surabhiSingh.jpg' },
-      { name: 'Yashas Bhat', title: 'Tech Lead', photo: '/images/projects/childrensNationalSP25/yashasBhat.jpg' },
-      { name: 'Mohammad Abd-Elmoniem', title: 'Tech Lead', photo: '/images/projects/childrensNationalSP25/mohammadAbd-Elmoniem.jpg' },
+      { name: 'Hannah Chan', title: 'Project Lead', photo: '/images/projects/spring-25/childrensNationalSP25/hannahChan.jpg' },
+      { name: 'Surabhi Singh', title: 'Project Manager', photo: '/images/projects/spring-25/childrensNationalSP25/surabhiSingh.jpg' },
+      { name: 'Yashas Bhat', title: 'Tech Lead', photo: '/images/projects/spring-25/childrensNationalSP25/yashasBhat.jpg' },
+      { name: 'Mohammad Abd-Elmoniem', title: 'Tech Lead', photo: '/images/projects/spring-25/childrensNationalSP25/mohammadAbd-Elmoniem.jpg' },
       { name: 'Matthew Xu', title: 'Full-stack Engineer' },
-      { name: 'Tanmay Panguluri', title: 'Full-stack Engineer', photo: '/images/projects/childrensNationalSP25/tanmayPanguluri.jpg' },
-      { name: 'Richard Yin', title: 'Full-stack Engineer', photo: '/images/projects/childrensNationalSP25/richardYin.jpg' },
-      { name: 'Eswar Karavadi', title: 'Front-end and TrachHub Engineer', photo: '/images/projects/childrensNationalSP25/eswarKaravadi.jpg' },
-      { name: 'Olivia Zhang', title: 'Frontend Engineer', photo: '/images/projects/childrensNationalSP25/oliviaZhang.jpg' },
-      { name: 'Amogh Gurram', title: 'Backend Engineer', photo: '/images/projects/childrensNationalSP25/amoghGurram.jpg' },
+      { name: 'Tanmay Panguluri', title: 'Full-stack Engineer', photo: '/images/projects/spring-25/childrensNationalSP25/tanmayPanguluri.jpg' },
+      { name: 'Richard Yin', title: 'Full-stack Engineer', photo: '/images/projects/spring-25/childrensNationalSP25/richardYin.jpg' },
+      { name: 'Eswar Karavadi', title: 'Front-end and TrachHub Engineer', photo: '/images/projects/spring-25/childrensNationalSP25/eswarKaravadi.jpg' },
+      { name: 'Olivia Zhang', title: 'Frontend Engineer', photo: '/images/projects/spring-25/childrensNationalSP25/oliviaZhang.jpg' },
+      { name: 'Amogh Gurram', title: 'Backend Engineer', photo: '/images/projects/spring-25/childrensNationalSP25/amoghGurram.jpg' },
       { name: 'Thomas Urdinola', title: 'Backend Engineer' },
-      { name: 'Michelle Yu', title: 'Shadower', photo: '/images/projects/childrensNationalSP25/michelleYu.jpg' },
-      { name: 'Jayant Kammula', title: 'Shadower', photo: '/images/projects/childrensNationalSP25/jayantKammula.jpg' },
-      { name: 'Kira Le', title: 'Shadower', photo: '/images/projects/childrensNationalSP25/kiraLe.jpg' },
+      { name: 'Michelle Yu', title: 'Shadower', photo: '/images/projects/spring-25/childrensNationalSP25/michelleYu.jpg' },
+      { name: 'Jayant Kammula', title: 'Shadower', photo: '/images/projects/spring-25/childrensNationalSP25/jayantKammula.jpg' },
+      { name: 'Kira Le', title: 'Shadower', photo: '/images/projects/spring-25/childrensNationalSP25/kiraLe.jpg' },
     ],
   },
   {
@@ -60,13 +60,32 @@ const SPRING_25_PROJECTS: Project[] = [
     logo: '/images/logos/amazon.svg',
     logoAlt: 'Amazon Project Kuiper Logo',
     title: 'Amazon Project Kuiper',
-    description: 'Short description of project 2 something something something something something something something something something ',
+    description: 'Built a full-stack application on AWS using ML to predict representative clutter height for satellite ground station site selection, validated globally for accuracy and reliability',
     year: 2025,
     semester: 'Spring',
+    showcaseContent: {
+      description: 'A showcase of the dashboard and how it predicts satellite ground station site selection',
+      image: '/images/projects/spring-25/amazonSP25/amazonSP25-showcase.png',
+    },
     members: [
-      { name: 'David Kim', title: 'Team Lead' },
-      { name: 'Eva Brown', title: 'Developer' },
-      { name: 'Frank Green', title: 'Designer' },
+      { name: "Yuvraj Rekhi", title: "Project Lead", photo: "/images/projects/spring-25/amazonSP25/YuvrajRekhi.jpg" },
+      { name: "Rhea Sarkar", title: "Tech Lead", photo: "/images/projects/spring-25/amazonSP25/RheaSarkar.jpg" },
+      { name: "Vivek Nadig", title: "Tech Lead", photo: "/images/projects/spring-25/amazonSP25/VivekNadig.jpg" },
+      { name: "Anjali Gallacher", title: "PM / UI/UX", photo: "/images/projects/spring-25/amazonSP25/AnjaliGallacher.jpg" },
+
+      { name: "Joseph Cho", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/JosephCho.jpg" },
+      { name: "Advay Choudhury", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/AdvayChoudhury.jpg" },
+      { name: "Smithi Mahendran", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/SmithiMahendran.jpg" },
+      { name: "Viraj Urs", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/VirajUrs.jpg" },
+      { name: "Rishi Chudasama", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/RishiChudasama.jpg" },
+      { name: "Mohe Edeen Abu Maizer", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/MoheEdeenAbuMaizer.jpg" },
+      { name: "Arsh Goenka", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/ArshGoenka.jpg" },
+      { name: "Arav Luthra", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/AravLuthra.jpg" },
+      { name: "Akash Wudali", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/AkashWudali.jpg" },
+      { name: "Varun Mannam", title: "Engineer", photo: "/images/projects/spring-25/amazonSP25/VarunMannam.jpg" },
+
+      { name: "Aryan Jain", title: "Shadow", photo: "/images/projects/spring-25/amazonSP25/AryanJain.jpg" },
+      { name: "Ryan Li", title: "Shadow", photo: "/images/projects/spring-25/amazonSP25/RyanLi.jpg" },
     ],
   },
   {
@@ -79,25 +98,25 @@ const SPRING_25_PROJECTS: Project[] = [
     semester: 'Spring',
     showcaseContent: {
       description: 'Selecting what tool to use to analyze the uploaded malware files',
-      image: '/images/projects/mitreSP25/mitre-showcase.png',
+      image: '/images/projects/spring-25/mitreSP25/mitre-showcase.png',
     },
     members: [
-      { name: 'Amelia Harn', title: 'Project Lead', photo: '/images/projects/mitreSP25/ameliaHarn.png' },
-      { name: 'Anand Vinod', title: 'Tech Lead', photo: '/images/projects/mitreSP25/anandVinod.png' },
-      { name: 'Kevin Chong', title: 'ML Tech Lead', photo: '/images/projects/mitreSP25/kevinChong.webp' },
-      { name: 'Shreya Sanikommu', title: 'Project Manager', photo: '/images/projects/mitreSP25/shreyaSanikommu.png', zoomPhotoIn: true },
-      { name: 'Anvay Panguluri', title: 'Backend Engineer', photo: '/images/projects/mitreSP25/anvayPanguluri.webp' },
-      { name: 'Autumn Anson', title: 'Frontend Engineer/Research', photo: '/images/projects/mitreSP25/autumnAnson.webp' },
-      { name: 'Chayanika Sinha', title: 'Data Visualization Engineer', photo: '/images/projects/mitreSP25/chayanikaSinha.webp' },
-      { name: 'Gitika Saravanan', title: 'DevOps Engineer', photo: '/images/projects/mitreSP25/gitikaSaravanan.webp' },
-      { name: 'Jessica Zhou', title: 'UI/UX Designer', photo: '/images/projects/mitreSP25/jessicaZhou.webp', zoomPhotoIn: true },
-      { name: 'Marvin Lin', title: 'ML Engineer', photo: '/images/projects/mitreSP25/marvinLin.png' },
-      { name: 'Nate Zhang', title: 'Frontend Engineer/Research', photo: '/images/projects/mitreSP25/nateZhang.png' },
-      { name: 'Parth Dua', title: 'Backend/DevOps Engineer', photo: '/images/projects/mitreSP25/parthDua.webp', zoomPhotoIn: true },
-      { name: 'Ritvik Thakur', title: 'Backend Engineer', photo: '/images/projects/mitreSP25/ritvikThakur.webp' },
-      { name: 'Thomas Huitema', title: 'Backend Engineer', photo: '/images/projects/mitreSP25/thomasHuitema.webp' },
-      { name: 'Varun Kota', title: 'ML Engineer', photo: '/images/projects/mitreSP25/varunKota.webp' },
-      { name: 'Will Graham', title: 'Frontend Engineer', photo: '/images/projects/mitreSP25/willGraham.png' }
+      { name: 'Amelia Harn', title: 'Project Lead', photo: '/images/projects/spring-25/mitreSP25/ameliaHarn.png' },
+      { name: 'Anand Vinod', title: 'Tech Lead', photo: '/images/projects/spring-25/mitreSP25/anandVinod.png' },
+      { name: 'Kevin Chong', title: 'ML Tech Lead', photo: '/images/projects/spring-25/mitreSP25/kevinChong.webp' },
+      { name: 'Shreya Sanikommu', title: 'Project Manager', photo: '/images/projects/spring-25/mitreSP25/shreyaSanikommu.png', zoomPhotoIn: true },
+      { name: 'Anvay Panguluri', title: 'Backend Engineer', photo: '/images/projects/spring-25/mitreSP25/anvayPanguluri.webp' },
+      { name: 'Autumn Anson', title: 'Frontend Engineer/Research', photo: '/images/projects/spring-25/mitreSP25/autumnAnson.webp' },
+      { name: 'Chayanika Sinha', title: 'Data Visualization Engineer', photo: '/images/projects/spring-25/mitreSP25/chayanikaSinha.webp' },
+      { name: 'Gitika Saravanan', title: 'DevOps Engineer', photo: '/images/projects/spring-25/mitreSP25/gitikaSaravanan.webp' },
+      { name: 'Jessica Zhou', title: 'UI/UX Designer', photo: '/images/projects/spring-25/mitreSP25/jessicaZhou.webp', zoomPhotoIn: true },
+      { name: 'Marvin Lin', title: 'ML Engineer', photo: '/images/projects/spring-25/mitreSP25/marvinLin.png' },
+      { name: 'Nate Zhang', title: 'Frontend Engineer/Research', photo: '/images/projects/spring-25/mitreSP25/nateZhang.png' },
+      { name: 'Parth Dua', title: 'Backend/DevOps Engineer', photo: '/images/projects/spring-25/mitreSP25/parthDua.webp', zoomPhotoIn: true },
+      { name: 'Ritvik Thakur', title: 'Backend Engineer', photo: '/images/projects/spring-25/mitreSP25/ritvikThakur.webp' },
+      { name: 'Thomas Huitema', title: 'Backend Engineer', photo: '/images/projects/spring-25/mitreSP25/thomasHuitema.webp' },
+      { name: 'Varun Kota', title: 'ML Engineer', photo: '/images/projects/spring-25/mitreSP25/varunKota.webp' },
+      { name: 'Will Graham', title: 'Frontend Engineer', photo: '/images/projects/spring-25/mitreSP25/willGraham.png' }
     ]
   },
   {
@@ -109,21 +128,21 @@ const SPRING_25_PROJECTS: Project[] = [
     year: 2025,
     semester: 'Spring',
     members: [
-      { name: 'Madeline Anson', title: 'Team Lead', photo: '/images/projects/usNewsSP25/MadelineAnson.jpg' },
-      { name: 'Josiah Lim', title: 'Tech Lead', photo: '/images/projects/usNewsSP25/JosiahLim.jpg' },
-      { name: 'Pranav Palle', title: 'Tech Lead', photo: '/images/projects/usNewsSP25/PranavPalle.jpg' },
-      { name: 'Tanish Anandababu', title: 'Frontend Engineer', photo: '/images/projects/usNewsSP25/TanishAnandababu.jpg' },
-      { name: 'Sathvik Andhavarapu', title: 'Frontend Engineer', photo: '/images/projects/usNewsSP25/SathvikAndhavarapu.jpg' },
-      { name: 'Akshita Badkundri', title: 'Backend Engineer', photo: '/images/projects/usNewsSP25/AkshitaBadkundri.jpg' },
-      { name: 'Anant Agrawal', title: 'Backend Engineer', photo: '/images/projects/usNewsSP25/AnantAgrawal.jpg' },
-      { name: 'Pranjal Kattel', title: 'Engineer', photo: '/images/projects/usNewsSP25/PranjalKattel.jpg' },
-      { name: 'Alex Shrestha', title: 'Engineer', photo: '/images/projects/usNewsSP25/AlexShrestha.jpg' },
-      { name: 'Bhavya Rajasekaran', title: 'Backend Engineer', photo: '/images/projects/usNewsSP25/BhavyaRajasekaran.jpg' },
-      { name: 'Madeline Moldrem', title: 'Shadow', photo: '/images/projects/usNewsSP25/MadelineMoldrem.jpg' },
-      { name: 'Samantha Tyles', title: 'Shadow', photo: '/images/projects/usNewsSP25/SamanthaTyles.jpg' }
+      { name: 'Madeline Anson', title: 'Team Lead', photo: '/images/projects/spring-25/usNewsSP25/MadelineAnson.jpg' },
+      { name: 'Josiah Lim', title: 'Tech Lead', photo: '/images/projects/spring-25/usNewsSP25/JosiahLim.jpg' },
+      { name: 'Pranav Palle', title: 'Tech Lead', photo: '/images/projects/spring-25/usNewsSP25/PranavPalle.jpg' },
+      { name: 'Tanish Anandababu', title: 'Frontend Engineer', photo: '/images/projects/spring-25/usNewsSP25/TanishAnandababu.jpg' },
+      { name: 'Sathvik Andhavarapu', title: 'Frontend Engineer', photo: '/images/projects/spring-25/usNewsSP25/SathvikAndhavarapu.jpg' },
+      { name: 'Akshita Badkundri', title: 'Backend Engineer', photo: '/images/projects/spring-25/usNewsSP25/AkshitaBadkundri.jpg' },
+      { name: 'Anant Agrawal', title: 'Backend Engineer', photo: '/images/projects/spring-25/usNewsSP25/AnantAgrawal.jpg' },
+      { name: 'Pranjal Kattel', title: 'Engineer', photo: '/images/projects/spring-25/usNewsSP25/PranjalKattel.jpg' },
+      { name: 'Alex Shrestha', title: 'Engineer', photo: '/images/projects/spring-25/usNewsSP25/AlexShrestha.jpg' },
+      { name: 'Bhavya Rajasekaran', title: 'Backend Engineer', photo: '/images/projects/spring-25/usNewsSP25/BhavyaRajasekaran.jpg' },
+      { name: 'Madeline Moldrem', title: 'Shadow', photo: '/images/projects/spring-25/usNewsSP25/MadelineMoldrem.jpg' },
+      { name: 'Samantha Tyles', title: 'Shadow', photo: '/images/projects/spring-25/usNewsSP25/SamanthaTyles.jpg' }
     ],
     showcaseContent: {
-      image: '/images/projects/usNewsSP25/demo.png',
+      image: '/images/projects/spring-25/usNewsSP25/demo.png',
       description: "Dashboard showing anomaly monitoring using the U.S. News API"
     }
   },
@@ -136,19 +155,19 @@ const SPRING_25_PROJECTS: Project[] = [
     year: 2025,
     semester: 'Spring',
     members: [
-      { name: 'Angela Zhang', title: 'Project Lead', photo: '/images/projects/boozAllenSP25/AngelaZhang.jpg' },
-      { name: 'Daven Chang', title: 'Tech Lead', photo: '/images/projects/boozAllenSP25/DavenChang.jpg' },
-      { name: 'Alan Jiang', title: 'Tech Lead', photo: '/images/projects/boozAllenSP25/AlanJiang.jpg' },
+      { name: 'Angela Zhang', title: 'Project Lead', photo: '/images/projects/spring-25/boozAllenSP25/AngelaZhang.jpg' },
+      { name: 'Daven Chang', title: 'Tech Lead', photo: '/images/projects/spring-25/boozAllenSP25/DavenChang.jpg' },
+      { name: 'Alan Jiang', title: 'Tech Lead', photo: '/images/projects/spring-25/boozAllenSP25/AlanJiang.jpg' },
       { name: 'Isabelle Ortiz', title: 'Project Manager' },
-      { name: 'Ritvik Mahapatra', title: 'Engineer', photo: '/images/projects/boozAllenSP25/RitvikMahapatra.jpg' },
-      { name: 'Aidana Aibek', title: 'UI/UX Designer', photo: '/images/projects/boozAllenSP25/AidanaAibek.jpg' },
-      { name: 'Dev Patel', title: 'Engineer', photo: '/images/projects/boozAllenSP25/DevPatel.jpg' },
-      { name: 'Adnan Kabir', title: 'Engineer', photo: '/images/projects/boozAllenSP25/AdnanKabir.jpg' },
-      { name: 'Sidharth Ponram', title: 'Engineer', photo: '/images/projects/boozAllenSP25/SidharthPonram.jpg' },
-      { name: 'Rachel Li', title: 'Engineer', photo: '/images/projects/boozAllenSP25/RachelLi.jpg' },
-      { name: 'Vir Trivedi', title: 'Engineer', photo: '/images/projects/boozAllenSP25/VirTrivedi.jpg' },
-      { name: 'Kanhav Bhatnagar', title: 'Engineer', photo: '/images/projects/boozAllenSP25/KanhavBhatnagar.jpg' },
-      { name: 'Chiraag Nadig', title: 'Engineer', photo: '/images/projects/boozAllenSP25/ChiraagNadig.jpg' }
+      { name: 'Ritvik Mahapatra', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/RitvikMahapatra.jpg' },
+      { name: 'Aidana Aibek', title: 'UI/UX Designer', photo: '/images/projects/spring-25/boozAllenSP25/AidanaAibek.jpg' },
+      { name: 'Dev Patel', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/DevPatel.jpg' },
+      { name: 'Adnan Kabir', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/AdnanKabir.jpg' },
+      { name: 'Sidharth Ponram', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/SidharthPonram.jpg' },
+      { name: 'Rachel Li', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/RachelLi.jpg' },
+      { name: 'Vir Trivedi', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/VirTrivedi.jpg' },
+      { name: 'Kanhav Bhatnagar', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/KanhavBhatnagar.jpg' },
+      { name: 'Chiraag Nadig', title: 'Engineer', photo: '/images/projects/spring-25/boozAllenSP25/ChiraagNadig.jpg' }
     ],
   },
   {
@@ -160,21 +179,21 @@ const SPRING_25_PROJECTS: Project[] = [
     year: 2025,
     semester: 'Spring',
     members: [
-      { name: 'Nishad Wajge', title: 'Project Lead', photo: '/images/projects/gditSP25/NishadWajge.jpg' },
-      { name: 'Utsav Kataria', title: 'Tech Lead', photo: '/images/projects/gditSP25/UtsavKataria.jpg' },
-      { name: 'Soham Katdare', title: 'Tech Lead', photo: '/images/projects/gditSP25/SohamKatdare.jpg' },
-      { name: 'Ayan Banerjee', title: 'ML Engineer', photo: '/images/projects/gditSP25/AyanBanerjee.jpg' },
-      { name: 'Angela Yu', title: 'ML Engineer', photo: '/images/projects/gditSP25/AngelaYu.jpg' },
-      { name: 'Sriram Nallani', title: 'ML Engineer', photo: '/images/projects/gditSP25/SriramNallani.jpg' },
-      { name: 'Lakshmee Harivanam', title: 'ML Engineer', photo: '/images/projects/gditSP25/LakshmeeHarivanam.jpg' },
-      { name: 'Kaleb Ward', title: 'Frontend Engineer', photo: '/images/projects/gditSP25/KalebWard.jpg' },
-      { name: 'Shivank Bhimavarapu', title: 'Frontend Engineer', photo: '/images/projects/gditSP25/ShivankBhimavarapu.jpg' },
-      { name: 'Jaiman Munshi', title: 'Backend Engineer', photo: '/images/projects/gditSP25/JaimanMunshi.jpg' },
-      { name: 'Sid Belwal', title: 'Backend Engineer', photo: '/images/projects/gditSP25/SidBelwal.jpg' },
-      { name: 'Nithin Bhandari', title: 'Backend Engineer', photo: '/images/projects/gditSP25/NithinBhandari.jpg' }
+      { name: 'Nishad Wajge', title: 'Project Lead', photo: '/images/projects/spring-25/gditSP25/NishadWajge.jpg' },
+      { name: 'Utsav Kataria', title: 'Tech Lead', photo: '/images/projects/spring-25/gditSP25/UtsavKataria.jpg' },
+      { name: 'Soham Katdare', title: 'Tech Lead', photo: '/images/projects/spring-25/gditSP25/SohamKatdare.jpg' },
+      { name: 'Ayan Banerjee', title: 'ML Engineer', photo: '/images/projects/spring-25/gditSP25/AyanBanerjee.jpg' },
+      { name: 'Angela Yu', title: 'ML Engineer', photo: '/images/projects/spring-25/gditSP25/AngelaYu.jpg' },
+      { name: 'Sriram Nallani', title: 'ML Engineer', photo: '/images/projects/spring-25/gditSP25/SriramNallani.jpg' },
+      { name: 'Lakshmee Harivanam', title: 'ML Engineer', photo: '/images/projects/spring-25/gditSP25/LakshmeeHarivanam.jpg' },
+      { name: 'Kaleb Ward', title: 'Frontend Engineer', photo: '/images/projects/spring-25/gditSP25/KalebWard.jpg' },
+      { name: 'Shivank Bhimavarapu', title: 'Frontend Engineer', photo: '/images/projects/spring-25/gditSP25/ShivankBhimavarapu.jpg' },
+      { name: 'Jaiman Munshi', title: 'Backend Engineer', photo: '/images/projects/spring-25/gditSP25/JaimanMunshi.jpg' },
+      { name: 'Sid Belwal', title: 'Backend Engineer', photo: '/images/projects/spring-25/gditSP25/SidBelwal.jpg' },
+      { name: 'Nithin Bhandari', title: 'Backend Engineer', photo: '/images/projects/spring-25/gditSP25/NithinBhandari.jpg' }
     ],
     showcaseContent: {
-      image: '/images/projects/gditSP25/demo.png',
+      image: '/images/projects/spring-25/gditSP25/demo.png',
       description: 'EmailMiner interface showcasing how the RAG pipeline accurately retrieves relevant information from emails'
     }
   },
@@ -186,87 +205,110 @@ const SPRING_25_PROJECTS: Project[] = [
     year: 2025,
     semester: 'Spring',
     members: [
-      { name: 'Bilal Suleman', title: 'Project Lead', photo: '/images/projects/omalSP25/BilalSuleman.jpg' },
-      { name: 'Krish Thakker', title: 'Tech Lead', photo: '/images/projects/omalSP25/KrishThakker.jpg' },
-      { name: 'Vikaas Venkstesh', title: 'Backend Developer', photo: '/images/projects/omalSP25/VikaasVenkstesh.jpg' },
-      { name: 'Ezekiel Franklin', title: 'Backend Developer', photo: '/images/projects/omalSP25/EzekielFranklin.jpg' },
-      { name: 'Bryant Xiong', title: 'Backend Developer', photo: '/images/projects/omalSP25/BryantXiong.jpg' },
-      { name: 'Edna Adissu', title: 'UI/UX Designer', photo: '/images/projects/omalSP25/EdnaAdissu.jpg' },
-      { name: 'Miles McDonald', title: 'Frontend Developer', photo: '/images/projects/omalSP25/MilesMcDonald.jpg' },
-      { name: 'Siddhant Jain', title: 'Frontend Developer', photo: '/images/projects/omalSP25/SiddhantJain.jpg' },
-      { name: 'Lilly Ureta', title: 'Bootcamp Shadow', photo: '/images/projects/omalSP25/LillyUreta.jpg' },
-      { name: 'Andrew Chen', title: 'Project Manager', photo: '/images/projects/omalSP25/AndrewChen.jpg' },
+      { name: 'Bilal Suleman', title: 'Project Lead', photo: '/images/projects/spring-25/omalSP25/BilalSuleman.jpg' },
+      { name: 'Krish Thakker', title: 'Tech Lead', photo: '/images/projects/spring-25/omalSP25/KrishThakker.jpg' },
+      { name: 'Vikaas Venkstesh', title: 'Backend Developer', photo: '/images/projects/spring-25/omalSP25/VikaasVenkstesh.jpg' },
+      { name: 'Ezekiel Franklin', title: 'Backend Developer', photo: '/images/projects/spring-25/omalSP25/EzekielFranklin.jpg' },
+      { name: 'Bryant Xiong', title: 'Backend Developer', photo: '/images/projects/spring-25/omalSP25/BryantXiong.jpg' },
+      { name: 'Edna Adissu', title: 'UI/UX Designer', photo: '/images/projects/spring-25/omalSP25/EdnaAdissu.jpg' },
+      { name: 'Miles McDonald', title: 'Frontend Developer', photo: '/images/projects/spring-25/omalSP25/MilesMcDonald.jpg' },
+      { name: 'Siddhant Jain', title: 'Frontend Developer', photo: '/images/projects/spring-25/omalSP25/SiddhantJain.jpg' },
+      { name: 'Lilly Ureta', title: 'Bootcamp Shadow', photo: '/images/projects/spring-25/omalSP25/LillyUreta.jpg' },
+      { name: 'Andrew Chen', title: 'Project Manager', photo: '/images/projects/spring-25/omalSP25/AndrewChen.jpg' },
     ],
   },
   {
-    slug: 'spring-2025-project-8',
-    logo: '',
-    title: 'Spring 2025 Project 8',
-    description: 'Short description of project 8',
+    slug: 'cnh-xray-sp25',
+    logo: '/images/logos/childrens-national.png',
+    logoAlt: 'Childrens National Logo',
+    title: 'CNH X-Ray Project',
+    description: 'The team trained a Graph Neural Network (GNN) on the ABIDE and sEEG brain imaging dataset to create an application that assists in Autism diagnosis',
     year: 2025,
     semester: 'Spring',
+    showcaseContent: {
+      image: '/images/projects/spring-25/cnhXraySP25/demo.png',
+      description: 'Visualizing imaging in 2D and 3D with focus on regions of interest'
+    },
     members: [
-      { name: 'Victor Kim', title: 'Team Lead' },
-      { name: 'Wendy Brown', title: 'Developer' },
-      { name: 'Xander Green', title: 'Designer' },
+      { name: 'Andrew Yang', title: 'Project Lead', photo: '/images/projects/spring-25/cnhXraySP25/AndrewYang.jpg' },
+      { name: 'Shlok Desai', title: 'Research Lead', photo: '/images/projects/spring-25/cnhXraySP25/ShlokDesai.jpg' },
+      { name: 'Naman Nagelia', title: 'Engineer Lead', photo: '/images/projects/spring-25/cnhXraySP25/NamanNagelia.jpg' },
+      { name: 'Nandhu Pillai', title: 'Researcher', photo: '/images/projects/spring-25/cnhXraySP25/NandhuPillai.jpg' },
+      { name: 'William Lee', title: 'Researcher', photo: '/images/projects/spring-25/cnhXraySP25/WilliamLee.jpg' },
+      { name: 'Anika Rai', title: 'Researcher', photo: '/images/projects/spring-25/cnhXraySP25/AnikaRai.jpg' },
+      { name: 'Rian Tiwari', title: 'Researcher', photo: '/images/projects/spring-25/cnhXraySP25/RianTiwari.jpg' },
+      { name: 'Anu Daga', title: 'Researcher', photo: '/images/projects/spring-25/cnhXraySP25/AnuDaga.jpg' },
+      { name: 'Jude Lwin', title: 'Engineer', photo: '/images/projects/spring-25/cnhXraySP25/JudeLwin.jpg' },
+      { name: 'Cathy Wu', title: 'Engineer', photo: '/images/projects/spring-25/cnhXraySP25/CathyWu.jpg' },
+      { name: 'Arush Jain', title: 'Engineer', photo: '/images/projects/spring-25/cnhXraySP25/ArushJain.jpg' },
+      { name: 'Alan Chan', title: 'Engineer', photo: '/images/projects/spring-25/cnhXraySP25/AlanChan.jpg' },
+      { name: 'Vibhas Ramani', title: 'Engineer', photo: '/images/projects/spring-25/cnhXraySP25/VibhasRamani.jpg' },
+      { name: 'Ishaan Chakraborty', title: 'Project Manager', photo: '/images/projects/spring-25/cnhXraySP25/IshaanChakraborty.jpg' },
+      { name: 'James Miller', title: 'Shadow', photo: '/images/projects/spring-25/cnhXraySP25/JamesMiller.jpg' },
+      { name: 'Aarya Vijayaraghavan', title: 'Shadow' },
+      { name: 'Bhavya Tanugula', title: 'Shadow', photo: '/images/projects/spring-25/cnhXraySP25/BhavyaTanugula.jpg' },
     ],
   },
   {
-    slug: 'spring-2025-project-9',
-    logo: '',
-    title: 'Spring 2025 Project 9',
-    description: 'Short description of project 9',
+    slug: 'mokhtarzada-sp-25',
+    logo: '/images/logos/hatchery-logo.webp',
+    title: 'Mokhtarzada Project',
+    description: 'Developed a tool to automatically fetch relevant financial documents from websites using AI-based browser automation and construct a vector database of financial data to inform the user about market situations and provide detailed insights into specific industries',
     year: 2025,
     semester: 'Spring',
     members: [
-      { name: 'Yara Black', title: 'Team Lead' },
-      { name: 'Zane Wilson', title: 'Developer' },
-      { name: 'Amy Clark', title: 'Designer' },
-    ],
+      { name: 'Atheesh Thirumalairajan', title: 'Project Lead', photo: '/images/projects/spring-25/mokhtarzadaSP25/AtheeshThirumalairajan.jpg' },
+      { name: 'Andy Diep', title: 'Tech lead', photo: '/images/projects/spring-25/mokhtarzadaSP25/AndyDiep.jpg' },
+      { name: 'Aadarsh Govada', title: 'Engineer', photo: '/images/projects/spring-25/mokhtarzadaSP25/AadarshGovada.jpg' },
+      { name: 'Arjun Rajaram', title: 'Engineer', photo: '/images/projects/spring-25/mokhtarzadaSP25/ArjunRajaram.jpg' },
+      { name: 'Eva Dimitrova', title: 'Engineer', photo: '/images/projects/spring-25/mokhtarzadaSP25/EvaDimitrova.jpg' },
+      { name: 'Evelyn Jiang', title: 'Engineer', photo: '/images/projects/spring-25/mokhtarzadaSP25/EvelynJiang.jpg' },
+      { name: 'Gili Gordiyenko', title: 'Engineer', photo: '/images/projects/spring-25/mokhtarzadaSP25/GiliGordiyenko.jpg' },
+      { name: 'Harini Thirukonda', title: 'Engineer', photo: '/images/projects/spring-25/mokhtarzadaSP25/HariniThirukonda.jpg' },
+      { name: 'Narain Sriram', title: 'Engineer', photo: '/images/projects/spring-25/mokhtarzadaSP25/NarainSriram.jpg' }
+    ]
+  },
+  {
+    slug: 'warriors-legacy-sp-25',
+    logo: '/images/logos/warriors-legacy.png',
+    title: 'Warriors Legacy Project',
+    description: 'Developed an all-in-one mobile app for veterans, integrating healthcare access, AI-powered resume suggestions, video calling, and messaging to support medical, career, and community needs',
+    year: 2025,
+    semester: 'Spring',
+    members: [
+      { name: "Josiah Johnson", title: "Project Lead", photo: "/images/projects/spring-25/warriors-legacySP25/JosiahJohnson.jpg" },
+      { name: "Andy Hong", title: "Tech Lead", photo: "/images/projects/spring-25/warriors-legacySP25/AndyHong.jpg" },
+      { name: "Arnav Aggarwal", title: "Tech Lead", photo: "/images/projects/spring-25/warriors-legacySP25/ArnavAggarwal.jpg" },
+
+      { name: "Aprameya Kannan", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/AprameyaKannan.jpg" },
+      { name: "Aadi Anand", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/AadiAnand.jpg" },
+      { name: "Jacob Plunkert", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/JacobPlunkert.jpg" },
+      { name: "Tanay Naik", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/TanayNaik.jpg" },
+      { name: "Bharath Malipeddi", title: "Fullstack Engineer" },
+      { name: "Rithvik Singh", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/RithvikSingh.jpg" },
+      { name: "Samarth Parekh", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/SamarthParekh.jpg" },
+
+      { name: "Riya Lakhani", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/RiyaLakhani.jpg" },
+      { name: "Milana Dagne", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/MilanaDagne.jpg" },
+    ]
   },
 ];
 
-const FALL_24_PROJECTS: Project[] = [
-  {
-    slug: 'fall-2024-project-1',
-    logo: '',
-    title: 'Fall 2024 Project 1',
-    description: 'Short description of project 1',
-    year: 2024,
-    semester: 'Fall',
-    members: [
-      { name: 'Brian Hall', title: 'Team Lead' },
-      { name: 'Cathy Young', title: 'Developer' },
-      { name: 'Derek Fox', title: 'Designer' },
-    ],
-  },
-  {
-    slug: 'fall-2024-project-2',
-    logo: '',
-    title: 'Fall 2024 Project 2',
-    description: 'Short description of project 2',
-    year: 2024,
-    semester: 'Fall',
-    members: [
-      { name: 'Ella King', title: 'Team Lead' },
-      { name: 'Finn Moore', title: 'Developer' },
-      { name: 'Gina Ray', title: 'Designer' },
-    ],
-  },
-  {
-    slug: 'fall-2024-project-3',
-    logo: '',
-    title: 'Fall 2024 Project 3',
-    description: 'Short description of project 3',
-    year: 2024,
-    semester: 'Fall',
-    members: [
-      { name: 'Holly West', title: 'Team Lead' },
-      { name: 'Ian Bell', title: 'Developer' },
-      { name: 'Judy Snow', title: 'Designer' },
-    ],
-  },
-];
+// const FALL_24_PROJECTS: Project[] = [
+//   {
+//     slug: 'fall-2024-project-1',
+//     logo: '',
+//     title: 'Fall 2024 Project 1',
+//     description: 'Short description of project 1',
+//     year: 2024,
+//     semester: 'Fall',
+//     members: [
+//       { name: 'Brian Hall', title: 'Team Lead' },
+//       { name: 'Cathy Young', title: 'Developer' },
+//       { name: 'Derek Fox', title: 'Designer' },
+//     ],
+//   },
+// ];
 
 // Featured projects must have exactly 3 items
 const FEATURED_PROJECTS: FixedLengthArray<Project, 3> = [
@@ -274,6 +316,7 @@ const FEATURED_PROJECTS: FixedLengthArray<Project, 3> = [
   SPRING_25_PROJECTS[1],
   SPRING_25_PROJECTS[2],
 ];
-const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_24_PROJECTS];
+// const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_24_PROJECTS];
+const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS];
 
-export { ALL_PROJECTS, FEATURED_PROJECTS, SPRING_25_PROJECTS, FALL_24_PROJECTS };
+export { ALL_PROJECTS, FEATURED_PROJECTS, SPRING_25_PROJECTS };

@@ -7,6 +7,26 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import VideoEmbed from "@/components/ui/video-embed";
 import { prefixPath } from "@/lib/prefix";
+import { Metadata } from "next";
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params;
+  const project = ALL_PROJECTS.find((p) => p.slug === slug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found | ADC",
+      description: "The requested project does not exist.",
+    };
+  }
+
+  return {
+    title: `${project.title} | ADC`,
+    description: project.description || "Detailed information about the project",
+  };
+}
 
 export async function generateStaticParams() {
   return ALL_PROJECTS.map((project) => ({
@@ -60,7 +80,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                   alt="Project Image"
                   width={900}
                   height={400}
-                  className="object-contain w-auto h-auto max-h-[30rem] max-w-full border rounded-md"
+                  className="object-contain w-full h-full max-h-[30rem] max-w-full"
                 />
               ) : (
                 <VideoEmbed url={project.showcaseContent.videoUrl || ""} />

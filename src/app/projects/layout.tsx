@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
 
 interface ProjectLayoutProps {

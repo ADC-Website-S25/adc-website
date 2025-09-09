@@ -1,6 +1,7 @@
 import { LeadershipMember, leadershipMembers } from "@/data/leadership"
 import { prefixPath } from "@/lib/prefix"
 import Image from "next/image"
+import FadeSlideIn from "../ui/fade-slide-in"
 
 const Leadership = () => {
   return (
@@ -10,12 +11,13 @@ const Leadership = () => {
       </h3>
       <div className="flex flex-wrap justify-center gap-y-10 gap-x-5 max-w-7xl px-4">
         {leadershipMembers.map((member, index) => (
-          <Member 
-            key={index}
-            name={member.name}
-            role={member.role}
-            src={member.src}
-          />
+          <FadeSlideIn delay={index * 50} key={member.name}>
+            <Member 
+              name={member.name}
+              role={member.role}
+              src={member.src}
+            />
+          </FadeSlideIn>
         ))}
       </div>
     </section>

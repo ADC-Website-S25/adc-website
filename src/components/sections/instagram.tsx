@@ -1,20 +1,21 @@
 import React from "react";
 import Post from "./post";
+import Link from "next/link";
+import FadeSlideIn from "../ui/fade-slide-in";
 
 const Instagram = () => {
   return (
-    <section
-      id="highlights"
-      className="w-full flex flex-col items-center justify-center scroll-mt-32"
-    >
+    <section id="contact" className="w-full flex flex-col items-center justify-center mt-32 scroll-mt-32">
       {/* title */}
-      <h1 className="max-w-[90%] font-bold leading-[1.1] text-5xl sm:text-6xl mb-8 mt-24 text-center bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] bg-clip-text text-transparent">
-        Follow Us on Instagram!
-      </h1>
+      <FadeSlideIn className="max-w-[85%]">
+        <h1 className="font-bold leading-[1.1] text-5xl sm:text-6xl md:text-7xl mb-8 text-center bg-gradient-to-r from-[#515BD4] via-[#8134AF] to-[#DD2A7B] bg-clip-text text-transparent">
+          Follow Us on Instagram!
+        </h1>
+      </FadeSlideIn>
 
       {/* instagram profile gradient button link */}
-      <div className="flex items-center justify-center mb-10">
-        <a
+      <FadeSlideIn delay={50} className="flex items-center justify-center mb-10">
+        <Link
           href="https://www.instagram.com/appdev_umd/"
           target="_blank"
           rel="noopener noreferrer"
@@ -29,8 +30,8 @@ const Instagram = () => {
           >
             @appdev_umd
           </span>
-        </a>
-      </div>
+        </Link>
+      </FadeSlideIn>
 
       {/* instagram posts; surrounding divs act as top + bottom borders */}
       <div>

@@ -11,14 +11,17 @@ import {
   SheetClose,
 } from "@/components/ui/sheet"
 import Link from 'next/link';
+import GradientText from '../ui/gradient-text';
+import { applicationLink, internalLink } from '@/data/links';
 import { prefixPath } from '@/lib/prefix';
 
 const navLinks = [
   { href: '/#about', label: 'About' },
   { href: '/#projects', label: 'Projects' },
   { href: '/#sponsors', label: 'Sponsors' },
-  { href: '/#highlights', label: 'Highlights' },
   { href: '/#contact', label: 'Contact Us' },
+  { href: applicationLink, label: 'Apply Now', specialText: true },
+  { href: internalLink, label: 'Log In' },
 ];
 
 const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
@@ -33,15 +36,21 @@ const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
           className='w-10 h-10'
           draggable={false}
         />
-        <span className='text-xl font-semibold text-gray-800'>
+        <span className='md:text-lg lg:text-xl font-semibold text-gray-800'>
           App Dev Club
         </span>
       </Link>
       
       <div className='hidden md:flex items-center space-x-8'>
-        {navLinks.map(({ href, label }) => (
+        {navLinks.map(({ href, label, specialText }) => (
           <NavbarLink key={href} href={href}>
-            {label}
+            {specialText ? (
+                <GradientText showBg={false} colors={["#0083ff", "#80cbc4","#0083ff","#0d47a1"]}>
+                {label}
+                </GradientText>
+            ) : (
+              label
+            )}
           </NavbarLink>
         ))}
       </div>
@@ -55,10 +64,16 @@ const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
         <SheetContent className='!w-[250px]'>
           <SheetHeader>
             <SheetTitle className='flex flex-col text-2xl gap-5 mt-10'>
-              {navLinks.map(({ href, label }) => (
+              {navLinks.map(({ href, label, specialText }) => (
                 <SheetClose asChild key={href}>
-                  <NavbarLink href={href}>
-                    {label}
+                  <NavbarLink key={href} href={href}>
+                    {specialText ? (
+                        <GradientText showBg={false} colors={["#0083ff", "#80cbc4","#0083ff","#0d47a1"]}>
+                        {label}
+                        </GradientText>
+                    ) : (
+                      label
+                    )}
                   </NavbarLink>
                 </SheetClose>
               ))}
@@ -79,7 +94,8 @@ const NavbarLink: React.FC<NavbarLinkProps> = ({ href, children }) => (
   <Link
     href={href}
     draggable={false}
-    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-semibold"
+    target={href.startsWith('http') ? '_blank' : undefined}
+    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-semibold text-lg md:text-sm lg:text-base"
   >
     {children}
   </Link>

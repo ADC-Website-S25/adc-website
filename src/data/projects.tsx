@@ -292,6 +292,29 @@ const SPRING_25_PROJECTS: Project[] = [
       { name: "Milana Dagne", title: "Fullstack Engineer", photo: "/images/projects/spring-25/warriors-legacySP25/MilanaDagne.jpg" },
     ]
   },
+  {
+    slug: 'ionq-sp-25',
+    logo: '/images/logos/ionq.svg',
+    title: 'Quantum Machine Learning',
+    description: 'Collaborated with QLab and Dr. Franz Klein to explore quantum machine learning for image classification, reproducing IonQ research papers, benchmarking against classical techniques, and testing quantum circuits on simulators before deploying to Aria-1 and Forte-1 ion-trap quantum computers',
+    year: 2025,
+    semester: 'Spring',
+    members: [
+      { name: "Ashna Nayak", title: "Project Lead", photo: "/images/projects/spring-25/ionqSP25/AshnaNayak.jpg" },
+      { name: "Kushagra Mehta", title: "Tech Lead", photo: "/images/projects/spring-25/ionqSP25/KushagraMehta.jpg" },
+      { name: "Samarth Sriram", title: "Tech Lead", photo: "/images/projects/spring-25/ionqSP25/SamarthSriram.jpg" },
+      { name: "Joey Lee", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/JoeyLee.jpg" },
+      { name: "Kanjonavo Sabud", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/KanjonavoSabud.jpg" },
+      { name: "Kevan Kazeminezhad", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/KevanKazeminezhad.jpg" },
+      { name: "Max Wang", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/MaxWang.jpg" },
+      { name: "Mihir Talati", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/MihirTalati.jpg" },
+      { name: "Richa Gupta", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/RichaGupta.jpg" },
+      { name: "Samarth Parekh", title: "QML Engineer", photo: "/images/projects/spring-25/ionqSP25/SamarthParekh.jpg" },
+      { name: "Jessica Zhou", title: "PM", photo: "/images/projects/spring-25/ionqSP25/JessicaZhou.webp", zoomPhotoIn: true },
+      { name: "Pranav Krishnamurthy", title: "Shadower", photo: "/images/projects/spring-25/ionqSP25/PranavKrishnamurthy.jpg" },
+      { name: "Sawyer Bloom", title: "Shadower", photo: "/images/projects/spring-25/ionqSP25/SawyerBloom.jpg" },
+    ]
+  },
 ];
 
 // const FALL_24_PROJECTS: Project[] = [

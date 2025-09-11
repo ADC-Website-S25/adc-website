@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/adc-website' : '';
+const basePath = isProd ? '' : '';
 
 export function prefixPath(path: string) {
   return `${basePath}${path}`;

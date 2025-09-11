@@ -1,5 +1,5 @@
-export const showApplicationLink = false;
-export const applicationLink = "https://apply.appdevclub.com/" //TODO: ADD REAL APPLY LINK
+export const showApplicationLink = true;
+export const applicationLink = "https://inside.appdevclub.com/" //TODO: ADD REAL APPLY LINK
 
 export const showInternalLink = false;
 export const internalLink = "https://corp.appdevclub.com/"

@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function AppDevHacks() {
   return (
-    <section aria-labelledby="appdevhacks-heading" className="w-full text-center">
+    <section aria-labelledby="appdevhacks-heading" className="w-full text-center relative z-0">
       <h2
         id="appdevhacks-heading"
-        className="mt-24 text-center text-3xl md:text-5xl font-bold text-subheader"
+        className="pt-24 text-center text-3xl md:text-5xl font-bold text-subheader"
       >
         App Dev Hacks
       </h2>

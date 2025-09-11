@@ -5,7 +5,7 @@ import FadeSlideIn from "../ui/fade-slide-in"
 
 const Leadership = () => {
   return (
-    <section id='leadership' className='flex flex-col items-center justify-center w-full mt-28 gap-12'>
+    <section id='leadership' className='flex flex-col items-center justify-center w-full pt-28 gap-12 relative z-0'>
       <h3 className="relative z-10 bg-white px-6 text-3xl md:text-5xl font-bold text-subheader">
         Our Leadership
       </h3>

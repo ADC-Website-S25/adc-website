@@ -191,7 +191,7 @@ const PositionPopover = ({ position }: { position: RoadmapPosition }) => {
 
 const Roadmap = () => {
   return (
-    <section className="mt-12 md:mt-20 px-4 md:px-8" id="roadmap">
+    <section className="pt-12 md:pt-20 px-4 md:px-8 relative z-0" id="roadmap">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-16">

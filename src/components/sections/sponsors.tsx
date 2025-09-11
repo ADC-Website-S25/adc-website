@@ -92,12 +92,12 @@ export default function RotatingLogoGrid() {
 
   return (
     <section
-      className="flex flex-col w-full max-w-8xl"
+      className="flex flex-col w-full max-w-8xl relative z-0"
       aria-labelledby="sponsors-heading"
       id="sponsors"
     >
       {/* heading + subtitle */}
-      <div className="flex flex-col justify-center items-center mt-40">
+      <div className="flex flex-col justify-center items-center pt-40">
         <span className="relative w-full flex items-center justify-center">
           <h1
             id="sponsors-heading"

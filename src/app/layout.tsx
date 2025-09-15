@@ -76,23 +76,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Find the active banner based on the current date
-  const banner = banners.find(
-    (b) =>
-      new Date() >= b.showBannerStartDate &&
-      new Date() <= b.showBannerEndDate
-  );
-  const hasActiveBanner = Boolean(banner);
-
   return (
     <html lang="en">
       <body
         className={`${bricolage.variable} antialiased scroll-smooth min-h-screen overflow-x-clip`}
       >
-        {banner && hasActiveBanner && (
-          <Banner {...banner} />
-        )}
-        <Navbar hasActiveBanner={hasActiveBanner} />
+        <Banner />
+        <Navbar />
         {children}
         <Footer />
       </body>

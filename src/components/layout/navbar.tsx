@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button';
@@ -14,6 +15,7 @@ import Link from 'next/link';
 import GradientText from '../ui/gradient-text';
 import { applicationLink, internalLink, showApplicationLink, showInternalLink } from '@/data/links-and-feature-flags';
 import { prefixPath } from '@/lib/prefix';
+import { useActiveBanner } from '@/lib/useActiveBanner';
 
 const getNavLinks = () => {
   const baseLinks = [
@@ -35,9 +37,10 @@ const getNavLinks = () => {
 };
 const navLinks = getNavLinks();
 
-const Navbar = ({ hasActiveBanner }: { hasActiveBanner?: boolean }) => {
+const Navbar = () => {
+  const activeBanner = useActiveBanner();
   return (
-    <nav className={`sticky top-4 md:top-6 w-[95%] max-w-6xl h-16 flex items-center justify-between px-6 py-3 rounded-full bg-white/60 backdrop-blur-md shadow-lg z-50 mx-auto ${hasActiveBanner ? "mt-4 -mb-20" : "-mb-16"}`}>
+    <nav className={`sticky top-4 md:top-6 w-[95%] max-w-6xl h-16 flex items-center justify-between px-6 py-3 rounded-full bg-white/60 backdrop-blur-md shadow-lg z-50 mx-auto ${activeBanner ? "mt-4 -mb-20" : "-mb-16"}`}>
       <Link href='/#home' className='flex items-center space-x-3' draggable={false}>
         <Image
           src={prefixPath("/common/adc-256.png")}

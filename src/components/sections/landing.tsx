@@ -75,7 +75,7 @@ const Landing = () => {
             <span className='flex flex-col items-center justify-center text-white'>
               <span className='flex items-baseline'>
                 <SlidingNumber
-                  value={300}
+                  value={400}
                   className='text-5xl xl:text-6xl font-bold'
                 />
                 <p className='text-5xl xl:text-6xl font-bold'>+</p>

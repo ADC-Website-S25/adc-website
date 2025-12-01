@@ -21,10 +21,18 @@ const ApplyPage = () => {
         Applications for Bootcamp and Project Teams will open again in the
         Spring
       </p>
-      <section className="max-w-3xl mx-auto flex flex-col items-center gap-6 px-4 mb-16">
-        <div className="w-full max-w-2xl my-8 flex items-center justify-center relative">
+      <div className="w-full flex flex-col items-center px-4">
+        <div className="w-full max-w-3xl my-8 flex items-center justify-center relative">
           <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
           <h2 className="text-2xl font-bold text-subheader bg-white px-4 text-center z-10">
+            Open Positions
+          </h2>
+        </div>
+      </div>
+      <section className="max-w-2xl mx-auto flex flex-col items-center gap-6 px-4 mb-16">
+        <div className="w-full max-w-2xl my-8 flex items-center justify-center relative">
+          <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-0.5 bg-blue-500 w-full z-0" />
+          <h2 className="text-xl font-bold text-subheader bg-white px-4 text-center z-10">
             Executive Board
           </h2>
         </div>
@@ -47,11 +55,11 @@ const ApplyPage = () => {
           />
         </div>
       </section>
-      <section className="max-w-3xl mx-auto flex flex-col items-center gap-6 px-4">
+      <section className="max-w-2xl mx-auto flex flex-col items-center gap-6 px-4">
         <div className="w-full max-w-2xl my-8 flex items-center justify-center relative">
-          <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-1 bg-blue-500 w-full z-0" />
-          <h2 className="text-2xl font-bold text-subheader bg-white px-4 text-center z-10">
-            Open Positions
+          <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-0.5 bg-blue-500 w-full z-0" />
+          <h2 className="text-xl font-bold text-subheader bg-white px-4 text-center z-10">
+            Board of Directors
           </h2>
         </div>
         <div className="max-w-xl flex flex-col gap-6 w-full">

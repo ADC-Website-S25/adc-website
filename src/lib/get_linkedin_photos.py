@@ -76,22 +76,26 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ------------------------------------------------------------------
 
 people = [
-    {"first": "Alan", "last": "Chan", "linkedin": "https://www.linkedin.com/in/alanchan8/"},
-    {"first": "Thomas", "last": "Huitema", "linkedin": "https://www.linkedin.com/in/thomas-huitema"},
-    {"first": "Will", "last": "Graham", "linkedin": "https://www.linkedin.com/in/will-graham-4623022a8"},
-    {"first": "James", "last": "Miller", "linkedin": "https://www.linkedin.com/in/james-miller-a0957832a/"},
-    {"first": "Rachel", "last": "Li", "linkedin": "https://www.linkedin.com/in/rachel-w-li/"},
-    {"first": "Miles", "last": "McDonald", "linkedin": "https://www.linkedin.com/in/miles-mcdonald-86275023b/"},
-    {"first": "Alex", "last": "Yang", "linkedin": "https://www.linkedin.com/in/alexyang00/"},
-    {"first": "Urjit", "last": "Chakraborty", "linkedin": "https://www.linkedin.com/in/urjit-chakraborty-6b855b260"},
-    {"first": "Siddhant", "last": "Jain", "linkedin": "https://www.linkedin.com/in/sidjain88tx/"},
-    {"first": "Ryan", "last": "Li", "linkedin": "https://www.linkedin.com/in/ryan-li-174139257/"},
-    {"first": "SaiPraneeth", "last": "Oruganti", "linkedin": "https://www.linkedin.com/in/sp-oruganti/"},
-    {"first": "Tanush", "last": "Kallem", "linkedin": "https://www.linkedin.com/in/tanush-kallem-74882b272/"},
-    {"first": "Mihira", "last": "Murthy", "linkedin": "https://www.linkedin.com/in/mihiramurthy/"},
-    {"first": "Amanda", "last": "Tsai", "linkedin": "https://www.linkedin.com/in/amanda-tsai-105935287/"},
-    {"first": "Vincent", "last": "Liu", "linkedin": "https://www.linkedin.com/in/vincent-liu-cs/"},
+    {"first": "soham", "last": "katdare", "linkedin": "https://linkedin.com/in/sakatdare"},
+    {"first": "kanhav", "last": "bhatnagar", "linkedin": "https://www.linkedin.com/in/bkanhav/"},
+    {"first": "dev", "last": "patel", "linkedin": "https://www.linkedin.com/in/devpat23/"},
+    {"first": "mouli", "last": "banga", "linkedin": "https://www.linkedin.com/in/mouli-banga/"},
+    {"first": "aditya", "last": "tripathi", "linkedin": "https://www.linkedin.com/in/aditrip21/"},
+    {"first": "katherine", "last": "hall", "linkedin": "https://www.linkedin.com/in/katherinehall206/"},
+    {"first": "aarav", "last": "borthakur", "linkedin": "https://www.linkedin.com/in/aarav-borthakur/"},
+    {"first": "allison", "last": "yu", "linkedin": "https://www.linkedin.com/in/allisonayu/"},
+    {"first": "harini", "last": "thirukonda", "linkedin": "https://www.linkedin.com/in/harini-thirukonda-190036238/"},
+    {"first": "agnik", "last": "banerjee", "linkedin": "https://www.linkedin.com/in/agnikbanerjee/"},
+    {"first": "suneth", "last": "ramawickrama", "linkedin": "https://www.linkedin.com/in/suneth-ramawickrama/"},
+    {"first": "nithin", "last": "bhandari", "linkedin": "https://www.linkedin.com/in/nithinbhandari/"},
+    {"first": "rivan", "last": "parikh", "linkedin": "https://www.linkedin.com/in/rivan-parikh/"},
+    {"first": "amogh", "last": "samaga", "linkedin": "https://www.linkedin.com/in/amogh-samaga/"},
+    {"first": "aprameya", "last": "kannan", "linkedin": "https://www.linkedin.com/in/aprameyak/"},
+    {"first": "sidharth", "last": "ponram", "linkedin": "https://www.linkedin.com/in/sidharthponram/"}
 ]
+
+
+
 
 
 # ----------------------------
@@ -106,16 +110,13 @@ def get_extension(url):
 
 def extract_image_url_from_voyager(soup):
     code_tags = soup.find_all("code")
-    print(code_tags[len(code_tags) - 3])
 
     for code in code_tags:
         if not code.string:
             continue
         
         # put your linkedin hash here instead of this current one or else itll download just your pic
-        if "profile-displayphoto-" in code.string and "D4E03AQGay5Bf0OlLVA" not in code.string:
-            print(code.string)
-        else:
+        if "profile-displayphoto-" not in code.string or "D4E03AQGay5Bf0OlLVA" in code.string:
             continue
 
         try:

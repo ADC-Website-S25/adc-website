@@ -30,7 +30,7 @@ type ShowcaseContent =
  */
 
 const FALL_26_PROJECTS: Project[] = [
-    {
+  {
     slug: 'exiger-fall-26',
     logo: '/images/logos/exiger.webp',
     logoAlt: 'Exiger Logo',
@@ -58,8 +58,167 @@ const FALL_26_PROJECTS: Project[] = [
       { name: 'Mihira Murthy', title: 'Project Manager', photo: '/images/projects/fall-26/exigerFALL26/mihiraMurthy.jpg' },
       { name: 'Amanda Tsai', title: 'Shadow', photo: '/images/projects/fall-26/exigerFALL26/amandaTsai.jpg' },
       { name: 'Vincent Liu', title: 'Shadow', photo: '/images/projects/fall-26/exigerFALL26/vincentLiu.jpg' },
-
     ]
+  },
+  {
+    slug: 'amazon-fall-26',
+    logo: '/images/logos/amazon_leo.svg',
+    logoAlt: 'Amazon Project Leo Logo',
+    title: 'Amazon Project Leo',
+    description: 'Built a full-stack application on AWS using ML to predict airport boundaries for compliance with satellite regulations, validated globally for accuracy and reliability',
+    year: 2026,
+    semester: 'Fall',
+    members: [
+      { "name": "Amelia Harn", "title": "Project Lead", "photo": "/images/projects/fall-26/amazonFALL26/ameliaHarn.png" },
+      { "name": "Andrew Hong", "title": "Tech Lead", "photo": "/images/projects/fall-26/amazonFALL26/andrewHong.png" },
+      { "name": "Nandhu Pillai", "title": "Tech Lead", "photo": "/images/projects/fall-26/amazonFALL26/nandhuPillai.webp" },
+      { "name": "Abhinav Kota", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/abhinavKota.webp" },
+      { "name": "Aidana Aibek", "title": "UI/UX Engineer", "photo": "/images/projects/fall-26/amazonFALL26/aidanaAibek.png" },
+      { "name": "Anish Maheshwar", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/anishMaheshwar.png" },
+      { "name": "Arav Luthra", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/aravLuthra.png" },
+      { "name": "Arnav Aggarwal", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/arnavAggarwal.png" },
+      { "name": "Arnav Gowda", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/arnavGowda.png" },
+      { "name": "Eric Huang", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/ericHuang.png" },
+      { "name": "Kathy Chen", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/kathyChen.png" },
+      { "name": "Seonyoung Lee", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/seonyoungLee.webp" },
+      { "name": "Shohini Rhea Sarkar", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/shohiniRheaSarkar.png" },
+      { "name": "Smithi Mahendran", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/smithiMahendran.png" },
+      { "name": "Suhaan Baru", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/suhaanBaru.png" },
+      { "name": "Tanvi Panse", "title": "Project Manager", "photo": "/images/projects/fall-26/amazonFALL26/tanviPanse.png" },
+      { "name": "Tristan Tsang", "title": "Engineer", "photo": "/images/projects/fall-26/amazonFALL26/tristanTsang.webp" }
+    ]
+
+  },
+  {
+    slug: 'vex-fall-26',
+    logo: '/images/logos/vex.png',
+    logoAlt: 'Vex Logo',
+    title: 'Vex',
+    description: 'Built a full-stack application on AWS using ML to predict airport boundaries for compliance with satellite regulations, validated globally for accuracy and reliability',
+    year: 2026,
+    semester: 'Fall',
+    members: [
+      { "name": "Eswar Karavadi", "title": "Project Lead", "photo": "/images/projects/fall-26/vexFALL26/eswarKaravadi.jpg" },
+      { "name": "Tanmay Panguluri", "title": "Backend Engineer", "photo": "/images/projects/fall-26/vexFALL26/tanmayPanguluri.jpg" },
+      { "name": "Anvay Panguluri", "title": "Backend Tech Lead", "photo": "/images/projects/fall-26/vexFALL26/anvayPanguluri.jpg" },
+      { "name": "Pranav Satyadeep", "title": "Backend Engineer", "photo": "/images/projects/fall-26/vexFALL26/pranavSatyadeep.jpg" },
+      { "name": "Shiva Tripurana", "title": "Front End Engineer", "photo": "/images/projects/fall-26/vexFALL26/shivaTripurana.jpg" },
+      { "name": "Leo Chen", "title": "UI/UX", "photo": "/images/projects/fall-26/vexFALL26/leoChen.jpg" },
+      { "name": "Emmanuel Michael", "title": "Backend Engineer", "photo": "/images/projects/fall-26/vexFALL26/emmanuelMichael.jpg" },
+      { "name": "Ayan Banerjee", "title": "ML Tech Lead", "photo": "/images/projects/fall-26/vexFALL26/ayanBanerjee.jpg" },
+      { "name": "Bhavesh Thapar", "title": "ML Engineer", "photo": "/images/projects/fall-26/vexFALL26/bhaveshThapar.jpg" },
+      { "name": "Purab Shah", "title": "Backend Engineer", "photo": "/images/projects/fall-26/vexFALL26/purabShah.jpg" },
+      { "name": "Eric Gilerson", "title": "Front End Engineer", "photo": "/images/projects/fall-26/vexFALL26/ericGilerson.jpg" },
+      { "name": "Vihaan Motwani", "title": "ML Engineer", "photo": "/images/projects/fall-26/vexFALL26/vihaanMotwani.jpg" },
+      { "name": "Kanishk Sivanandam", "title": "Front End Engineer", "photo": "/images/projects/fall-26/vexFALL26/kanishkSivanandam.jpg" },
+      { "name": "Aditya Koul", "title": "ML Engineer", "photo": "/images/projects/fall-26/vexFALL26/adityaKoul.jpg" }
+    ]
+  },
+  {
+    slug: 'qubi-fall-26',
+    logo: '/images/logos/qubi.svg',
+    logoAlt: 'Qubi Logo',
+    title: 'Qubi',
+    description: 'Developed a full-stack mobile application that enables users to build, send, and visualize quantum circuits on different quantum computers while engaging with an interactive curriculum',
+    year: 2026,
+    semester: 'Fall',
+    showcaseContent: {
+      image: "/images/projects/fall-26/qubiFALL26/qubi.png",
+      description: "Interface for building and running a circuit on IONQ quantum simulators"
+    },
+    members: [
+      { "name": "Phoebe Dainer", "title": "Team Lead", "photo": "/images/projects/fall-26/qubiFALL26/phoebeDainer.jpg" },
+      { "name": "Kanjonavo Sabud", "title": "Tech Lead (quantum)", "photo": "/images/projects/fall-26/qubiFALL26/konstantinospaparrizos.jpg" },
+      { "name": "Siddharth Belwal", "title": "Tech Lead (backend)", "photo": "/images/projects/fall-26/qubiFALL26/siddharthBelwal.jpg" },
+      { "name": "Aarush Vinod", "title": "Backend Engineer" },
+      { "name": "Alex Shrestha", "title": "Backend Engineer", "photo": "/images/projects/fall-26/qubiFALL26/alexShrestha.jpg" },
+      { "name": "Arav Ravula", "title": "Frontend/Backend Engineer", "photo": "/images/projects/fall-26/qubiFALL26/aravRavula.jpg" },
+      { "name": "Christie Cao", "title": "UI/UX", "photo": "/images/projects/fall-26/qubiFALL26/christieCao.jpg" },
+      { "name": "Joey Lee", "title": "Quantum Engineer", "photo": "/images/projects/fall-26/qubiFALL26/joeyLee.jpg" },
+      { "name": "Nahom Wondimu", "title": "Frontend Engineer", "photo": "/images/projects/fall-26/qubiFALL26/nahomWondimu.jpg" },
+      { "name": "Victor Casado", "title": "Frontend Engineer", "photo": "/images/projects/fall-26/qubiFALL26/victorCasado.jpg" },
+      { "name": "Konstantinos Paparrizos", "title": "Shadow", "photo": "/images/projects/fall-26/qubiFALL26/konstantinosPaparrizos.jpg" },
+      { "name": "Abjini Chattopadhyay", "title": "Shadow", "photo": "/images/projects/fall-26/qubiFALL26/abjiniChattopadhyay.jpg" },
+      { "name": "Lianyu Peng", "title": "Shadow", "photo": "/images/projects/fall-26/qubiFALL26/lianyuPeng.jpg" }
+    ]
+  },
+  {
+    slug: 'cnh-fall-26',
+    logo: '/images/logos/childrens-national.png',
+    logoAlt: 'Childrens National Logo',
+    title: 'MRI Visualizer',
+    description: 'Developed a web-based application that enables users to upload brain MRI scans, visualize them interactively, and run backend deep-learning models to generate and overlay tumor segmentation results in real time',
+    year: 2026,
+    semester: 'Fall',
+    members: [
+      { "name": "Josiah Johnson", "title": "Project Lead", "photo": "/images/projects/fall-26/cnhFALL26/josiahJohnson.jpg" },
+      { "name": "Anant Agrawal", "title": "Tech Lead", "photo": "/images/projects/fall-26/cnhFALL26/anantAgrawal.jpg" },
+      { "name": "Sathvik Andhavarapu", "title": "Tech Lead", "photo": "/images/projects/fall-26/cnhFALL26/sathvikAndhavarapu.jpg" },
+      { "name": "Mohe Edeen Abu Maizer", "title": "Fullstack Engineer", "photo": "/images/projects/fall-26/cnhFALL26/moheabumaizer.jpg" },
+      { "name": "Daniel Son", "title": "DevOps Engineer", "photo": "/images/projects/fall-26/cnhFALL26/danielSon.jpg" },
+      { "name": "Anushmita Dey", "title": "Frontend Engineer", "photo": "/images/projects/fall-26/cnhFALL26/anushmitaDey.jpg" },
+      { "name": "Anannya Trehan", "title": "Backend Engineer", "photo": "/images/projects/fall-26/cnhFALL26/anannyaTrehan.jpg" },
+      { "name": "Aymaan Hussain", "title": "Fullstack Engineer", "photo": "/images/projects/fall-26/cnhFALL26/aymaanHussain.jpg" },
+      { "name": "Cole Sladowsky", "title": "Frontend Engineer", "photo": "/images/projects/fall-26/cnhFALL26/coleSladowsky.jpg" },
+      { "name": "Arnav Sharma", "title": "Backend Engineer", "photo": "/images/projects/fall-26/cnhFALL26/arnavSharma.jpg" },
+      { "name": "Rohan Chintakindi", "title": "Backend Engineer", "photo": "/images/projects/fall-26/cnhFALL26/rohanChintakindi.jpg" },
+      { "name": "Emily Ho", "title": "Shadow", "photo": "/images/projects/fall-26/cnhFALL26/emilyHo.jpg" },
+      { "name": "Lakshmee Harivanam", "title": "Project Manager", "photo": "/images/projects/fall-26/cnhFALL26/lakshmeeHarivanam.jpg" },
+      { "name": "Chaitra Bhumula", "title": "Fullstack Engineer", "photo": "/images/projects/fall-26/cnhFALL26/chaitraBhumula.jpg" },
+      { "name": "Nikita Arya", "title": "UI/UX", "photo": "/images/projects/fall-26/cnhFALL26/nikitaArya.jpg" },
+      { "name": "Maggie McAndrew", "title": "Shadow", "photo": "/images/projects/fall-26/cnhFALL26/maggieMcAndrew.jpg" },
+      { "name": "Molly Panepento", "title": "Shadow", "photo": "/images/projects/fall-26/cnhFALL26/mollyPanepento.jpg" }
+    ]
+
+  },
+  {
+    slug: 'ionq-fall-26',
+    logo: '/images/logos/ionq.svg',
+    logoAlt: 'IonQ Logo',
+    title: 'Wildfire Prediction',
+    description: 'Developed quantum-ML prototypes with IonQ for wildfire prediction and tensor-network neural nets by integrating quantum layers, fixing amplitude embedding, benchmarking on HPC, and compiling MNIST tensor networks into executable quantum circuits',
+    year: 2026,
+    semester: 'Fall',
+    members: [
+      { "name": "Anika Rai", "title": "Project Lead", "photo": "/images/projects/fall-26/ionqFALL26/anikaRai.jpg" },
+      { "name": "Samarth Parekh", "title": "Tech Lead", "photo": "/images/projects/fall-26/ionqFALL26/samarthParekh.jpg" },
+      { "name": "Jaiman Munshi", "title": "Tech Lead", "photo": "/images/projects/fall-26/ionqFALL26/jaimanMunshi.jpg" },
+      { "name": "Sara Karnik", "title": "Quantum Research Engineer", "photo": "/images/projects/fall-26/ionqFALL26/saraKarnik.jpg" },
+      { "name": "Anirudh Mantha", "title": "Quantum Research Engineer", "photo": "/images/projects/fall-26/ionqFALL26/anirudhMantha.jpg" },
+      { "name": "Pranav Panicker", "title": "Quantum Research Engineer" },
+      { "name": "Tanvi Tewary", "title": "Quantum Research Engineer", "photo": "/images/projects/fall-26/ionqFALL26/tanviTewary.jpg" },
+      { "name": "Tom Shimoni", "title": "Quantum Research Engineer", "photo": "/images/projects/fall-26/ionqFALL26/tomShimoni.jpg" },
+      { "name": "Sawyer Bloom", "title": "Quantum Research Engineer", "photo": "/images/projects/fall-26/ionqFALL26/sawyerBloom.jpg" },
+      { "name": "Raunak Maheshwari", "title": "Machine Learning Engineer" }
+  ]
+  },
+  {
+    slug: 'boozallen-fall-26',
+    logo: '/images/logos/booz-allen.png',
+    logoAlt: 'Booz Allen Logo',
+    title: 'AuditAssistant 2.0',
+    description: 'Added AI-powered smart search for quick information retrieval and API-based web-native policy viewer to existing Medicaid policy analysis tool',
+    year: 2026,
+    semester: 'Fall',
+    members: [
+      { "name": "Soham Katdare", "title": "Project Lead", "photo": "/images/projects/fall-26/boozallenFALL26/sohamKatdare.jpg" },
+      { "name": "Kanhav Bhatnagar", "title": "Tech Lead", "photo": "/images/projects/fall-26/boozallenFALL26/kanhavBhatnagar.jpg" },
+      { "name": "Dev Patel", "title": "Tech Lead", "photo": "/images/projects/fall-26/boozallenFALL26/devPatel.jpg" },
+      { "name": "Mouli Banga", "title": "Product Manager", "photo": "/images/projects/fall-26/boozallenFALL26/mouliBanga.jpg" },
+      { "name": "Aditya Tripathi", "title": "Full-Stack Engineer" },
+      { "name": "Katherine Hall", "title": "Full-Stack Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/katherineHall.jpg" },
+      { "name": "Aarav Borthakur", "title": "Full-Stack Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/aaravBorthakur.jpg" },
+      { "name": "Allison Yu", "title": "Full-stack Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/allisonYu.jpg" },
+      { "name": "Harini Thirukonda", "title": "Full-stack engineer", "photo": "/images/projects/fall-26/boozallenFALL26/hariniThirukonda.jpg" },
+      { "name": "Agnik Banerjee", "title": "Machine Learning Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/agnikBanerjee.jpg" },
+      { "name": "Suneth Ramawickrama", "title": "Machine Learning Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/sunethRamawickrama.jpg" },
+      { "name": "Nithin Bhandari", "title": "Machine Learning Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/nithinBhandari.jpg" },
+      { "name": "Rivan Parikh", "title": "Machine Learning Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/rivanParikh.jpg" },
+      { "name": "Amogh Samaga", "title": "Machine Learning Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/amoghSamaga.jpg" },
+      { "name": "Aprameya Kannan", "title": "DevOps Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/aprameyaKannan.jpg" },
+      { "name": "Sidharth Ponram", "title": "DevOps Engineer", "photo": "/images/projects/fall-26/boozallenFALL26/sidharthPonram.jpg" }
+    ]
+
   },
 ];
 

@@ -29,6 +29,40 @@ type ShowcaseContent =
  * TO EXPORT THESE PROJECTS update the export statement at the bottom of this file as well
  */
 
+const FALL_26_PROJECTS: Project[] = [
+    {
+    slug: 'exiger-fall-26',
+    logo: '/images/logos/exiger.webp',
+    logoAlt: 'Exiger Logo',
+    title: 'Supplier Portal',
+    description: 'Developed a custom supplier portal designed to streamline how global companies interact with their vendors, creating a two-way bridge for managing risk, tracking procurement orders, and handling onboarding tasks',
+    year: 2026,
+    semester: 'Fall',
+    showcaseContent: {
+      description: 'Main supplier portal dashboard for managing tasks, risk analysis, and purchase orders',
+      image: '/images/projects/fall-26/exigerFALL26/exiger-demo.webp',
+    },
+    members: [
+      { name: 'Alan Chan', title: 'Project Lead', photo: '/images/projects/fall-26/exigerFALL26/alanChan.jpg' },
+      { name: 'Thomas Huitema', title: 'Tech Lead', photo: '/images/projects/fall-26/exigerFALL26/thomasHuitema.jpg' },
+      { name: 'Will Graham', title: 'Tech Lead', photo: '/images/projects/fall-26/exigerFALL26/willGraham.png' },
+      { name: 'James Miller', title: 'Full Stack Engineer', photo: '/images/projects/fall-26/exigerFALL26/jamesMiller.jpg' },
+      { name: 'Rachel Li', title: 'Full Stack Engineer', photo: '/images/projects/fall-26/exigerFALL26/rachelLi.jpg' },
+      { name: 'Miles McDonald', title: 'Full Stack Engineer', photo: '/images/projects/fall-26/exigerFALL26/milesMcDonald.jpg' },
+      { name: 'Alex Yang', title: 'Backend Engineer', photo: '/images/projects/fall-26/exigerFALL26/alexYang.jpg' },
+      { name: 'Urjit Chakraborty', title: 'Backend Engineer', photo: '/images/projects/fall-26/exigerFALL26/urjitChakraborty.jpg' },
+      { name: 'Siddhant Jain', title: 'Backend Engineer', photo: '/images/projects/fall-26/exigerFALL26/siddhantJain.jpg' },
+      { name: 'Ryan Li', title: 'Frontend Engineer', photo: '/images/projects/fall-26/exigerFALL26/ryanLi.jpg' },
+      { name: 'Sai Praneeth Oruganti', title: 'Frontend Engineer', photo: '/images/projects/fall-26/exigerFALL26/saiPraneethOruganti.jpg' },
+      { name: 'Tanush Kallem', title: 'DevOps Engineer', photo: '/images/projects/fall-26/exigerFALL26/tanushKallem.jpg' },
+      { name: 'Mihira Murthy', title: 'Project Manager', photo: '/images/projects/fall-26/exigerFALL26/mihiraMurthy.jpg' },
+      { name: 'Amanda Tsai', title: 'Shadow', photo: '/images/projects/fall-26/exigerFALL26/amandaTsai.jpg' },
+      { name: 'Vincent Liu', title: 'Shadow', photo: '/images/projects/fall-26/exigerFALL26/vincentLiu.jpg' },
+
+    ]
+  },
+];
+
 const SPRING_25_PROJECTS: Project[] = [
   {
     slug: 'trachsense-sp-25',
@@ -317,22 +351,6 @@ const SPRING_25_PROJECTS: Project[] = [
   },
 ];
 
-// const FALL_24_PROJECTS: Project[] = [
-//   {
-//     slug: 'fall-2024-project-1',
-//     logo: '',
-//     title: 'Fall 2024 Project 1',
-//     description: 'Short description of project 1',
-//     year: 2024,
-//     semester: 'Fall',
-//     members: [
-//       { name: 'Brian Hall', title: 'Team Lead' },
-//       { name: 'Cathy Young', title: 'Developer' },
-//       { name: 'Derek Fox', title: 'Designer' },
-//     ],
-//   },
-// ];
-
 // Featured projects must have exactly 3 items
 const FEATURED_PROJECTS: FixedLengthArray<Project, 3> = [
   SPRING_25_PROJECTS[0],
@@ -340,6 +358,6 @@ const FEATURED_PROJECTS: FixedLengthArray<Project, 3> = [
   SPRING_25_PROJECTS[2],
 ];
 // const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_24_PROJECTS];
-const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS];
+const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_26_PROJECTS];
 
-export { ALL_PROJECTS, FEATURED_PROJECTS, SPRING_25_PROJECTS };
+export { ALL_PROJECTS, FEATURED_PROJECTS, SPRING_25_PROJECTS, FALL_26_PROJECTS };

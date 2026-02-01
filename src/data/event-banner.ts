@@ -7,11 +7,11 @@ import { Banner } from "@/components/layout/banner";
 // export const banners: Banner[] = [];
 export const banners: Banner[] = [
   {
-    title: "Second Look Fair and Symposium",
-    subtitle: "Stop by our booth to learn more about the club, then attend the symposium later from 6 to 8 PM!",
-    eventLocation: "STAMP / Antonov Auditorium, Iribe",
+    title: "ADC Symposium",
+    subtitle: "Learn about upcoming opportunities, network with members, and *enjoy free pizza!*",
+    eventLocation: "Antonov Auditorium, Iribe Center",
     eventDateTime: {
-      startTime: new Date('2026-02-05T10:00:00-05:00'),
+      startTime: new Date('2026-02-05T18:00:00-05:00'),
       endTime: new Date('2026-02-05T20:00:00-05:00'),
       get date() {
         return this.startTime;

@@ -25,6 +25,19 @@ const Banner = () => {
 
   const { title, subtitle, eventLocation, eventDateTime, href } = banner;
 
+  function renderBold(subtitle: string) {
+    return subtitle.split(/(\*[^*]+\*)/g).map((part, i) => {
+      if (part.startsWith("*") && part.endsWith("*")) {
+        return (
+          <strong key={i}>
+            {part.slice(1, -1)}
+          </strong>
+        );
+      }
+      return part;
+    });
+  }
+
   const today = new Date(
     new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })
   );
@@ -50,7 +63,9 @@ const Banner = () => {
           <h2 className="text-2xl font-bold">
             {href ? <Link href={href}>{title}</Link> : title}
           </h2>
-          <p className="text-muted-foreground text-sm">{subtitle}</p>
+          <p className="text-muted-foreground text-sm">
+            {renderBold(subtitle)}
+          </p>
         </div>
 
         {displayStatus && (

@@ -46,7 +46,7 @@ const Banner = () => {
           displayStatus ? 'grid-cols-[1fr_auto_1fr]' : 'grid-cols-2'
         }`}
       >
-        <div className="max-w-sm max-md:text-center">
+        <div className="max-w-md max-md:text-center">
           <h2 className="text-2xl font-bold">
             {href ? <Link href={href}>{title}</Link> : title}
           </h2>
@@ -66,7 +66,7 @@ const Banner = () => {
           </div>
         )}
 
-        <div className="flex flex-col max-md:items-center md:ml-auto">
+        <div className="flex flex-col max-md:items-center md:ml-auto break-words">
           {eventDateTime && (
             <span className="flex items-center">
               <Clock size={16} className="inline mr-1" />

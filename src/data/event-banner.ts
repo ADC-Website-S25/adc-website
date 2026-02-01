@@ -7,18 +7,18 @@ import { Banner } from "@/components/layout/banner";
 // export const banners: Banner[] = [];
 export const banners: Banner[] = [
   {
-    title: "ADC @ the First Look Fair",
-    subtitle: "Stop by our booth to learn more about the club!",
-    eventLocation: "McKeldin Mall",
+    title: "Second Look Fair and Symposium",
+    subtitle: "Stop by our booth to learn more about the club, then attend the symposium later from 6 to 8 PM!",
+    eventLocation: "STAMP / Antonov Auditorium, Iribe",
     eventDateTime: {
-      startTime: new Date('2025-09-12T10:00:00-04:00'), // 10am EST
-      endTime: new Date('2025-09-12T15:00:00-04:00'),   // 3pm EST
+      startTime: new Date('2026-02-05T10:00:00-05:00'),
+      endTime: new Date('2026-02-05T20:00:00-05:00'),
       get date() {
         return this.startTime;
       },
     },
-    showBannerStartDate: new Date('2025-09-09T00:00:00-04:00'), // MAKE SURE ALL DATES ARE LOCAL EST TIME OR ELSE IT MIGHT BREAK
-    showBannerEndDate: new Date('2025-09-13T23:59:59-04:00'),
+    showBannerStartDate: new Date('2026-02-01T00:00:00-05:00'),
+    showBannerEndDate: new Date('2026-02-07T23:59:59-05:00'),
   },
 ];
   // {

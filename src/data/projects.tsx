@@ -94,7 +94,7 @@ const FALL_26_PROJECTS: Project[] = [
     logo: '/images/logos/vex.png',
     logoAlt: 'Vex Logo',
     title: 'Vex',
-    description: 'Built a full-stack application on AWS using ML to predict airport boundaries for compliance with satellite regulations, validated globally for accuracy and reliability',
+    description: 'Developed an AI-assisted social platform enabling real-time, voice-enabled chatrooms where an intelligent agent participates in conversations, enhances discussions, and allows users to share and replay meaningful exchanges',
     year: 2026,
     semester: 'Fall',
     members: [
@@ -124,11 +124,11 @@ const FALL_26_PROJECTS: Project[] = [
     semester: 'Fall',
     showcaseContent: {
       image: "/images/projects/fall-26/qubiFALL26/qubi.png",
-      description: "Interface for building and running a circuit on IONQ quantum simulators"
+      description: "Interface for building and running a circuit on quantum simulators"
     },
     members: [
       { "name": "Phoebe Dainer", "title": "Team Lead", "photo": "/images/projects/fall-26/qubiFALL26/phoebeDainer.jpg" },
-      { "name": "Kanjonavo Sabud", "title": "Tech Lead (quantum)", "photo": "/images/projects/fall-26/qubiFALL26/konstantinospaparrizos.jpg" },
+      { "name": "Kanjonavo Sabud", "title": "Tech Lead (quantum)" },
       { "name": "Siddharth Belwal", "title": "Tech Lead (backend)", "photo": "/images/projects/fall-26/qubiFALL26/siddharthBelwal.jpg" },
       { "name": "Aarush Vinod", "title": "Backend Engineer" },
       { "name": "Alex Shrestha", "title": "Backend Engineer", "photo": "/images/projects/fall-26/qubiFALL26/alexShrestha.jpg" },
@@ -512,9 +512,9 @@ const SPRING_25_PROJECTS: Project[] = [
 
 // Featured projects must have exactly 3 items
 const FEATURED_PROJECTS: FixedLengthArray<Project, 3> = [
-  SPRING_25_PROJECTS[0],
-  SPRING_25_PROJECTS[1],
-  SPRING_25_PROJECTS[2],
+  FALL_26_PROJECTS[0],
+  FALL_26_PROJECTS[1],
+  FALL_26_PROJECTS[2],
 ];
 // const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_24_PROJECTS];
 const ALL_PROJECTS: Project[] = [...SPRING_25_PROJECTS, ...FALL_26_PROJECTS];

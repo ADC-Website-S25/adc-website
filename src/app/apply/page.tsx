@@ -8,7 +8,7 @@ const ApplyPage = () => {
     <div className="pt-40 mx-auto relative z-10">
       <div className="w-full mx-auto max-w-6xl -mb-11 hidden md:block">
         <Link href="/" className="mb-6">
-          <Button variant={"ghost"} className="rounded-xl">
+          <Button variant={"ghost"}>
             <ArrowLeft className="mr-1" />
             Back to Home
           </Button>

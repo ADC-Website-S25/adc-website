@@ -633,74 +633,74 @@ const SPRING_25_PROJECTS: Project[] = [
         name: "Hannah Chan",
         title: "Project Lead",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/hannahChan.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/hannahChan.webp",
       },
       {
         name: "Surabhi Singh",
         title: "Project Manager",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/surabhiSingh.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/surabhiSingh.webp",
       },
       {
         name: "Yashas Bhat",
         title: "Tech Lead",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/yashasBhat.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/yashasBhat.webp",
       },
       {
         name: "Mohammad Abd-Elmoniem",
         title: "Tech Lead",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/mohammadAbd-Elmoniem.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/mohammadAbd-Elmoniem.webp",
       },
       { name: "Matthew Xu", title: "Full-stack Engineer" },
       {
         name: "Tanmay Panguluri",
         title: "Full-stack Engineer",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/tanmayPanguluri.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/tanmayPanguluri.webp",
       },
       {
         name: "Richard Yin",
         title: "Full-stack Engineer",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/richardYin.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/richardYin.webp",
       },
       {
         name: "Eswar Karavadi",
         title: "Front-end and TrachHub Engineer",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/eswarKaravadi.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/eswarKaravadi.webp",
       },
       {
         name: "Olivia Zhang",
         title: "Frontend Engineer",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/oliviaZhang.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/oliviaZhang.webp",
       },
       {
         name: "Amogh Gurram",
         title: "Backend Engineer",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/amoghGurram.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/amoghGurram.webp",
       },
       { name: "Thomas Urdinola", title: "Backend Engineer" },
       {
         name: "Michelle Yu",
         title: "Shadower",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/michelleYu.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/michelleYu.webp",
       },
       {
         name: "Jayant Kammula",
         title: "Shadower",
         photo:
-          "/images/projects/spring-25/childrensNationalSP25/jayantKammula.jpg",
+          "/images/projects/spring-25/childrensNationalSP25/jayantKammula.webp",
       },
       {
         name: "Kira Le",
         title: "Shadower",
-        photo: "/images/projects/spring-25/childrensNationalSP25/kiraLe.jpg",
+        photo: "/images/projects/spring-25/childrensNationalSP25/kiraLe.webp",
       },
     ],
   },
@@ -722,84 +722,84 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Yuvraj Rekhi",
         title: "Project Lead",
-        photo: "/images/projects/spring-25/amazonSP25/YuvrajRekhi.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/YuvrajRekhi.webp",
       },
       {
         name: "Rhea Sarkar",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/amazonSP25/RheaSarkar.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/RheaSarkar.webp",
       },
       {
         name: "Vivek Nadig",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/amazonSP25/VivekNadig.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/VivekNadig.webp",
       },
       {
         name: "Anjali Gallacher",
         title: "PM / UI/UX",
-        photo: "/images/projects/spring-25/amazonSP25/AnjaliGallacher.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/AnjaliGallacher.webp",
       },
 
       {
         name: "Joseph Cho",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/JosephCho.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/JosephCho.webp",
       },
       {
         name: "Advay Choudhury",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/AdvayChoudhury.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/AdvayChoudhury.webp",
       },
       {
         name: "Smithi Mahendran",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/SmithiMahendran.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/SmithiMahendran.webp",
       },
       {
         name: "Viraj Urs",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/VirajUrs.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/VirajUrs.webp",
       },
       {
         name: "Rishi Chudasama",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/RishiChudasama.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/RishiChudasama.webp",
       },
       {
         name: "Mohe Edeen Abu Maizer",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/MoheEdeenAbuMaizer.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/MoheEdeenAbuMaizer.webp",
       },
       {
         name: "Arsh Goenka",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/ArshGoenka.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/ArshGoenka.webp",
       },
       {
         name: "Arav Luthra",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/AravLuthra.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/AravLuthra.webp",
       },
       {
         name: "Akash Wudali",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/AkashWudali.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/AkashWudali.webp",
       },
       {
         name: "Varun Mannam",
         title: "Engineer",
-        photo: "/images/projects/spring-25/amazonSP25/VarunMannam.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/VarunMannam.webp",
       },
 
       {
         name: "Aryan Jain",
         title: "Shadow",
-        photo: "/images/projects/spring-25/amazonSP25/AryanJain.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/AryanJain.webp",
       },
       {
         name: "Ryan Li",
         title: "Shadow",
-        photo: "/images/projects/spring-25/amazonSP25/RyanLi.jpg",
+        photo: "/images/projects/spring-25/amazonSP25/RyanLi.webp",
       },
     ],
   },
@@ -821,12 +821,12 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Amelia Harn",
         title: "Project Lead",
-        photo: "/images/projects/spring-25/mitreSP25/ameliaHarn.png",
+        photo: "/images/projects/spring-25/mitreSP25/ameliaHarn.webp",
       },
       {
         name: "Anand Vinod",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/mitreSP25/anandVinod.png",
+        photo: "/images/projects/spring-25/mitreSP25/anandVinod.webp",
       },
       {
         name: "Kevin Chong",
@@ -836,7 +836,7 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Shreya Sanikommu",
         title: "Project Manager",
-        photo: "/images/projects/spring-25/mitreSP25/shreyaSanikommu.png",
+        photo: "/images/projects/spring-25/mitreSP25/shreyaSanikommu.webp",
         zoomPhotoIn: true,
       },
       {
@@ -868,12 +868,12 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Marvin Lin",
         title: "ML Engineer",
-        photo: "/images/projects/spring-25/mitreSP25/marvinLin.png",
+        photo: "/images/projects/spring-25/mitreSP25/marvinLin.webp",
       },
       {
         name: "Nate Zhang",
         title: "Frontend Engineer/Research",
-        photo: "/images/projects/spring-25/mitreSP25/nateZhang.png",
+        photo: "/images/projects/spring-25/mitreSP25/nateZhang.webp",
       },
       {
         name: "Parth Dua",
@@ -899,7 +899,7 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Will Graham",
         title: "Frontend Engineer",
-        photo: "/images/projects/spring-25/mitreSP25/willGraham.png",
+        photo: "/images/projects/spring-25/mitreSP25/willGraham.webp",
       },
     ],
   },
@@ -916,62 +916,62 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Madeline Anson",
         title: "Team Lead",
-        photo: "/images/projects/spring-25/usNewsSP25/MadelineAnson.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/MadelineAnson.webp",
       },
       {
         name: "Josiah Lim",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/usNewsSP25/JosiahLim.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/JosiahLim.webp",
       },
       {
         name: "Pranav Palle",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/usNewsSP25/PranavPalle.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/PranavPalle.webp",
       },
       {
         name: "Tanish Anandababu",
         title: "Frontend Engineer",
-        photo: "/images/projects/spring-25/usNewsSP25/TanishAnandababu.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/TanishAnandababu.webp",
       },
       {
         name: "Sathvik Andhavarapu",
         title: "Frontend Engineer",
-        photo: "/images/projects/spring-25/usNewsSP25/SathvikAndhavarapu.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/SathvikAndhavarapu.webp",
       },
       {
         name: "Akshita Badkundri",
         title: "Backend Engineer",
-        photo: "/images/projects/spring-25/usNewsSP25/AkshitaBadkundri.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/AkshitaBadkundri.webp",
       },
       {
         name: "Anant Agrawal",
         title: "Backend Engineer",
-        photo: "/images/projects/spring-25/usNewsSP25/AnantAgrawal.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/AnantAgrawal.webp",
       },
       {
         name: "Pranjal Kattel",
         title: "Engineer",
-        photo: "/images/projects/spring-25/usNewsSP25/PranjalKattel.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/PranjalKattel.webp",
       },
       {
         name: "Alex Shrestha",
         title: "Engineer",
-        photo: "/images/projects/spring-25/usNewsSP25/AlexShrestha.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/AlexShrestha.webp",
       },
       {
         name: "Bhavya Rajasekaran",
         title: "Backend Engineer",
-        photo: "/images/projects/spring-25/usNewsSP25/BhavyaRajasekaran.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/BhavyaRajasekaran.webp",
       },
       {
         name: "Madeline Moldrem",
         title: "Shadow",
-        photo: "/images/projects/spring-25/usNewsSP25/MadelineMoldrem.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/MadelineMoldrem.webp",
       },
       {
         name: "Samantha Tyles",
         title: "Shadow",
-        photo: "/images/projects/spring-25/usNewsSP25/SamanthaTyles.jpg",
+        photo: "/images/projects/spring-25/usNewsSP25/SamanthaTyles.webp",
       },
     ],
     showcaseContent: {
@@ -993,63 +993,63 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Angela Zhang",
         title: "Project Lead",
-        photo: "/images/projects/spring-25/boozAllenSP25/AngelaZhang.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/AngelaZhang.webp",
       },
       {
         name: "Daven Chang",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/boozAllenSP25/DavenChang.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/DavenChang.webp",
       },
       {
         name: "Alan Jiang",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/boozAllenSP25/AlanJiang.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/AlanJiang.webp",
       },
       { name: "Isabelle Ortiz", title: "Project Manager" },
       {
         name: "Ritvik Mahapatra",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/RitvikMahapatra.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/RitvikMahapatra.webp",
       },
       {
         name: "Aidana Aibek",
         title: "UI/UX Designer",
-        photo: "/images/projects/spring-25/boozAllenSP25/AidanaAibek.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/AidanaAibek.webp",
       },
       {
         name: "Dev Patel",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/DevPatel.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/DevPatel.webp",
       },
       {
         name: "Adnan Kabir",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/AdnanKabir.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/AdnanKabir.webp",
       },
       {
         name: "Sidharth Ponram",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/SidharthPonram.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/SidharthPonram.webp",
       },
       {
         name: "Rachel Li",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/RachelLi.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/RachelLi.webp",
       },
       {
         name: "Vir Trivedi",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/VirTrivedi.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/VirTrivedi.webp",
       },
       {
         name: "Kanhav Bhatnagar",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/KanhavBhatnagar.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/KanhavBhatnagar.webp",
       },
       {
         name: "Chiraag Nadig",
         title: "Engineer",
-        photo: "/images/projects/spring-25/boozAllenSP25/ChiraagNadig.jpg",
+        photo: "/images/projects/spring-25/boozAllenSP25/ChiraagNadig.webp",
       },
     ],
   },
@@ -1066,62 +1066,62 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Nishad Wajge",
         title: "Project Lead",
-        photo: "/images/projects/spring-25/gditSP25/NishadWajge.jpg",
+        photo: "/images/projects/spring-25/gditSP25/NishadWajge.webp",
       },
       {
         name: "Utsav Kataria",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/gditSP25/UtsavKataria.jpg",
+        photo: "/images/projects/spring-25/gditSP25/UtsavKataria.webp",
       },
       {
         name: "Soham Katdare",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/gditSP25/SohamKatdare.jpg",
+        photo: "/images/projects/spring-25/gditSP25/SohamKatdare.webp",
       },
       {
         name: "Ayan Banerjee",
         title: "ML Engineer",
-        photo: "/images/projects/spring-25/gditSP25/AyanBanerjee.jpg",
+        photo: "/images/projects/spring-25/gditSP25/AyanBanerjee.webp",
       },
       {
         name: "Angela Yu",
         title: "ML Engineer",
-        photo: "/images/projects/spring-25/gditSP25/AngelaYu.jpg",
+        photo: "/images/projects/spring-25/gditSP25/AngelaYu.webp",
       },
       {
         name: "Sriram Nallani",
         title: "ML Engineer",
-        photo: "/images/projects/spring-25/gditSP25/SriramNallani.jpg",
+        photo: "/images/projects/spring-25/gditSP25/SriramNallani.webp",
       },
       {
         name: "Lakshmee Harivanam",
         title: "ML Engineer",
-        photo: "/images/projects/spring-25/gditSP25/LakshmeeHarivanam.jpg",
+        photo: "/images/projects/spring-25/gditSP25/LakshmeeHarivanam.webp",
       },
       {
         name: "Kaleb Ward",
         title: "Frontend Engineer",
-        photo: "/images/projects/spring-25/gditSP25/KalebWard.jpg",
+        photo: "/images/projects/spring-25/gditSP25/KalebWard.webp",
       },
       {
         name: "Shivank Bhimavarapu",
         title: "Frontend Engineer",
-        photo: "/images/projects/spring-25/gditSP25/ShivankBhimavarapu.jpg",
+        photo: "/images/projects/spring-25/gditSP25/ShivankBhimavarapu.webp",
       },
       {
         name: "Jaiman Munshi",
         title: "Backend Engineer",
-        photo: "/images/projects/spring-25/gditSP25/JaimanMunshi.jpg",
+        photo: "/images/projects/spring-25/gditSP25/JaimanMunshi.webp",
       },
       {
         name: "Sid Belwal",
         title: "Backend Engineer",
-        photo: "/images/projects/spring-25/gditSP25/SidBelwal.jpg",
+        photo: "/images/projects/spring-25/gditSP25/SidBelwal.webp",
       },
       {
         name: "Nithin Bhandari",
         title: "Backend Engineer",
-        photo: "/images/projects/spring-25/gditSP25/NithinBhandari.jpg",
+        photo: "/images/projects/spring-25/gditSP25/NithinBhandari.webp",
       },
     ],
     showcaseContent: {
@@ -1142,52 +1142,52 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Bilal Suleman",
         title: "Project Lead",
-        photo: "/images/projects/spring-25/omalSP25/BilalSuleman.jpg",
+        photo: "/images/projects/spring-25/omalSP25/BilalSuleman.webp",
       },
       {
         name: "Krish Thakker",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/omalSP25/KrishThakker.jpg",
+        photo: "/images/projects/spring-25/omalSP25/KrishThakker.webp",
       },
       {
         name: "Vikaas Venkstesh",
         title: "Backend Developer",
-        photo: "/images/projects/spring-25/omalSP25/VikaasVenkstesh.jpg",
+        photo: "/images/projects/spring-25/omalSP25/VikaasVenkstesh.webp",
       },
       {
         name: "Ezekiel Franklin",
         title: "Backend Developer",
-        photo: "/images/projects/spring-25/omalSP25/EzekielFranklin.jpg",
+        photo: "/images/projects/spring-25/omalSP25/EzekielFranklin.webp",
       },
       {
         name: "Bryant Xiong",
         title: "Backend Developer",
-        photo: "/images/projects/spring-25/omalSP25/BryantXiong.jpg",
+        photo: "/images/projects/spring-25/omalSP25/BryantXiong.webp",
       },
       {
         name: "Edna Adissu",
         title: "UI/UX Designer",
-        photo: "/images/projects/spring-25/omalSP25/EdnaAdissu.jpg",
+        photo: "/images/projects/spring-25/omalSP25/EdnaAdissu.webp",
       },
       {
         name: "Miles McDonald",
         title: "Frontend Developer",
-        photo: "/images/projects/spring-25/omalSP25/MilesMcDonald.jpg",
+        photo: "/images/projects/spring-25/omalSP25/MilesMcDonald.webp",
       },
       {
         name: "Siddhant Jain",
         title: "Frontend Developer",
-        photo: "/images/projects/spring-25/omalSP25/SiddhantJain.jpg",
+        photo: "/images/projects/spring-25/omalSP25/SiddhantJain.webp",
       },
       {
         name: "Lilly Ureta",
         title: "Bootcamp Shadow",
-        photo: "/images/projects/spring-25/omalSP25/LillyUreta.jpg",
+        photo: "/images/projects/spring-25/omalSP25/LillyUreta.webp",
       },
       {
         name: "Andrew Chen",
         title: "Project Manager",
-        photo: "/images/projects/spring-25/omalSP25/AndrewChen.jpg",
+        photo: "/images/projects/spring-25/omalSP25/AndrewChen.webp",
       },
     ],
   },
@@ -1209,83 +1209,83 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Andrew Yang",
         title: "Project Lead",
-        photo: "/images/projects/spring-25/cnhXraySP25/andrewYang.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/andrewYang.webp",
       },
       {
         name: "Shlok Desai",
         title: "Research Lead",
-        photo: "/images/projects/spring-25/cnhXraySP25/ShlokDesai.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/ShlokDesai.webp",
       },
       {
         name: "Naman Nagelia",
         title: "Engineer Lead",
-        photo: "/images/projects/spring-25/cnhXraySP25/NamanNagelia.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/NamanNagelia.webp",
       },
       {
         name: "Nandhu Pillai",
         title: "Researcher",
-        photo: "/images/projects/spring-25/cnhXraySP25/NandhuPillai.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/NandhuPillai.webp",
       },
       {
         name: "William Lee",
         title: "Researcher",
-        photo: "/images/projects/spring-25/cnhXraySP25/WilliamLee.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/WilliamLee.webp",
       },
       {
         name: "Anika Rai",
         title: "Researcher",
-        photo: "/images/projects/spring-25/cnhXraySP25/AnikaRai.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/AnikaRai.webp",
       },
       {
         name: "Rian Tiwari",
         title: "Researcher",
-        photo: "/images/projects/spring-25/cnhXraySP25/RianTiwari.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/RianTiwari.webp",
       },
       {
         name: "Anu Daga",
         title: "Researcher",
-        photo: "/images/projects/spring-25/cnhXraySP25/AnuDaga.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/AnuDaga.webp",
       },
       {
         name: "Jude Lwin",
         title: "Engineer",
-        photo: "/images/projects/spring-25/cnhXraySP25/JudeLwin.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/JudeLwin.webp",
       },
       {
         name: "Cathy Wu",
         title: "Engineer",
-        photo: "/images/projects/spring-25/cnhXraySP25/CathyWu.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/CathyWu.webp",
       },
       {
         name: "Arush Jain",
         title: "Engineer",
-        photo: "/images/projects/spring-25/cnhXraySP25/ArushJain.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/ArushJain.webp",
       },
       {
         name: "Alan Chan",
         title: "Engineer",
-        photo: "/images/projects/spring-25/cnhXraySP25/AlanChan.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/AlanChan.webp",
       },
       {
         name: "Vibhas Ramani",
         title: "Engineer",
-        photo: "/images/projects/spring-25/cnhXraySP25/VibhasRamani.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/VibhasRamani.webp",
       },
       {
         name: "Ishaan Chakraborty",
         title: "Project Manager",
-        photo: "/images/projects/spring-25/cnhXraySP25/IshaanChakraborty.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/IshaanChakraborty.webp",
       },
       {
         name: "James Miller",
         title: "Shadow",
-        photo: "/images/projects/spring-25/cnhXraySP25/JamesMiller.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/JamesMiller.webp",
       },
       { name: "Aarya Vijayaraghavan", title: "Shadow" },
       {
         name: "Bhavya Tanugula",
         title: "Shadow",
-        photo: "/images/projects/spring-25/cnhXraySP25/BhavyaTanugula.jpg",
+        photo: "/images/projects/spring-25/cnhXraySP25/BhavyaTanugula.webp",
       },
     ],
   },
@@ -1302,48 +1302,48 @@ const SPRING_25_PROJECTS: Project[] = [
         name: "Atheesh Thirumalairajan",
         title: "Project Lead",
         photo:
-          "/images/projects/spring-25/mokhtarzadaSP25/AtheeshThirumalairajan.jpg",
+          "/images/projects/spring-25/mokhtarzadaSP25/AtheeshThirumalairajan.webp",
       },
       {
         name: "Andy Diep",
         title: "Tech lead",
-        photo: "/images/projects/spring-25/mokhtarzadaSP25/AndyDiep.jpg",
+        photo: "/images/projects/spring-25/mokhtarzadaSP25/AndyDiep.webp",
       },
       {
         name: "Aadarsh Govada",
         title: "Engineer",
-        photo: "/images/projects/spring-25/mokhtarzadaSP25/AadarshGovada.jpg",
+        photo: "/images/projects/spring-25/mokhtarzadaSP25/AadarshGovada.webp",
       },
       {
         name: "Arjun Rajaram",
         title: "Engineer",
-        photo: "/images/projects/spring-25/mokhtarzadaSP25/ArjunRajaram.jpg",
+        photo: "/images/projects/spring-25/mokhtarzadaSP25/ArjunRajaram.webp",
       },
       {
         name: "Eva Dimitrova",
         title: "Engineer",
-        photo: "/images/projects/spring-25/mokhtarzadaSP25/EvaDimitrova.jpg",
+        photo: "/images/projects/spring-25/mokhtarzadaSP25/EvaDimitrova.webp",
       },
       {
         name: "Evelyn Jiang",
         title: "Engineer",
-        photo: "/images/projects/spring-25/mokhtarzadaSP25/EvelynJiang.jpg",
+        photo: "/images/projects/spring-25/mokhtarzadaSP25/EvelynJiang.webp",
       },
       {
         name: "Gili Gordiyenko",
         title: "Engineer",
-        photo: "/images/projects/spring-25/mokhtarzadaSP25/GiliGordiyenko.jpg",
+        photo: "/images/projects/spring-25/mokhtarzadaSP25/GiliGordiyenko.webp",
       },
       {
         name: "Harini Thirukonda",
         title: "Engineer",
         photo:
-          "/images/projects/spring-25/mokhtarzadaSP25/HariniThirukonda.jpg",
+          "/images/projects/spring-25/mokhtarzadaSP25/HariniThirukonda.webp",
       },
       {
         name: "Narain Sriram",
         title: "Engineer",
-        photo: "/images/projects/spring-25/mokhtarzadaSP25/NarainSriram.jpg",
+        photo: "/images/projects/spring-25/mokhtarzadaSP25/NarainSriram.webp",
       },
     ],
   },
@@ -1360,65 +1360,67 @@ const SPRING_25_PROJECTS: Project[] = [
         name: "Josiah Johnson",
         title: "Project Lead",
         photo:
-          "/images/projects/spring-25/warriors-legacySP25/JosiahJohnson.jpg",
+          "/images/projects/spring-25/warriors-legacySP25/JosiahJohnson.webp",
       },
       {
         name: "Andy Hong",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/warriors-legacySP25/AndyHong.jpg",
+        photo: "/images/projects/spring-25/warriors-legacySP25/AndyHong.webp",
       },
       {
         name: "Arnav Aggarwal",
         title: "Tech Lead",
         photo:
-          "/images/projects/spring-25/warriors-legacySP25/ArnavAggarwal.jpg",
+          "/images/projects/spring-25/warriors-legacySP25/ArnavAggarwal.webp",
       },
 
       {
         name: "Aprameya Kannan",
         title: "Fullstack Engineer",
         photo:
-          "/images/projects/spring-25/warriors-legacySP25/AprameyaKannan.jpg",
+          "/images/projects/spring-25/warriors-legacySP25/AprameyaKannan.webp",
       },
       {
         name: "Aadi Anand",
         title: "Fullstack Engineer",
-        photo: "/images/projects/spring-25/warriors-legacySP25/AadiAnand.jpg",
+        photo: "/images/projects/spring-25/warriors-legacySP25/AadiAnand.webp",
       },
       {
         name: "Jacob Plunkert",
         title: "Fullstack Engineer",
         photo:
-          "/images/projects/spring-25/warriors-legacySP25/JacobPlunkert.jpg",
+          "/images/projects/spring-25/warriors-legacySP25/JacobPlunkert.webp",
       },
       {
         name: "Tanay Naik",
         title: "Fullstack Engineer",
-        photo: "/images/projects/spring-25/warriors-legacySP25/TanayNaik.jpg",
+        photo: "/images/projects/spring-25/warriors-legacySP25/TanayNaik.webp",
       },
       { name: "Bharath Malipeddi", title: "Fullstack Engineer" },
       {
         name: "Rithvik Singh",
         title: "Fullstack Engineer",
         photo:
-          "/images/projects/spring-25/warriors-legacySP25/RithvikSingh.jpg",
+          "/images/projects/spring-25/warriors-legacySP25/RithvikSingh.webp",
       },
       {
         name: "Samarth Parekh",
         title: "Fullstack Engineer",
         photo:
-          "/images/projects/spring-25/warriors-legacySP25/SamarthParekh.jpg",
+          "/images/projects/spring-25/warriors-legacySP25/SamarthParekh.webp",
       },
 
       {
         name: "Riya Lakhani",
         title: "Fullstack Engineer",
-        photo: "/images/projects/spring-25/warriors-legacySP25/RiyaLakhani.jpg",
+        photo:
+          "/images/projects/spring-25/warriors-legacySP25/RiyaLakhani.webp",
       },
       {
         name: "Milana Dagne",
         title: "Fullstack Engineer",
-        photo: "/images/projects/spring-25/warriors-legacySP25/MilanaDagne.jpg",
+        photo:
+          "/images/projects/spring-25/warriors-legacySP25/MilanaDagne.webp",
       },
     ],
   },
@@ -1434,52 +1436,52 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Ashna Nayak",
         title: "Project Lead",
-        photo: "/images/projects/spring-25/ionqSP25/AshnaNayak.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/AshnaNayak.webp",
       },
       {
         name: "Kushagra Mehta",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/ionqSP25/KushagraMehta.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/KushagraMehta.webp",
       },
       {
         name: "Samarth Sriram",
         title: "Tech Lead",
-        photo: "/images/projects/spring-25/ionqSP25/SamarthSriram.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/SamarthSriram.webp",
       },
       {
         name: "Joey Lee",
         title: "QML Engineer",
-        photo: "/images/projects/spring-25/ionqSP25/JoeyLee.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/JoeyLee.webp",
       },
       {
         name: "Kanjonavo Sabud",
         title: "QML Engineer",
-        photo: "/images/projects/spring-25/ionqSP25/KanjonavoSabud.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/KanjonavoSabud.webp",
       },
       {
         name: "Kevan Kazeminezhad",
         title: "QML Engineer",
-        photo: "/images/projects/spring-25/ionqSP25/KevanKazeminezhad.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/KevanKazeminezhad.webp",
       },
       {
         name: "Max Wang",
         title: "QML Engineer",
-        photo: "/images/projects/spring-25/ionqSP25/MaxWang.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/MaxWang.webp",
       },
       {
         name: "Mihir Talati",
         title: "QML Engineer",
-        photo: "/images/projects/spring-25/ionqSP25/MihirTalati.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/MihirTalati.webp",
       },
       {
         name: "Richa Gupta",
         title: "QML Engineer",
-        photo: "/images/projects/spring-25/ionqSP25/RichaGupta.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/RichaGupta.webp",
       },
       {
         name: "Samarth Parekh",
         title: "QML Engineer",
-        photo: "/images/projects/spring-25/ionqSP25/SamarthParekh.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/SamarthParekh.webp",
       },
       {
         name: "Jessica Zhou",
@@ -1490,12 +1492,12 @@ const SPRING_25_PROJECTS: Project[] = [
       {
         name: "Pranav Krishnamurthy",
         title: "Shadower",
-        photo: "/images/projects/spring-25/ionqSP25/PranavKrishnamurthy.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/PranavKrishnamurthy.webp",
       },
       {
         name: "Sawyer Bloom",
         title: "Shadower",
-        photo: "/images/projects/spring-25/ionqSP25/SawyerBloom.jpg",
+        photo: "/images/projects/spring-25/ionqSP25/SawyerBloom.webp",
       },
     ],
   },

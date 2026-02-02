@@ -11,37 +11,56 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects | ADC",
   description: "Explore our projects and initiatives",
-}
+};
 
-const projectsByTerm = ALL_PROJECTS.reduce((acc, project) => {
-  const key = `${project.semester} ${project.year}`;
-  if (!acc[key]) {
-    acc[key] = [];
-  }
-  acc[key].push(project);
-  return acc;
-}, {} as Record<string, Project[]>);
+const projectsByTerm = ALL_PROJECTS.reduce(
+  (acc, project) => {
+    const key = `${project.semester} ${project.year}`;
+    if (!acc[key]) {
+      acc[key] = [];
+    }
+    acc[key].push(project);
+    return acc;
+  },
+  {} as Record<string, Project[]>,
+);
 
 // Convert to array and sort
-const sortedProjects = Object.entries(projectsByTerm)
-  .sort(([a], [b]) => {
-    // Extract year and semester for sorting
-    const [semA, yearA] = a.split(' ');
-    const [semB, yearB] = b.split(' ');
-    
-    if (yearA !== yearB) return parseInt(yearB) - parseInt(yearA);
-    // Spring comes after Fall in the same academic year
-    return semA === 'Spring' ? -1 : 1;
-  });
+const sortedProjects = Object.entries(projectsByTerm).sort(([a], [b]) => {
+  // Extract year and semester for sorting
+  const [semA, yearA] = a.split(" ");
+  const [semB, yearB] = b.split(" ");
 
-function ProjectCard({ logo, title, description, slug }: { logo: string; title: string; description: string; slug: string }) {
-  const isSvg = logo?.toLowerCase().endsWith(".svg")
+  if (yearA !== yearB) return parseInt(yearB) - parseInt(yearA);
+  // Spring comes after Fall in the same academic year
+  console.log(semA);
+  return semA === "Spring" ? 1 : -1;
+});
+
+function ProjectCard({
+  logo,
+  title,
+  description,
+  slug,
+}: {
+  logo: string;
+  title: string;
+  description: string;
+  slug: string;
+}) {
+  const isSvg = logo?.toLowerCase().endsWith(".svg");
   return (
     <BlueBorderContainer className="flex flex-col items-center gap-3 p-6 h-full relative bg-white group overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-white to-blue-300/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       <div className="mb-3 w-32 h-32 flex items-center justify-center bg-blue-100 rounded-full z-10">
         {logo ? (
-          <Image src={prefixPath(logo)} alt={title} width={128} height={128} className="object-contain p-2 z-10" />
+          <Image
+            src={prefixPath(logo)}
+            alt={title}
+            width={128}
+            height={128}
+            className="object-contain p-2 z-10"
+          />
         ) : (
           <span className="text-blue-400 text-4xl font-bold z-10">?</span>
         )}
@@ -53,7 +72,10 @@ function ProjectCard({ logo, title, description, slug }: { logo: string; title: 
         {description}
       </p>
       <Link href={`/projects/${slug}`} className="w-full mt-auto z-10">
-        <Button variant="roundedOutline" className="w-full py-5 hover:bg-blue-100/75">
+        <Button
+          variant="roundedOutline"
+          className="w-full py-5 hover:bg-blue-100/75"
+        >
           Read more <ArrowRight className="ml-1" />
         </Button>
       </Link>
@@ -61,7 +83,16 @@ function ProjectCard({ logo, title, description, slug }: { logo: string; title: 
   );
 }
 
-function ProjectGrid({ projects }: { projects: { logo: string; title: string; description: string; slug: string }[] }) {
+function ProjectGrid({
+  projects,
+}: {
+  projects: {
+    logo: string;
+    title: string;
+    description: string;
+    slug: string;
+  }[];
+}) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 w-full max-w-8xl mx-auto px-2 md:px-6">
       {projects.map((project, idx) => (
@@ -82,7 +113,9 @@ export default function ProjectsPage() {
           </Button>
         </Link>
       </div>
-      <h1 className="text-4xl sm:text-5xl font-bold text-center text-blue-500 mb-12">Our Projects</h1>
+      <h1 className="text-4xl sm:text-5xl font-bold text-center text-blue-500 mb-12">
+        Our Projects
+      </h1>
       {sortedProjects.map(([term, projects]) => (
         <section className="mb-16" key={term}>
           <div className="relative flex items-center justify-center w-full my-8">
@@ -96,4 +129,4 @@ export default function ProjectsPage() {
       ))}
     </div>
   );
-} 
+}

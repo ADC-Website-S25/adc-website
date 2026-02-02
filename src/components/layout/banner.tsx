@@ -1,9 +1,9 @@
-'use client';
-import React from 'react';
-import { Clock, MapPin } from 'lucide-react';
-import Link from 'next/link';
-import GradientText from '../ui/gradient-text';
-import { useActiveBanner } from '@/lib/useActiveBanner';
+"use client";
+import React from "react";
+import { Clock, MapPin } from "lucide-react";
+import Link from "next/link";
+import GradientText from "../ui/gradient-text";
+import { useActiveBanner } from "@/lib/useActiveBanner";
 
 export type Banner = {
   title: string;
@@ -13,11 +13,11 @@ export type Banner = {
     date: Date;
     startTime: Date;
     endTime: Date;
-  }
+  };
   href?: string;
   showBannerStartDate: Date;
   showBannerEndDate: Date;
-}
+};
 
 const Banner = () => {
   const banner = useActiveBanner();
@@ -28,18 +28,14 @@ const Banner = () => {
   function renderBold(subtitle: string) {
     return subtitle.split(/(\*[^*]+\*)/g).map((part, i) => {
       if (part.startsWith("*") && part.endsWith("*")) {
-        return (
-          <strong key={i}>
-            {part.slice(1, -1)}
-          </strong>
-        );
+        return <strong key={i}>{part.slice(1, -1)}</strong>;
       }
       return part;
     });
   }
 
   const today = new Date(
-    new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })
+    new Date().toLocaleString("en-US", { timeZone: "America/New_York" }),
   );
   const eventDate = new Date(eventDateTime.startTime);
 
@@ -47,16 +43,16 @@ const Banner = () => {
     today >= eventDateTime.startTime && today <= eventDateTime.endTime;
   const happeningToday = today.toDateString() === eventDate.toDateString();
   const displayStatus = happeningNow
-    ? 'Happening Now!'
+    ? "Happening Now!"
     : happeningToday
-    ? 'Happening Today!'
-    : null;
+      ? "Happening Today!"
+      : null;
 
   return (
-    <aside className="w-full bg-white z-[99999] shadow-2xl">
+    <aside className="w-full bg-amber-300 z-[99999] shadow-2xl">
       <div
         className={`flex flex-col md:grid items-center gap-4 px-4 py-2 max-w-6xl mx-auto ${
-          displayStatus ? 'grid-cols-[1fr_auto_1fr]' : 'grid-cols-2'
+          displayStatus ? "grid-cols-[1fr_auto_1fr]" : "grid-cols-2"
         }`}
       >
         <div className="max-w-md max-md:text-center">
@@ -71,7 +67,7 @@ const Banner = () => {
         {displayStatus && (
           <div className="flex justify-center">
             <GradientText
-              colors={['#00b5ff', '#0083ff', '#10b981', '#0066cc', '#06b6d4']}
+              colors={["#dc2626", "#f97316", "#eab308", "#f59e0b", "#d97706"]}
               animationSpeed={10}
               showBorder={false}
               className="text-3xl whitespace-nowrap"
@@ -86,18 +82,18 @@ const Banner = () => {
             <span className="flex items-center">
               <Clock size={16} className="inline mr-1" />
               <p className="truncate">
-                {`${eventDateTime.date.toLocaleString('en-US', {
-                  month: 'short',
-                  day: 'numeric',
-                  timeZone: 'America/New_York',
-                })}, ${eventDateTime.startTime.toLocaleTimeString('en-US', {
-                  hour: 'numeric',
-                  minute: '2-digit',
-                  timeZone: 'America/New_York',
-                })}-${eventDateTime.endTime.toLocaleTimeString('en-US', {
-                  hour: 'numeric',
-                  minute: '2-digit',
-                  timeZone: 'America/New_York',
+                {`${eventDateTime.date.toLocaleString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  timeZone: "America/New_York",
+                })}, ${eventDateTime.startTime.toLocaleTimeString("en-US", {
+                  hour: "numeric",
+                  minute: "2-digit",
+                  timeZone: "America/New_York",
+                })}-${eventDateTime.endTime.toLocaleTimeString("en-US", {
+                  hour: "numeric",
+                  minute: "2-digit",
+                  timeZone: "America/New_York",
                 })}`}
               </p>
             </span>

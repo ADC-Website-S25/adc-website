@@ -540,7 +540,7 @@ const FALL_25_PROJECTS: Project[] = [
       {
         name: "Soham Katdare",
         title: "Project Lead",
-        photo: "/images/projects/fall-25/boozallenFALL25/sohamkatdare.webp",
+        photo: "/images/projects/fall-25/boozallenFALL25/sohamKatdare.webp",
       },
       {
         name: "Kanhav Bhatnagar",

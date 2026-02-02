@@ -1,11 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque } from 'next/font/google';
-import "./globals.css";
+import { Bricolage_Grotesque } from "next/font/google";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import Banner from "@/components/layout/banner";
-import { banners } from "@/data/event-banner";
-import Footer2 from "@/components/layout/footer-blue";
+import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -15,7 +13,8 @@ const bricolage = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   title: "App Dev Club @ UMD",
-  description: "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
+  description:
+    "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
   keywords: [
     "UMD",
     "University of Maryland",
@@ -27,13 +26,14 @@ export const metadata: Metadata = {
     "Hackathon",
     "Tech Club",
     "Fortune 500",
-    "Digital Solutions"
+    "Digital Solutions",
   ],
   authors: [{ name: "App Dev Club" }],
   metadataBase: new URL("https://appdevclub.com"),
   openGraph: {
     title: "App Dev Club @ UMD",
-    description: "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
+    description:
+      "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
     url: "https://appdevclub.com",
     siteName: "App Dev Club",
     images: [
@@ -50,7 +50,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "App Dev Club @ UMD",
-    description: "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
+    description:
+      "Fostering the growth of UMD Computer Science students through creating digital solutions for Fortune 500 Companies - EST. Sep 2023",
     images: ["/og-image.webp"],
   },
   alternates: {
@@ -68,8 +69,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-}
-
+};
 
 export default function RootLayout({
   children,

@@ -1,5 +1,5 @@
 export const showApplicationLink = true;
-export const applicationLink = "https://inside.appdevclub.com/";
+export const applicationLink = "https://corp.appdevclub.com/";
 // export const applicationLink = "/apply";
 
 export const showInternalLink = false;

@@ -8,7 +8,7 @@ export default function ApplyRedirect() {
 
   return (
     <div className="pt-40 mx-auto relative z-10 flex items-center justify-center">
-      <h1>Redirecting to apply page...</h1>
+      <h1 className="font-bold">Redirecting to apply page...</h1>
     </div>
   );
 }

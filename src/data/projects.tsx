@@ -255,14 +255,9 @@ const FALL_25_PROJECTS: Project[] = [
         photo: "/images/projects/fall-25/vexFALL25/pranavSatyadeep.webp",
       },
       {
-        name: "Shiva Tripurana",
-        title: "Front End Engineer",
-        photo: "/images/projects/fall-25/vexFALL25/shivaTripurana.webp",
-      },
-      {
-        name: "Leo Chen",
-        title: "UI/UX",
-        photo: "/images/projects/fall-25/vexFALL25/leoChen.webp",
+        name: "Samik Wangneo",
+        title: "Backend Engineer",
+        photo: "/images/projects/fall-25/vexFALL25/samikWangneo.webp",
       },
       {
         name: "Emmanuel Michael",
@@ -270,19 +265,24 @@ const FALL_25_PROJECTS: Project[] = [
         photo: "/images/projects/fall-25/vexFALL25/emmanuelMichael.webp",
       },
       {
-        name: "Bhavesh Thapar",
-        title: "ML Engineer",
-        photo: "/images/projects/fall-25/vexFALL25/bhaveshThapar.webp",
-      },
-      {
         name: "Purab Shah",
         title: "Backend Engineer",
         photo: "/images/projects/fall-25/vexFALL25/purabShah.webp",
       },
       {
-        name: "Eric Gilerson",
-        title: "Front End Engineer",
-        photo: "/images/projects/fall-25/vexFALL25/ericGilerson.webp",
+        name: "Aditya Koul",
+        title: "ML Engineer",
+        photo: "/images/projects/fall-25/vexFALL25/adityaKoul.webp",
+      },
+      {
+        name: "Abhyuday Goyal",
+        title: "ML Engineer",
+        photo: "/images/projects/fall-25/vexFALL25/abhyudayGoyal.webp",
+      },
+      {
+        name: "Bhavesh Thapar",
+        title: "ML Engineer",
+        photo: "/images/projects/fall-25/vexFALL25/bhaveshThapar.webp",
       },
       {
         name: "Vihaan Motwani",
@@ -290,14 +290,29 @@ const FALL_25_PROJECTS: Project[] = [
         photo: "/images/projects/fall-25/vexFALL25/vihaanMotwani.webp",
       },
       {
+        name: "Leo Chen",
+        title: "UI/UX",
+        photo: "/images/projects/fall-25/vexFALL25/leoChen.webp",
+      },
+      {
+        name: "Shiva Tripurana",
+        title: "Front End Engineer",
+        photo: "/images/projects/fall-25/vexFALL25/shivaTripurana.webp",
+      },
+      {
+        name: "Eric Gilerson",
+        title: "Front End Engineer",
+        photo: "/images/projects/fall-25/vexFALL25/ericGilerson.webp",
+      },
+      {
         name: "Kanishk Sivanandam",
         title: "Front End Engineer",
         photo: "/images/projects/fall-25/vexFALL25/kanishkSivanandam.webp",
       },
       {
-        name: "Aditya Koul",
-        title: "ML Engineer",
-        photo: "/images/projects/fall-25/vexFALL25/adityaKoul.webp",
+        name: "Faith Anyanwu",
+        title: "Shadow",
+        photo: "/images/projects/fall-25/vexFALL25/faithAnyanwu.webp",
       },
     ],
   },

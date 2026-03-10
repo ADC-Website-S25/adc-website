@@ -16,13 +16,8 @@ export const leadershipMembers: LeadershipMember[] = [
     src: "/images/leadership/ameliaHarn.png",
   },
   {
-    name: "Hannah Chan",
-    role: "Vice President",
-    src: "/images/leadership/hannahChan.jpg",
-  },
-  {
     name: "Ashna Nayak",
-    role: "Managing Director",
+    role: "Vice President",
     src: "/images/leadership/AshnaNayak.jpg",
   },
 ];

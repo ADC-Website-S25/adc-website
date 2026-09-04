@@ -11,13 +11,18 @@ export const leadershipMembers: LeadershipMember[] = [
     src: "/images/leadership/AtheeshThirumalairajan.jpg",
   },
   {
-    name: "Amelia Harn",
+    name: "Ashna Nayak",
     role: "Executive Director",
-    src: "/images/leadership/ameliaHarn.png",
+    src: "/images/leadership/AshnaNayak.jpg",
   },
   {
-    name: "Ashna Nayak",
+    name: "Alan Chan",
     role: "Vice President",
-    src: "/images/leadership/AshnaNayak.jpg",
+    src: "/images/leadership/alanChan.png",
+  },
+  {
+    name: "Thomas Huitema",
+    role: "Managing Director",
+    src: "/images/leadership/thomasHuitema.png",
   },
 ];
